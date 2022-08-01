@@ -35,7 +35,7 @@
     "chai-as-promised": "^7.1.1",
     "eslint": "^8.18.0",
     "eslint-plugin-chai-expect": "^3.0.0",
-    "eslint-plugin-mocha": "^10.0.5",
+    "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
     "husky": "^8.0.1",
     "mocha": "^10.0.0",
