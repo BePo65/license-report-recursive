@@ -1,8 +1,11 @@
 // postinstall.js
 // update the version of license-report in the README.md file
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'node:path';
+import url from 'node:url';
+
+const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const packageLockJsonPath = path
 	.resolve(__dirname, '..', 'package-lock.json')
@@ -30,6 +33,6 @@ const readmePath = path
     newReadmeContent = [regexResult[1], licenseReportVersion, regexResult[3]].join('');
     await fs.promises.writeFile(readmePath, newReadmeContent);
   } else {
-    console.log('Error: pattern in README.md not found.')
+    console.error('Error: pattern in README.md not found.')
   }
 })();

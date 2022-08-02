@@ -1,0 +1,24 @@
+{
+  "env": {
+    "node": true,
+    "es2021": true,
+    "mocha": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:mocha/recommended",
+    "plugin:chai-expect/recommended",
+    "plugin:json/recommended"
+  ],
+  "parserOptions": {
+    "sourceType": "module"
+  },
+  "plugins": [
+    "prefer-arrow",
+    "json"
+  ],
+  "rules": {
+    "mocha/no-mocha-arrows": "off",
+    "json/*": "error"
+  }
+}
