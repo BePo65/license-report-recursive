@@ -1,0 +1,1597 @@
+[
+  {
+    "department": "kessler",
+    "relatedTo": "stuff",
+    "name": "@kessler/tableify",
+    "licensePeriod": "perpetual",
+    "material": "material",
+    "licenseType": "MIT",
+    "link": "git+https://github.com/kessler/node-tableify.git",
+    "remoteVersion": "1.0.2",
+    "installedVersion": "1.0.2",
+    "definedVersion": "^1.0.2",
+    "author": "Dan VerWeire, Yaniv Kessler"
+  },
+  {
+    "department": "kessler",
+    "relatedTo": "stuff",
+    "name": "mocha",
+    "licensePeriod": "perpetual",
+    "material": "material",
+    "licenseType": "MIT",
+    "link": "git+https://github.com/mochajs/mocha.git",
+    "remoteVersion": "9.2.2",
+    "installedVersion": "9.2.2",
+    "definedVersion": "^9.1.1",
+    "author": "TJ Holowaychuk <tj@vision-media.ca>",
+    "requires": [
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "@ungap/promise-all-settled",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git+https://github.com/ungap/promise-all-settled.git",
+        "remoteVersion": "1.1.2",
+        "installedVersion": "1.1.2",
+        "definedVersion": "1.1.2",
+        "author": "Andrea Giammarchi"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "ansi-colors",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/doowb/ansi-colors.git",
+        "remoteVersion": "4.1.1",
+        "installedVersion": "4.1.1",
+        "definedVersion": "4.1.1",
+        "author": "Brian Woodward (https://github.com/doowb)"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "browser-stdout",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git+ssh://git@github.com/kumavis/browser-stdout.git",
+        "remoteVersion": "1.3.1",
+        "installedVersion": "1.3.1",
+        "definedVersion": "1.3.1",
+        "author": "kumavis"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "chokidar",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/paulmillr/chokidar.git",
+        "remoteVersion": "3.5.3",
+        "installedVersion": "3.5.3",
+        "definedVersion": "3.5.3",
+        "author": "Paul Miller (https://paulmillr.com)",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "anymatch",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/micromatch/anymatch.git",
+            "remoteVersion": "3.1.2",
+            "installedVersion": "3.1.2",
+            "definedVersion": "~3.1.2",
+            "author": "Elan Shanker https://github.com/es128",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "normalize-path",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/jonschlinkert/normalize-path.git",
+                "remoteVersion": "3.0.0",
+                "installedVersion": "3.0.0",
+                "definedVersion": "~3.0.0",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "picomatch",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/micromatch/picomatch.git",
+                "remoteVersion": "2.3.1",
+                "installedVersion": "2.3.1",
+                "definedVersion": "^2.0.4",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "braces",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/micromatch/braces.git",
+            "remoteVersion": "3.0.2",
+            "installedVersion": "3.0.2",
+            "definedVersion": "~3.0.2",
+            "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "fill-range",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/jonschlinkert/fill-range.git",
+                "remoteVersion": "7.0.1",
+                "installedVersion": "7.0.1",
+                "definedVersion": "^7.0.1",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "to-regex-range",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/micromatch/to-regex-range.git",
+                    "remoteVersion": "5.0.1",
+                    "installedVersion": "5.0.1",
+                    "definedVersion": "^5.0.1",
+                    "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "is-number",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/jonschlinkert/is-number.git",
+                        "remoteVersion": "7.0.0",
+                        "installedVersion": "7.0.0",
+                        "definedVersion": "^7.0.0",
+                        "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "fsevents",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "n/a",
+            "link": "git+https://github.com/fsevents/fsevents.git",
+            "remoteVersion": "2.3.2",
+            "installedVersion": "n/a",
+            "definedVersion": "~2.3.2",
+            "author": "n/a"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "glob-parent",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/gulpjs/glob-parent.git",
+            "remoteVersion": "5.1.2",
+            "installedVersion": "5.1.2",
+            "definedVersion": "~5.1.2",
+            "author": "Gulp Team <team@gulpjs.com> (https://gulpjs.com/)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "is-glob",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/micromatch/is-glob.git",
+                "remoteVersion": "4.0.3",
+                "installedVersion": "4.0.3",
+                "definedVersion": "~4.0.1",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "is-extglob",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/jonschlinkert/is-extglob.git",
+                    "remoteVersion": "2.1.1",
+                    "installedVersion": "2.1.1",
+                    "definedVersion": "^2.1.1",
+                    "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "is-binary-path",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/is-binary-path.git",
+            "remoteVersion": "2.1.0",
+            "installedVersion": "2.1.0",
+            "definedVersion": "~2.1.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "binary-extensions",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/sindresorhus/binary-extensions.git",
+                "remoteVersion": "2.2.0",
+                "installedVersion": "2.2.0",
+                "definedVersion": "^2.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "is-glob",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/micromatch/is-glob.git",
+            "remoteVersion": "4.0.3",
+            "installedVersion": "4.0.3",
+            "definedVersion": "~4.0.1",
+            "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "is-extglob",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/jonschlinkert/is-extglob.git",
+                "remoteVersion": "2.1.1",
+                "installedVersion": "2.1.1",
+                "definedVersion": "^2.1.1",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "normalize-path",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/jonschlinkert/normalize-path.git",
+            "remoteVersion": "3.0.0",
+            "installedVersion": "3.0.0",
+            "definedVersion": "~3.0.0",
+            "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "readdirp",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git://github.com/paulmillr/readdirp.git",
+            "remoteVersion": "3.6.0",
+            "installedVersion": "3.6.0",
+            "definedVersion": "~3.6.0",
+            "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "picomatch",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/micromatch/picomatch.git",
+                "remoteVersion": "2.3.1",
+                "installedVersion": "2.3.1",
+                "definedVersion": "^2.0.4",
+                "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "debug",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git://github.com/debug-js/debug.git",
+        "remoteVersion": "4.3.3",
+        "installedVersion": "4.3.3",
+        "definedVersion": "4.3.3",
+        "author": "Josh Junon <josh.junon@protonmail.com>",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "ms",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/vercel/ms.git",
+            "remoteVersion": "2.1.3",
+            "installedVersion": "2.1.3",
+            "definedVersion": "2.1.3",
+            "author": "n/a"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "diff",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "BSD-3-Clause",
+        "link": "git://github.com/kpdecker/jsdiff.git",
+        "remoteVersion": "5.0.0",
+        "installedVersion": "5.0.0",
+        "definedVersion": "5.0.0",
+        "author": "n/a"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "escape-string-regexp",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/sindresorhus/escape-string-regexp.git",
+        "remoteVersion": "4.0.0",
+        "installedVersion": "4.0.0",
+        "definedVersion": "4.0.0",
+        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "find-up",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/sindresorhus/find-up.git",
+        "remoteVersion": "5.0.0",
+        "installedVersion": "5.0.0",
+        "definedVersion": "5.0.0",
+        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "locate-path",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/locate-path.git",
+            "remoteVersion": "6.0.0",
+            "installedVersion": "6.0.0",
+            "definedVersion": "^6.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "p-locate",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/sindresorhus/p-locate.git",
+                "remoteVersion": "5.0.0",
+                "installedVersion": "5.0.0",
+                "definedVersion": "^5.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "p-limit",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/sindresorhus/p-limit.git",
+                    "remoteVersion": "3.1.0",
+                    "installedVersion": "3.1.0",
+                    "definedVersion": "^3.0.2",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "yocto-queue",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/sindresorhus/yocto-queue.git",
+                        "remoteVersion": "0.1.0",
+                        "installedVersion": "0.1.0",
+                        "definedVersion": "^0.1.0",
+                        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "path-exists",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/path-exists.git",
+            "remoteVersion": "4.0.0",
+            "installedVersion": "4.0.0",
+            "definedVersion": "^4.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "glob",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git://github.com/isaacs/node-glob.git",
+        "remoteVersion": "7.2.0",
+        "installedVersion": "7.2.0",
+        "definedVersion": "7.2.0",
+        "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "fs.realpath",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/isaacs/fs.realpath.git",
+            "remoteVersion": "1.0.0",
+            "installedVersion": "1.0.0",
+            "definedVersion": "^1.0.0",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "inflight",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/npm/inflight.git",
+            "remoteVersion": "1.0.6",
+            "installedVersion": "1.0.6",
+            "definedVersion": "^1.0.4",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "once",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "ISC",
+                "link": "git://github.com/isaacs/once.git",
+                "remoteVersion": "1.4.0",
+                "installedVersion": "1.4.0",
+                "definedVersion": "^1.3.0",
+                "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "wrappy",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "ISC",
+                    "link": "git+https://github.com/npm/wrappy.git",
+                    "remoteVersion": "1.0.2",
+                    "installedVersion": "1.0.2",
+                    "definedVersion": "1",
+                    "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+                  }
+                ]
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "wrappy",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "ISC",
+                "link": "git+https://github.com/npm/wrappy.git",
+                "remoteVersion": "1.0.2",
+                "installedVersion": "1.0.2",
+                "definedVersion": "1",
+                "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "inherits",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git://github.com/isaacs/inherits.git",
+            "remoteVersion": "2.0.4",
+            "installedVersion": "2.0.4",
+            "definedVersion": "2",
+            "author": "n/a"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "minimatch",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git://github.com/isaacs/minimatch.git",
+            "remoteVersion": "4.2.1",
+            "installedVersion": "4.2.1",
+            "definedVersion": "4.2.1",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "brace-expansion",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git://github.com/juliangruber/brace-expansion.git",
+                "remoteVersion": "1.1.11",
+                "installedVersion": "1.1.11",
+                "definedVersion": "^1.1.7",
+                "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "balanced-match",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git://github.com/juliangruber/balanced-match.git",
+                    "remoteVersion": "1.0.2",
+                    "installedVersion": "1.0.2",
+                    "definedVersion": "^1.0.0",
+                    "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com"
+                  },
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "concat-map",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git://github.com/substack/node-concat-map.git",
+                    "remoteVersion": "0.0.1",
+                    "installedVersion": "0.0.1",
+                    "definedVersion": "0.0.1",
+                    "author": "James Halliday mail@substack.net http://substack.net"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "once",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git://github.com/isaacs/once.git",
+            "remoteVersion": "1.4.0",
+            "installedVersion": "1.4.0",
+            "definedVersion": "^1.3.0",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "wrappy",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "ISC",
+                "link": "git+https://github.com/npm/wrappy.git",
+                "remoteVersion": "1.0.2",
+                "installedVersion": "1.0.2",
+                "definedVersion": "1",
+                "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "path-is-absolute",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/path-is-absolute.git",
+            "remoteVersion": "1.0.1",
+            "installedVersion": "1.0.1",
+            "definedVersion": "^1.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "growl",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git://github.com/tj/node-growl.git",
+        "remoteVersion": "1.10.5",
+        "installedVersion": "1.10.5",
+        "definedVersion": "1.10.5",
+        "author": "TJ Holowaychuk <tj@vision-media.ca>"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "he",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/mathiasbynens/he.git",
+        "remoteVersion": "1.2.0",
+        "installedVersion": "1.2.0",
+        "definedVersion": "1.2.0",
+        "author": "Mathias Bynens https://mathiasbynens.be/"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "js-yaml",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/nodeca/js-yaml.git",
+        "remoteVersion": "4.1.0",
+        "installedVersion": "4.1.0",
+        "definedVersion": "4.1.0",
+        "author": "Vladimir Zapparov <dervus.grim@gmail.com>",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "argparse",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "Python-2.0",
+            "link": "git+https://github.com/nodeca/argparse.git",
+            "remoteVersion": "2.0.1",
+            "installedVersion": "2.0.1",
+            "definedVersion": "^2.0.1",
+            "author": "n/a"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "log-symbols",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/sindresorhus/log-symbols.git",
+        "remoteVersion": "4.1.0",
+        "installedVersion": "4.1.0",
+        "definedVersion": "4.1.0",
+        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "chalk",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/chalk/chalk.git",
+            "remoteVersion": "4.1.2",
+            "installedVersion": "4.1.2",
+            "definedVersion": "^4.1.0",
+            "author": "n/a",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "ansi-styles",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/chalk/ansi-styles.git",
+                "remoteVersion": "4.3.0",
+                "installedVersion": "4.3.0",
+                "definedVersion": "^4.1.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "color-convert",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/Qix-/color-convert.git",
+                    "remoteVersion": "2.0.1",
+                    "installedVersion": "2.0.1",
+                    "definedVersion": "^2.0.1",
+                    "author": "Heather Arthur <fayearthur@gmail.com>",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "color-name",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+ssh://git@github.com/colorjs/color-name.git",
+                        "remoteVersion": "1.1.4",
+                        "installedVersion": "1.1.4",
+                        "definedVersion": "~1.1.4",
+                        "author": "DY <dfcreative@gmail.com>"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "supports-color",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/chalk/supports-color.git",
+                "remoteVersion": "8.1.1",
+                "installedVersion": "8.1.1",
+                "definedVersion": "8.1.1",
+                "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "has-flag",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/sindresorhus/has-flag.git",
+                    "remoteVersion": "4.0.0",
+                    "installedVersion": "4.0.0",
+                    "definedVersion": "^4.0.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "is-unicode-supported",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/is-unicode-supported.git",
+            "remoteVersion": "0.1.0",
+            "installedVersion": "0.1.0",
+            "definedVersion": "^0.1.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "minimatch",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git://github.com/isaacs/minimatch.git",
+        "remoteVersion": "4.2.1",
+        "installedVersion": "4.2.1",
+        "definedVersion": "4.2.1",
+        "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "brace-expansion",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git://github.com/juliangruber/brace-expansion.git",
+            "remoteVersion": "1.1.11",
+            "installedVersion": "1.1.11",
+            "definedVersion": "^1.1.7",
+            "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "balanced-match",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git://github.com/juliangruber/balanced-match.git",
+                "remoteVersion": "1.0.2",
+                "installedVersion": "1.0.2",
+                "definedVersion": "^1.0.0",
+                "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com"
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "concat-map",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git://github.com/substack/node-concat-map.git",
+                "remoteVersion": "0.0.1",
+                "installedVersion": "0.0.1",
+                "definedVersion": "0.0.1",
+                "author": "James Halliday mail@substack.net http://substack.net"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "ms",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/vercel/ms.git",
+        "remoteVersion": "2.1.3",
+        "installedVersion": "2.1.3",
+        "definedVersion": "2.1.3",
+        "author": "n/a"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "nanoid",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/ai/nanoid.git",
+        "remoteVersion": "3.3.1",
+        "installedVersion": "3.3.1",
+        "definedVersion": "3.3.1",
+        "author": "Andrey Sitnik <andrey@sitnik.ru>"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "serialize-javascript",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "BSD-3-Clause",
+        "link": "git+https://github.com/yahoo/serialize-javascript.git",
+        "remoteVersion": "6.0.0",
+        "installedVersion": "6.0.0",
+        "definedVersion": "6.0.0",
+        "author": "Eric Ferraiuolo <edf@ericf.me>",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "randombytes",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+ssh://git@github.com/crypto-browserify/randombytes.git",
+            "remoteVersion": "2.1.0",
+            "installedVersion": "2.1.0",
+            "definedVersion": "^2.1.0",
+            "author": "",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "safe-buffer",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git://github.com/feross/safe-buffer.git",
+                "remoteVersion": "5.2.1",
+                "installedVersion": "5.2.1",
+                "definedVersion": "^5.1.0",
+                "author": "Feross Aboukhadijeh feross@feross.org https://feross.org"
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "strip-json-comments",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/sindresorhus/strip-json-comments.git",
+        "remoteVersion": "3.1.1",
+        "installedVersion": "3.1.1",
+        "definedVersion": "3.1.1",
+        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "supports-color",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/chalk/supports-color.git",
+        "remoteVersion": "8.1.1",
+        "installedVersion": "8.1.1",
+        "definedVersion": "8.1.1",
+        "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "has-flag",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/has-flag.git",
+            "remoteVersion": "4.0.0",
+            "installedVersion": "4.0.0",
+            "definedVersion": "^4.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "which",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git://github.com/isaacs/node-which.git",
+        "remoteVersion": "2.0.2",
+        "installedVersion": "2.0.2",
+        "definedVersion": "2.0.2",
+        "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "isexe",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/isaacs/isexe.git",
+            "remoteVersion": "2.0.0",
+            "installedVersion": "2.0.0",
+            "definedVersion": "^2.0.0",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "workerpool",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "Apache-2.0",
+        "link": "git://github.com/josdejong/workerpool.git",
+        "remoteVersion": "6.2.0",
+        "installedVersion": "6.2.0",
+        "definedVersion": "6.2.0",
+        "author": "Jos de Jong <wjosdejong@gmail.com> (https://github.com/josdejong)"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "yargs",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/yargs/yargs.git",
+        "remoteVersion": "16.2.0",
+        "installedVersion": "16.2.0",
+        "definedVersion": "16.2.0",
+        "author": "n/a",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "cliui",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/yargs/cliui.git",
+            "remoteVersion": "7.0.4",
+            "installedVersion": "7.0.4",
+            "definedVersion": "^7.0.2",
+            "author": "Ben Coe <ben@npmjs.com>",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "string-width",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/sindresorhus/string-width.git",
+                "remoteVersion": "4.2.3",
+                "installedVersion": "4.2.3",
+                "definedVersion": "^4.2.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "emoji-regex",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
+                    "remoteVersion": "8.0.0",
+                    "installedVersion": "8.0.0",
+                    "definedVersion": "^8.0.0",
+                    "author": "Mathias Bynens https://mathiasbynens.be/"
+                  },
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "is-fullwidth-code-point",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
+                    "remoteVersion": "3.0.0",
+                    "installedVersion": "3.0.0",
+                    "definedVersion": "^3.0.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                  },
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "strip-ansi",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/chalk/strip-ansi.git",
+                    "remoteVersion": "6.0.1",
+                    "installedVersion": "6.0.1",
+                    "definedVersion": "^6.0.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "ansi-regex",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/chalk/ansi-regex.git",
+                        "remoteVersion": "5.0.1",
+                        "installedVersion": "5.0.1",
+                        "definedVersion": "^5.0.1",
+                        "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "strip-ansi",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/chalk/strip-ansi.git",
+                "remoteVersion": "6.0.1",
+                "installedVersion": "6.0.1",
+                "definedVersion": "^6.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "ansi-regex",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/chalk/ansi-regex.git",
+                    "remoteVersion": "5.0.1",
+                    "installedVersion": "5.0.1",
+                    "definedVersion": "^5.0.1",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                  }
+                ]
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "wrap-ansi",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/chalk/wrap-ansi.git",
+                "remoteVersion": "7.0.0",
+                "installedVersion": "7.0.0",
+                "definedVersion": "^7.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "ansi-styles",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/chalk/ansi-styles.git",
+                    "remoteVersion": "4.3.0",
+                    "installedVersion": "4.3.0",
+                    "definedVersion": "^4.1.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "color-convert",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/Qix-/color-convert.git",
+                        "remoteVersion": "2.0.1",
+                        "installedVersion": "2.0.1",
+                        "definedVersion": "^2.0.1",
+                        "author": "Heather Arthur <fayearthur@gmail.com>",
+                        "requires": [
+                          {
+                            "department": "kessler",
+                            "relatedTo": "stuff",
+                            "name": "color-name",
+                            "licensePeriod": "perpetual",
+                            "material": "material",
+                            "licenseType": "MIT",
+                            "link": "git+ssh://git@github.com/colorjs/color-name.git",
+                            "remoteVersion": "1.1.4",
+                            "installedVersion": "1.1.4",
+                            "definedVersion": "~1.1.4",
+                            "author": "DY <dfcreative@gmail.com>"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "string-width",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/sindresorhus/string-width.git",
+                    "remoteVersion": "4.2.3",
+                    "installedVersion": "4.2.3",
+                    "definedVersion": "^4.2.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "emoji-regex",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
+                        "remoteVersion": "8.0.0",
+                        "installedVersion": "8.0.0",
+                        "definedVersion": "^8.0.0",
+                        "author": "Mathias Bynens https://mathiasbynens.be/"
+                      },
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "is-fullwidth-code-point",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
+                        "remoteVersion": "3.0.0",
+                        "installedVersion": "3.0.0",
+                        "definedVersion": "^3.0.0",
+                        "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                      },
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "strip-ansi",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/chalk/strip-ansi.git",
+                        "remoteVersion": "6.0.1",
+                        "installedVersion": "6.0.1",
+                        "definedVersion": "^6.0.0",
+                        "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                        "requires": [
+                          {
+                            "department": "kessler",
+                            "relatedTo": "stuff",
+                            "name": "ansi-regex",
+                            "licensePeriod": "perpetual",
+                            "material": "material",
+                            "licenseType": "MIT",
+                            "link": "git+https://github.com/chalk/ansi-regex.git",
+                            "remoteVersion": "5.0.1",
+                            "installedVersion": "5.0.1",
+                            "definedVersion": "^5.0.1",
+                            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                          }
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "strip-ansi",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/chalk/strip-ansi.git",
+                    "remoteVersion": "6.0.1",
+                    "installedVersion": "6.0.1",
+                    "definedVersion": "^6.0.0",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                    "requires": [
+                      {
+                        "department": "kessler",
+                        "relatedTo": "stuff",
+                        "name": "ansi-regex",
+                        "licensePeriod": "perpetual",
+                        "material": "material",
+                        "licenseType": "MIT",
+                        "link": "git+https://github.com/chalk/ansi-regex.git",
+                        "remoteVersion": "5.0.1",
+                        "installedVersion": "5.0.1",
+                        "definedVersion": "^5.0.1",
+                        "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "escalade",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/lukeed/escalade.git",
+            "remoteVersion": "3.1.1",
+            "installedVersion": "3.1.1",
+            "definedVersion": "^3.1.1",
+            "author": "Luke Edwards luke.edwards05@gmail.com https://lukeed.com"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "get-caller-file",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/stefanpenner/get-caller-file.git",
+            "remoteVersion": "2.0.5",
+            "installedVersion": "2.0.5",
+            "definedVersion": "^2.0.5",
+            "author": "Stefan Penner"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "require-directory",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git://github.com/troygoode/node-require-directory.git",
+            "remoteVersion": "2.1.1",
+            "installedVersion": "2.1.1",
+            "definedVersion": "^2.1.1",
+            "author": "Troy Goode <troygoode@gmail.com> (http://github.com/troygoode/)"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "string-width",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/string-width.git",
+            "remoteVersion": "4.2.3",
+            "installedVersion": "4.2.3",
+            "definedVersion": "^4.2.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+            "requires": [
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "emoji-regex",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
+                "remoteVersion": "8.0.0",
+                "installedVersion": "8.0.0",
+                "definedVersion": "^8.0.0",
+                "author": "Mathias Bynens https://mathiasbynens.be/"
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "is-fullwidth-code-point",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
+                "remoteVersion": "3.0.0",
+                "installedVersion": "3.0.0",
+                "definedVersion": "^3.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+              },
+              {
+                "department": "kessler",
+                "relatedTo": "stuff",
+                "name": "strip-ansi",
+                "licensePeriod": "perpetual",
+                "material": "material",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/chalk/strip-ansi.git",
+                "remoteVersion": "6.0.1",
+                "installedVersion": "6.0.1",
+                "definedVersion": "^6.0.0",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                "requires": [
+                  {
+                    "department": "kessler",
+                    "relatedTo": "stuff",
+                    "name": "ansi-regex",
+                    "licensePeriod": "perpetual",
+                    "material": "material",
+                    "licenseType": "MIT",
+                    "link": "git+https://github.com/chalk/ansi-regex.git",
+                    "remoteVersion": "5.0.1",
+                    "installedVersion": "5.0.1",
+                    "definedVersion": "^5.0.1",
+                    "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "y18n",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/yargs/y18n.git",
+            "remoteVersion": "5.0.8",
+            "installedVersion": "5.0.8",
+            "definedVersion": "^5.0.5",
+            "author": "Ben Coe <bencoe@gmail.com>"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "yargs-parser",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/yargs/yargs-parser.git",
+            "remoteVersion": "20.2.4",
+            "installedVersion": "20.2.4",
+            "definedVersion": "20.2.4",
+            "author": "Ben Coe <ben@npmjs.com>"
+          }
+        ]
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "yargs-parser",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git+https://github.com/yargs/yargs-parser.git",
+        "remoteVersion": "20.2.4",
+        "installedVersion": "20.2.4",
+        "definedVersion": "20.2.4",
+        "author": "Ben Coe <ben@npmjs.com>"
+      },
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "yargs-unparser",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/yargs/yargs-unparser.git",
+        "remoteVersion": "2.0.0",
+        "installedVersion": "2.0.0",
+        "definedVersion": "2.0.0",
+        "author": "André Cruz <andre@moxy.studio>",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "camelcase",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/camelcase.git",
+            "remoteVersion": "6.3.0",
+            "installedVersion": "6.3.0",
+            "definedVersion": "^6.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "decamelize",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/decamelize.git",
+            "remoteVersion": "4.0.0",
+            "installedVersion": "4.0.0",
+            "definedVersion": "^4.0.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "flat",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "BSD-3-Clause",
+            "link": "git://github.com/hughsk/flat.git",
+            "remoteVersion": "5.0.2",
+            "installedVersion": "5.0.2",
+            "definedVersion": "^5.0.2",
+            "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)"
+          },
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "is-plain-obj",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/is-plain-obj.git",
+            "remoteVersion": "2.1.0",
+            "installedVersion": "2.1.0",
+            "definedVersion": "^2.1.0",
+            "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "department": "kessler",
+    "relatedTo": "stuff",
+    "name": "lodash",
+    "licensePeriod": "perpetual",
+    "material": "material",
+    "licenseType": "MIT",
+    "link": "git+https://github.com/lodash/lodash.git",
+    "remoteVersion": "4.17.21",
+    "installedVersion": "4.17.21",
+    "definedVersion": "^4.17.20",
+    "author": "John-David Dalton <john.david.dalton@gmail.com>"
+  },
+  {
+    "department": "kessler",
+    "relatedTo": "stuff",
+    "name": "semver",
+    "licensePeriod": "perpetual",
+    "material": "material",
+    "licenseType": "ISC",
+    "link": "git+https://github.com/npm/node-semver.git",
+    "remoteVersion": "7.3.7",
+    "installedVersion": "7.3.7",
+    "definedVersion": "^7.3.5",
+    "author": "GitHub Inc.",
+    "requires": [
+      {
+        "department": "kessler",
+        "relatedTo": "stuff",
+        "name": "lru-cache",
+        "licensePeriod": "perpetual",
+        "material": "material",
+        "licenseType": "ISC",
+        "link": "git://github.com/isaacs/node-lru-cache.git",
+        "remoteVersion": "6.0.0",
+        "installedVersion": "6.0.0",
+        "definedVersion": "^6.0.0",
+        "author": "Isaac Z. Schlueter <i@izs.me>",
+        "requires": [
+          {
+            "department": "kessler",
+            "relatedTo": "stuff",
+            "name": "yallist",
+            "licensePeriod": "perpetual",
+            "material": "material",
+            "licenseType": "ISC",
+            "link": "git+https://github.com/isaacs/yallist.git",
+            "remoteVersion": "4.0.0",
+            "installedVersion": "4.0.0",
+            "definedVersion": "^4.0.0",
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+          }
+        ]
+      }
+    ]
+  }
+]

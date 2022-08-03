@@ -1,5 +1,20 @@
 {
+  "name": "addDependenciesRecursive",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
   "dependencies": {
-    "got": "^11.8.2"
+    "once": "^1.4.0",
+    "my-local-package": "file:local-libs/my-local-package",
+    "my-mocha": "npm:mocha@^8.3.1"
+  },
+  "optionalDependencies": {
+    "@ungap/promise-all-settled": "^1.1.2"
   }
 }

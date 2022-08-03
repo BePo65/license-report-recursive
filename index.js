@@ -1,33 +1,20 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
-const debug = require('debug')('license-report');
-const getInstalledVersions = require('license-report/lib/getInstalledVersions');
-const getPackageReportData = require('license-report/lib/getPackageReportData.js');
-const packageDataToReportData = require('license-report/lib/packageDataToReportData');
-const util = require('license-report/lib/util');
+import fs from 'fs';
+import path from 'path';
+import createDebugMessages from 'debug';
+import addLocalPackageData from 'license-report/lib/addLocalPackageData.js';
+import addPackageDataFromRepository from 'license-report/lib/addPackageDataFromRepository.js';
+import packageDataToReportData from 'license-report/lib/packageDataToReportData.js';
 
-const addDependenciesRecursive = require('./lib/addDependenciesRecursive.js');
-const config = require('./lib/config.js');
-const getDepsIndex = require('./lib/getDepsIndex.js');
-const getFormatter = require('./lib/getFormatter');
-const getTree = require('./lib/getTree.js');
+import getDependencies from './lib/getDependencies.js';
+import addDependenciesRecursive from './lib/addDependenciesRecursive.js';
+import config from './lib/config.js';
+import getFormatter from './lib/getFormatter.js';
+import getTree from './lib/getTree.js';
+import util from './lib/util.js';
 
-function comparePackages(a, b) {
-  const nameA = a.name;
-  const nameB = b.name;
-
-  if (nameA < nameB) {
-    return -1;
-  }
-
-  if (nameA > nameB) {
-    return 1;
-  }
-
-  return 0;
-}
+const debug = createDebugMessages('license-report');
 
 (async () => {
   if (config.help) {
@@ -60,41 +47,40 @@ function comparePackages(a, b) {
       throw new Error(`Warning: the file '${resolvedPackageJson}' is required to get installed versions of packages`)
     }
 
-    // build an index of all the selected dependencies
-    let depsIndex = getDepsIndex(packageJson)
+    const inclusions = util.isNullOrUndefined(config.only) ? null : config.only.split(',')
+    const exclusions = Array.isArray(config.exclude) ? config.exclude : [config.exclude]
+    const parentPath = `>${packageJson.name}`
 
-    // package-lock.json is required to get the installed versions from
-    let packageLockJson = {}
-    const resolvedPackageLockJson = path.resolve(path.dirname(resolvedPackageJson), 'package-lock.json')
-    debug('loading %s', resolvedPackageLockJson)
-    if (fs.existsSync(resolvedPackageLockJson)) {
-      packageLockJson = await util.readJson(resolvedPackageLockJson)
-    } else {
-      console.warn(`Warning: the file '${resolvedPackageLockJson}' is required to get installed versions of packages`)
+    // an array with all the dependencies in the package.json under inspection
+    let depsIndex = getDependencies(packageJson, exclusions, inclusions, parentPath)
+
+    const projectRootPath = path.dirname(resolvedPackageJson)
+    let depsIndexRecursiveFlat = depsIndex
+    let depsIndexRecursiveTree = depsIndex
+
+    // add dependencies of dependencies
+    if ((config.recurse === true) || (config.recurse === 'true')) {
+      let inclusionsSubDeps = ['prod', 'opt', 'peer']
+      if (inclusions !== null) {
+        inclusionsSubDeps = inclusions.filter(entry => entry !== 'dev')
+      }
+      const { depsIndexRecursiveFlat: flat, depsIndexRecursiveTree: tree } = await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath)
+      depsIndexRecursiveFlat = flat
+      depsIndexRecursiveTree = tree
     }
 
-    let depsIndexActive = depsIndex
-    if (config.recurse) {
-      // add dependencies of dependencies
-      depsIndexActive = addDependenciesRecursive(depsIndex, packageLockJson)
-    }
-
-    const installedVersions = getInstalledVersions(packageLockJson, depsIndexActive)
-
-    const results = await Promise.all(
-      depsIndexActive.map(async (packageEntry) => {
-        return await getPackageReportData(packageEntry, installedVersions)
+    const packagesData = await Promise.all(
+      depsIndexRecursiveFlat.map(async (element) => {
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath)
+        const packagesData = await addPackageDataFromRepository(localDataForPackages)
+        return packageDataToReportData(packagesData, config)
       })
     )
-
-    const packagesData = results
-      .map(element => packageDataToReportData(element, config))
-      .sort(comparePackages)
 
     if (config.output !== 'tree') {
       console.log(outputFormatter(packagesData, config))
     } else {
-      const packagesDataTree = getTree(depsIndex, packagesData, packageLockJson)
+      const packagesDataTree = getTree(depsIndexRecursiveTree, packagesData)
       console.log(outputFormatter(packagesDataTree, config))
     }
   } catch (e) {
