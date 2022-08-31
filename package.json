@@ -31,11 +31,11 @@
     "license-report": "^6.0.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.0.3",
-    "@commitlint/config-conventional": "^17.0.3",
+    "@commitlint/cli": "^17.1.2",
+    "@commitlint/config-conventional": "^17.1.0",
     "chai": "^4.3.6",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.21.0",
+    "eslint": "^8.23.0",
     "eslint-plugin-chai-expect": "^3.0.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-mocha": "^10.1.0",
