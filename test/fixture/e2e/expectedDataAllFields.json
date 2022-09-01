@@ -8,9 +8,11 @@
     "licenseType": "MIT",
     "link": "git+https://github.com/kessler/node-tableify.git",
     "installedFrom": "https://registry.npmjs.org/@kessler/tableify/-/tableify-1.0.2.tgz",
+    "remoteVersion": "1.0.2",
     "installedVersion": "1.0.2",
     "definedVersion": "^1.0.2",
-    "remoteVersion": "1.0.2",
+    "latestRemoteVersion": "1.0.2",
+    "latestRemoteModified": "2022-04-05T23:26:35.798Z",
     "author": "Dan VerWeire, Yaniv Kessler"
   },
   {
@@ -22,9 +24,11 @@
     "licenseType": "MIT",
     "link": "git+https://github.com/mochajs/mocha.git",
     "installedFrom": "https://registry.npmjs.org/mocha/-/mocha-9.2.2.tgz",
+    "remoteVersion": "9.2.2",
     "installedVersion": "9.2.2",
     "definedVersion": "^9.1.1",
-    "remoteVersion": "9.2.2",
+    "latestRemoteVersion": "10.0.0",
+    "latestRemoteModified": "2022-06-20T01:14:43.542Z",
     "author": "TJ Holowaychuk <tj@vision-media.ca>",
     "requires": [
       {
@@ -36,9 +40,11 @@
         "licenseType": "ISC",
         "link": "git+https://github.com/ungap/promise-all-settled.git",
         "installedFrom": "https://registry.npmjs.org/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz",
+        "remoteVersion": "1.1.2",
         "installedVersion": "1.1.2",
         "definedVersion": "1.1.2",
-        "remoteVersion": "1.1.2",
+        "latestRemoteVersion": "1.1.2",
+        "latestRemoteModified": "2022-04-07T09:33:39.440Z",
         "author": "Andrea Giammarchi"
       },
       {
@@ -50,9 +56,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/doowb/ansi-colors.git",
         "installedFrom": "https://registry.npmjs.org/ansi-colors/-/ansi-colors-4.1.1.tgz",
+        "remoteVersion": "4.1.1",
         "installedVersion": "4.1.1",
         "definedVersion": "4.1.1",
-        "remoteVersion": "4.1.1",
+        "latestRemoteVersion": "4.1.3",
+        "latestRemoteModified": "2022-06-13T03:05:19.146Z",
         "author": "Brian Woodward (https://github.com/doowb)"
       },
       {
@@ -64,9 +72,11 @@
         "licenseType": "ISC",
         "link": "git+ssh://git@github.com/kumavis/browser-stdout.git",
         "installedFrom": "https://registry.npmjs.org/browser-stdout/-/browser-stdout-1.3.1.tgz",
+        "remoteVersion": "1.3.1",
         "installedVersion": "1.3.1",
         "definedVersion": "1.3.1",
-        "remoteVersion": "1.3.1",
+        "latestRemoteVersion": "1.3.1",
+        "latestRemoteModified": "2022-06-13T05:09:53.142Z",
         "author": "kumavis"
       },
       {
@@ -78,9 +88,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/paulmillr/chokidar.git",
         "installedFrom": "https://registry.npmjs.org/chokidar/-/chokidar-3.5.3.tgz",
+        "remoteVersion": "3.5.3",
         "installedVersion": "3.5.3",
         "definedVersion": "3.5.3",
-        "remoteVersion": "3.5.3",
+        "latestRemoteVersion": "3.5.3",
+        "latestRemoteModified": "2022-06-13T05:59:17.338Z",
         "author": "Paul Miller (https://paulmillr.com)",
         "requires": [
           {
@@ -92,9 +104,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/micromatch/anymatch.git",
             "installedFrom": "https://registry.npmjs.org/anymatch/-/anymatch-3.1.2.tgz",
+            "remoteVersion": "3.1.2",
             "installedVersion": "3.1.2",
             "definedVersion": "~3.1.2",
-            "remoteVersion": "3.1.2",
+            "latestRemoteVersion": "3.1.2",
+            "latestRemoteModified": "2022-06-13T03:07:46.291Z",
             "author": "Elan Shanker https://github.com/es128",
             "requires": [
               {
@@ -106,9 +120,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/jonschlinkert/normalize-path.git",
                 "installedFrom": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz",
+                "remoteVersion": "3.0.0",
                 "installedVersion": "3.0.0",
                 "definedVersion": "~3.0.0",
-                "remoteVersion": "3.0.0",
+                "latestRemoteVersion": "3.0.0",
+                "latestRemoteModified": "2022-06-22T05:31:16.967Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
               },
               {
@@ -120,9 +136,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/micromatch/picomatch.git",
                 "installedFrom": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",
+                "remoteVersion": "2.3.1",
                 "installedVersion": "2.3.1",
                 "definedVersion": "^2.0.4",
-                "remoteVersion": "2.3.1",
+                "latestRemoteVersion": "2.3.1",
+                "latestRemoteModified": "2022-05-12T22:25:17.093Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
               }
             ]
@@ -136,9 +154,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/micromatch/braces.git",
             "installedFrom": "https://registry.npmjs.org/braces/-/braces-3.0.2.tgz",
+            "remoteVersion": "3.0.2",
             "installedVersion": "3.0.2",
             "definedVersion": "~3.0.2",
-            "remoteVersion": "3.0.2",
+            "latestRemoteVersion": "3.0.2",
+            "latestRemoteModified": "2022-06-13T05:03:40.783Z",
             "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
             "requires": [
               {
@@ -150,9 +170,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/jonschlinkert/fill-range.git",
                 "installedFrom": "https://registry.npmjs.org/fill-range/-/fill-range-7.0.1.tgz",
+                "remoteVersion": "7.0.1",
                 "installedVersion": "7.0.1",
                 "definedVersion": "^7.0.1",
-                "remoteVersion": "7.0.1",
+                "latestRemoteVersion": "7.0.1",
+                "latestRemoteModified": "2022-06-18T00:47:33.318Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
                 "requires": [
                   {
@@ -164,9 +186,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/micromatch/to-regex-range.git",
                     "installedFrom": "https://registry.npmjs.org/to-regex-range/-/to-regex-range-5.0.1.tgz",
+                    "remoteVersion": "5.0.1",
                     "installedVersion": "5.0.1",
                     "definedVersion": "^5.0.1",
-                    "remoteVersion": "5.0.1",
+                    "latestRemoteVersion": "5.0.1",
+                    "latestRemoteModified": "2022-06-27T07:24:37.330Z",
                     "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
                     "requires": [
                       {
@@ -178,9 +202,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/jonschlinkert/is-number.git",
                         "installedFrom": "https://registry.npmjs.org/is-number/-/is-number-7.0.0.tgz",
+                        "remoteVersion": "7.0.0",
                         "installedVersion": "7.0.0",
                         "definedVersion": "^7.0.0",
-                        "remoteVersion": "7.0.0",
+                        "latestRemoteVersion": "7.0.0",
+                        "latestRemoteModified": "2022-06-19T02:46:48.175Z",
                         "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
                       }
                     ]
@@ -198,9 +224,11 @@
             "licenseType": "n/a",
             "link": "git+https://github.com/fsevents/fsevents.git",
             "installedFrom": "n/a",
+            "remoteVersion": "2.3.2",
             "installedVersion": "n/a",
             "definedVersion": "~2.3.2",
-            "remoteVersion": "2.3.2",
+            "latestRemoteVersion": "2.3.2",
+            "latestRemoteModified": "2022-06-18T03:57:59.137Z",
             "author": "n/a"
           },
           {
@@ -212,9 +240,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/gulpjs/glob-parent.git",
             "installedFrom": "https://registry.npmjs.org/glob-parent/-/glob-parent-5.1.2.tgz",
+            "remoteVersion": "5.1.2",
             "installedVersion": "5.1.2",
             "definedVersion": "~5.1.2",
-            "remoteVersion": "5.1.2",
+            "latestRemoteVersion": "6.0.2",
+            "latestRemoteModified": "2022-06-18T12:54:23.830Z",
             "author": "Gulp Team <team@gulpjs.com> (https://gulpjs.com/)",
             "requires": [
               {
@@ -226,9 +256,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/micromatch/is-glob.git",
                 "installedFrom": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+                "remoteVersion": "4.0.3",
                 "installedVersion": "4.0.3",
                 "definedVersion": "~4.0.1",
-                "remoteVersion": "4.0.3",
+                "latestRemoteVersion": "4.0.3",
+                "latestRemoteModified": "2022-06-19T02:42:16.099Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
                 "requires": [
                   {
@@ -240,9 +272,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/jonschlinkert/is-extglob.git",
                     "installedFrom": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+                    "remoteVersion": "2.1.1",
                     "installedVersion": "2.1.1",
                     "definedVersion": "^2.1.1",
-                    "remoteVersion": "2.1.1",
+                    "latestRemoteVersion": "2.1.1",
+                    "latestRemoteModified": "2022-06-19T02:41:12.048Z",
                     "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
                   }
                 ]
@@ -258,9 +292,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/is-binary-path.git",
             "installedFrom": "https://registry.npmjs.org/is-binary-path/-/is-binary-path-2.1.0.tgz",
+            "remoteVersion": "2.1.0",
             "installedVersion": "2.1.0",
             "definedVersion": "~2.1.0",
-            "remoteVersion": "2.1.0",
+            "latestRemoteVersion": "2.1.0",
+            "latestRemoteModified": "2022-06-19T02:37:23.015Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
             "requires": [
               {
@@ -272,9 +308,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/binary-extensions.git",
                 "installedFrom": "https://registry.npmjs.org/binary-extensions/-/binary-extensions-2.2.0.tgz",
+                "remoteVersion": "2.2.0",
                 "installedVersion": "2.2.0",
                 "definedVersion": "^2.0.0",
-                "remoteVersion": "2.2.0",
+                "latestRemoteVersion": "2.2.0",
+                "latestRemoteModified": "2022-06-13T04:37:59.971Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
               }
             ]
@@ -288,9 +326,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/micromatch/is-glob.git",
             "installedFrom": "https://registry.npmjs.org/is-glob/-/is-glob-4.0.3.tgz",
+            "remoteVersion": "4.0.3",
             "installedVersion": "4.0.3",
             "definedVersion": "~4.0.1",
-            "remoteVersion": "4.0.3",
+            "latestRemoteVersion": "4.0.3",
+            "latestRemoteModified": "2022-06-19T02:42:16.099Z",
             "author": "Jon Schlinkert (https://github.com/jonschlinkert)",
             "requires": [
               {
@@ -302,9 +342,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/jonschlinkert/is-extglob.git",
                 "installedFrom": "https://registry.npmjs.org/is-extglob/-/is-extglob-2.1.1.tgz",
+                "remoteVersion": "2.1.1",
                 "installedVersion": "2.1.1",
                 "definedVersion": "^2.1.1",
-                "remoteVersion": "2.1.1",
+                "latestRemoteVersion": "2.1.1",
+                "latestRemoteModified": "2022-06-19T02:41:12.048Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
               }
             ]
@@ -318,9 +360,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/jonschlinkert/normalize-path.git",
             "installedFrom": "https://registry.npmjs.org/normalize-path/-/normalize-path-3.0.0.tgz",
+            "remoteVersion": "3.0.0",
             "installedVersion": "3.0.0",
             "definedVersion": "~3.0.0",
-            "remoteVersion": "3.0.0",
+            "latestRemoteVersion": "3.0.0",
+            "latestRemoteModified": "2022-06-22T05:31:16.967Z",
             "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
           },
           {
@@ -332,9 +376,11 @@
             "licenseType": "MIT",
             "link": "git://github.com/paulmillr/readdirp.git",
             "installedFrom": "https://registry.npmjs.org/readdirp/-/readdirp-3.6.0.tgz",
+            "remoteVersion": "3.6.0",
             "installedVersion": "3.6.0",
             "definedVersion": "~3.6.0",
-            "remoteVersion": "3.6.0",
+            "latestRemoteVersion": "3.6.0",
+            "latestRemoteModified": "2022-06-26T09:16:48.579Z",
             "author": "Thorsten Lorenz <thlorenz@gmx.de> (thlorenz.com)",
             "requires": [
               {
@@ -346,9 +392,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/micromatch/picomatch.git",
                 "installedFrom": "https://registry.npmjs.org/picomatch/-/picomatch-2.3.1.tgz",
+                "remoteVersion": "2.3.1",
                 "installedVersion": "2.3.1",
                 "definedVersion": "^2.0.4",
-                "remoteVersion": "2.3.1",
+                "latestRemoteVersion": "2.3.1",
+                "latestRemoteModified": "2022-05-12T22:25:17.093Z",
                 "author": "Jon Schlinkert (https://github.com/jonschlinkert)"
               }
             ]
@@ -364,9 +412,11 @@
         "licenseType": "MIT",
         "link": "git://github.com/debug-js/debug.git",
         "installedFrom": "https://registry.npmjs.org/debug/-/debug-4.3.3.tgz",
+        "remoteVersion": "4.3.3",
         "installedVersion": "4.3.3",
         "definedVersion": "4.3.3",
-        "remoteVersion": "4.3.3",
+        "latestRemoteVersion": "4.3.4",
+        "latestRemoteModified": "2022-08-09T12:45:45.109Z",
         "author": "Josh Junon <josh.junon@protonmail.com>",
         "requires": [
           {
@@ -378,9 +428,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/vercel/ms.git",
             "installedFrom": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+            "remoteVersion": "2.1.3",
             "installedVersion": "2.1.3",
             "definedVersion": "2.1.3",
-            "remoteVersion": "2.1.3",
+            "latestRemoteVersion": "2.1.3",
+            "latestRemoteModified": "2022-08-31T19:33:16.241Z",
             "author": "n/a"
           }
         ]
@@ -394,9 +446,11 @@
         "licenseType": "BSD-3-Clause",
         "link": "git://github.com/kpdecker/jsdiff.git",
         "installedFrom": "https://registry.npmjs.org/diff/-/diff-5.0.0.tgz",
+        "remoteVersion": "5.0.0",
         "installedVersion": "5.0.0",
         "definedVersion": "5.0.0",
-        "remoteVersion": "5.0.0",
+        "latestRemoteVersion": "5.1.0",
+        "latestRemoteModified": "2022-06-15T03:38:13.317Z",
         "author": "n/a"
       },
       {
@@ -408,9 +462,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/sindresorhus/escape-string-regexp.git",
         "installedFrom": "https://registry.npmjs.org/escape-string-regexp/-/escape-string-regexp-4.0.0.tgz",
+        "remoteVersion": "4.0.0",
         "installedVersion": "4.0.0",
         "definedVersion": "4.0.0",
-        "remoteVersion": "4.0.0",
+        "latestRemoteVersion": "5.0.0",
+        "latestRemoteModified": "2022-06-17T17:22:39.618Z",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
       },
       {
@@ -422,9 +478,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/sindresorhus/find-up.git",
         "installedFrom": "https://registry.npmjs.org/find-up/-/find-up-5.0.0.tgz",
+        "remoteVersion": "5.0.0",
         "installedVersion": "5.0.0",
         "definedVersion": "5.0.0",
-        "remoteVersion": "5.0.0",
+        "latestRemoteVersion": "6.3.0",
+        "latestRemoteModified": "2022-06-18T00:56:26.175Z",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
         "requires": [
           {
@@ -436,9 +494,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/locate-path.git",
             "installedFrom": "https://registry.npmjs.org/locate-path/-/locate-path-6.0.0.tgz",
+            "remoteVersion": "6.0.0",
             "installedVersion": "6.0.0",
             "definedVersion": "^6.0.0",
-            "remoteVersion": "6.0.0",
+            "latestRemoteVersion": "7.1.1",
+            "latestRemoteModified": "2022-06-19T13:24:12.876Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
             "requires": [
               {
@@ -450,9 +510,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/p-locate.git",
                 "installedFrom": "https://registry.npmjs.org/p-locate/-/p-locate-5.0.0.tgz",
+                "remoteVersion": "5.0.0",
                 "installedVersion": "5.0.0",
                 "definedVersion": "^5.0.0",
-                "remoteVersion": "5.0.0",
+                "latestRemoteVersion": "6.0.0",
+                "latestRemoteModified": "2022-06-23T05:48:24.610Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
                 "requires": [
                   {
@@ -464,9 +526,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/p-limit.git",
                     "installedFrom": "https://registry.npmjs.org/p-limit/-/p-limit-3.1.0.tgz",
+                    "remoteVersion": "3.1.0",
                     "installedVersion": "3.1.0",
                     "definedVersion": "^3.0.2",
-                    "remoteVersion": "3.1.0",
+                    "latestRemoteVersion": "4.0.0",
+                    "latestRemoteModified": "2022-06-23T05:48:00.581Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
                     "requires": [
                       {
@@ -478,9 +542,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/yocto-queue.git",
                         "installedFrom": "https://registry.npmjs.org/yocto-queue/-/yocto-queue-0.1.0.tgz",
+                        "remoteVersion": "0.1.0",
                         "installedVersion": "0.1.0",
                         "definedVersion": "^0.1.0",
-                        "remoteVersion": "0.1.0",
+                        "latestRemoteVersion": "1.0.0",
+                        "latestRemoteModified": "2022-05-25T06:44:08.126Z",
                         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
                       }
                     ]
@@ -498,9 +564,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/path-exists.git",
             "installedFrom": "https://registry.npmjs.org/path-exists/-/path-exists-4.0.0.tgz",
+            "remoteVersion": "4.0.0",
             "installedVersion": "4.0.0",
             "definedVersion": "^4.0.0",
-            "remoteVersion": "4.0.0",
+            "latestRemoteVersion": "5.0.0",
+            "latestRemoteModified": "2022-06-23T14:32:33.682Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
           }
         ]
@@ -514,9 +582,11 @@
         "licenseType": "ISC",
         "link": "git://github.com/isaacs/node-glob.git",
         "installedFrom": "https://registry.npmjs.org/glob/-/glob-7.2.0.tgz",
+        "remoteVersion": "7.2.0",
         "installedVersion": "7.2.0",
         "definedVersion": "7.2.0",
-        "remoteVersion": "7.2.0",
+        "latestRemoteVersion": "8.0.3",
+        "latestRemoteModified": "2022-06-18T12:53:26.131Z",
         "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
         "requires": [
           {
@@ -528,9 +598,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/isaacs/fs.realpath.git",
             "installedFrom": "https://registry.npmjs.org/fs.realpath/-/fs.realpath-1.0.0.tgz",
+            "remoteVersion": "1.0.0",
             "installedVersion": "1.0.0",
             "definedVersion": "^1.0.0",
-            "remoteVersion": "1.0.0",
+            "latestRemoteVersion": "1.0.0",
+            "latestRemoteModified": "2022-06-18T03:56:46.872Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
           },
           {
@@ -542,9 +614,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/npm/inflight.git",
             "installedFrom": "https://registry.npmjs.org/inflight/-/inflight-1.0.6.tgz",
+            "remoteVersion": "1.0.6",
             "installedVersion": "1.0.6",
             "definedVersion": "^1.0.4",
-            "remoteVersion": "1.0.6",
+            "latestRemoteVersion": "1.0.6",
+            "latestRemoteModified": "2022-06-19T01:11:48.797Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
             "requires": [
               {
@@ -556,9 +630,11 @@
                 "licenseType": "ISC",
                 "link": "git://github.com/isaacs/once.git",
                 "installedFrom": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
+                "remoteVersion": "1.4.0",
                 "installedVersion": "1.4.0",
                 "definedVersion": "^1.3.0",
-                "remoteVersion": "1.4.0",
+                "latestRemoteVersion": "1.4.0",
+                "latestRemoteModified": "2022-06-22T21:39:21.315Z",
                 "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
                 "requires": [
                   {
@@ -570,9 +646,11 @@
                     "licenseType": "ISC",
                     "link": "git+https://github.com/npm/wrappy.git",
                     "installedFrom": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+                    "remoteVersion": "1.0.2",
                     "installedVersion": "1.0.2",
                     "definedVersion": "1",
-                    "remoteVersion": "1.0.2",
+                    "latestRemoteVersion": "1.0.2",
+                    "latestRemoteModified": "2022-06-29T03:46:15.994Z",
                     "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
                   }
                 ]
@@ -586,9 +664,11 @@
                 "licenseType": "ISC",
                 "link": "git+https://github.com/npm/wrappy.git",
                 "installedFrom": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+                "remoteVersion": "1.0.2",
                 "installedVersion": "1.0.2",
                 "definedVersion": "1",
-                "remoteVersion": "1.0.2",
+                "latestRemoteVersion": "1.0.2",
+                "latestRemoteModified": "2022-06-29T03:46:15.994Z",
                 "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
               }
             ]
@@ -602,9 +682,11 @@
             "licenseType": "ISC",
             "link": "git://github.com/isaacs/inherits.git",
             "installedFrom": "https://registry.npmjs.org/inherits/-/inherits-2.0.4.tgz",
+            "remoteVersion": "2.0.4",
             "installedVersion": "2.0.4",
             "definedVersion": "2",
-            "remoteVersion": "2.0.4",
+            "latestRemoteVersion": "2.0.4",
+            "latestRemoteModified": "2022-06-19T01:16:12.865Z",
             "author": "n/a"
           },
           {
@@ -616,9 +698,11 @@
             "licenseType": "ISC",
             "link": "git://github.com/isaacs/minimatch.git",
             "installedFrom": "https://registry.npmjs.org/minimatch/-/minimatch-4.2.1.tgz",
+            "remoteVersion": "4.2.1",
             "installedVersion": "4.2.1",
             "definedVersion": "4.2.1",
-            "remoteVersion": "4.2.1",
+            "latestRemoteVersion": "5.1.0",
+            "latestRemoteModified": "2022-06-19T21:21:41.166Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
             "requires": [
               {
@@ -630,9 +714,11 @@
                 "licenseType": "MIT",
                 "link": "git://github.com/juliangruber/brace-expansion.git",
                 "installedFrom": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",
+                "remoteVersion": "1.1.11",
                 "installedVersion": "1.1.11",
                 "definedVersion": "^1.1.7",
-                "remoteVersion": "1.1.11",
+                "latestRemoteVersion": "2.0.1",
+                "latestRemoteModified": "2022-06-13T05:03:38.580Z",
                 "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
                 "requires": [
                   {
@@ -644,9 +730,11 @@
                     "licenseType": "MIT",
                     "link": "git://github.com/juliangruber/balanced-match.git",
                     "installedFrom": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
+                    "remoteVersion": "1.0.2",
                     "installedVersion": "1.0.2",
                     "definedVersion": "^1.0.0",
-                    "remoteVersion": "1.0.2",
+                    "latestRemoteVersion": "2.0.0",
+                    "latestRemoteModified": "2022-06-13T04:13:47.768Z",
                     "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com"
                   },
                   {
@@ -658,9 +746,11 @@
                     "licenseType": "MIT",
                     "link": "git://github.com/substack/node-concat-map.git",
                     "installedFrom": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",
+                    "remoteVersion": "0.0.1",
                     "installedVersion": "0.0.1",
                     "definedVersion": "0.0.1",
-                    "remoteVersion": "0.0.1",
+                    "latestRemoteVersion": "0.0.1",
+                    "latestRemoteModified": "2022-06-13T20:37:30.400Z",
                     "author": "James Halliday mail@substack.net http://substack.net"
                   }
                 ]
@@ -676,9 +766,11 @@
             "licenseType": "ISC",
             "link": "git://github.com/isaacs/once.git",
             "installedFrom": "https://registry.npmjs.org/once/-/once-1.4.0.tgz",
+            "remoteVersion": "1.4.0",
             "installedVersion": "1.4.0",
             "definedVersion": "^1.3.0",
-            "remoteVersion": "1.4.0",
+            "latestRemoteVersion": "1.4.0",
+            "latestRemoteModified": "2022-06-22T21:39:21.315Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
             "requires": [
               {
@@ -690,9 +782,11 @@
                 "licenseType": "ISC",
                 "link": "git+https://github.com/npm/wrappy.git",
                 "installedFrom": "https://registry.npmjs.org/wrappy/-/wrappy-1.0.2.tgz",
+                "remoteVersion": "1.0.2",
                 "installedVersion": "1.0.2",
                 "definedVersion": "1",
-                "remoteVersion": "1.0.2",
+                "latestRemoteVersion": "1.0.2",
+                "latestRemoteModified": "2022-06-29T03:46:15.994Z",
                 "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
               }
             ]
@@ -706,9 +800,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/path-is-absolute.git",
             "installedFrom": "https://registry.npmjs.org/path-is-absolute/-/path-is-absolute-1.0.1.tgz",
+            "remoteVersion": "1.0.1",
             "installedVersion": "1.0.1",
             "definedVersion": "^1.0.0",
-            "remoteVersion": "1.0.1",
+            "latestRemoteVersion": "2.0.0",
+            "latestRemoteModified": "2022-06-23T14:34:57.712Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
           }
         ]
@@ -722,9 +818,11 @@
         "licenseType": "MIT",
         "link": "git://github.com/tj/node-growl.git",
         "installedFrom": "https://registry.npmjs.org/growl/-/growl-1.10.5.tgz",
+        "remoteVersion": "1.10.5",
         "installedVersion": "1.10.5",
         "definedVersion": "1.10.5",
-        "remoteVersion": "1.10.5",
+        "latestRemoteVersion": "1.10.5",
+        "latestRemoteModified": "2022-06-18T14:18:40.746Z",
         "author": "TJ Holowaychuk <tj@vision-media.ca>"
       },
       {
@@ -736,9 +834,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/mathiasbynens/he.git",
         "installedFrom": "https://registry.npmjs.org/he/-/he-1.2.0.tgz",
+        "remoteVersion": "1.2.0",
         "installedVersion": "1.2.0",
         "definedVersion": "1.2.0",
-        "remoteVersion": "1.2.0",
+        "latestRemoteVersion": "1.2.0",
+        "latestRemoteModified": "2022-07-06T14:43:40.376Z",
         "author": "Mathias Bynens https://mathiasbynens.be/"
       },
       {
@@ -750,9 +850,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/nodeca/js-yaml.git",
         "installedFrom": "https://registry.npmjs.org/js-yaml/-/js-yaml-4.1.0.tgz",
+        "remoteVersion": "4.1.0",
         "installedVersion": "4.1.0",
         "definedVersion": "4.1.0",
-        "remoteVersion": "4.1.0",
+        "latestRemoteVersion": "4.1.0",
+        "latestRemoteModified": "2022-06-19T05:47:20.696Z",
         "author": "Vladimir Zapparov <dervus.grim@gmail.com>",
         "requires": [
           {
@@ -764,9 +866,11 @@
             "licenseType": "Python-2.0",
             "link": "git+https://github.com/nodeca/argparse.git",
             "installedFrom": "https://registry.npmjs.org/argparse/-/argparse-2.0.1.tgz",
+            "remoteVersion": "2.0.1",
             "installedVersion": "2.0.1",
             "definedVersion": "^2.0.1",
-            "remoteVersion": "2.0.1",
+            "latestRemoteVersion": "2.0.1",
+            "latestRemoteModified": "2022-06-13T03:26:21.965Z",
             "author": "n/a"
           }
         ]
@@ -780,9 +884,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/sindresorhus/log-symbols.git",
         "installedFrom": "https://registry.npmjs.org/log-symbols/-/log-symbols-4.1.0.tgz",
+        "remoteVersion": "4.1.0",
         "installedVersion": "4.1.0",
         "definedVersion": "4.1.0",
-        "remoteVersion": "4.1.0",
+        "latestRemoteVersion": "5.1.0",
+        "latestRemoteModified": "2022-06-19T13:45:38.616Z",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
         "requires": [
           {
@@ -794,9 +900,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/chalk/chalk.git",
             "installedFrom": "https://registry.npmjs.org/chalk/-/chalk-4.1.2.tgz",
+            "remoteVersion": "4.1.2",
             "installedVersion": "4.1.2",
             "definedVersion": "^4.1.0",
-            "remoteVersion": "4.1.2",
+            "latestRemoteVersion": "5.0.1",
+            "latestRemoteModified": "2022-08-26T22:48:00.320Z",
             "author": "n/a",
             "requires": [
               {
@@ -808,9 +916,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/ansi-styles.git",
                 "installedFrom": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
+                "remoteVersion": "4.3.0",
                 "installedVersion": "4.3.0",
                 "definedVersion": "^4.1.0",
-                "remoteVersion": "4.3.0",
+                "latestRemoteVersion": "6.1.0",
+                "latestRemoteModified": "2022-06-13T03:05:27.416Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "requires": [
                   {
@@ -822,9 +932,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/Qix-/color-convert.git",
                     "installedFrom": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
+                    "remoteVersion": "2.0.1",
                     "installedVersion": "2.0.1",
                     "definedVersion": "^2.0.1",
-                    "remoteVersion": "2.0.1",
+                    "latestRemoteVersion": "2.0.1",
+                    "latestRemoteModified": "2022-06-30T11:24:38.239Z",
                     "author": "Heather Arthur <fayearthur@gmail.com>",
                     "requires": [
                       {
@@ -836,9 +948,11 @@
                         "licenseType": "MIT",
                         "link": "git+ssh://git@github.com/colorjs/color-name.git",
                         "installedFrom": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
+                        "remoteVersion": "1.1.4",
                         "installedVersion": "1.1.4",
                         "definedVersion": "~1.1.4",
-                        "remoteVersion": "1.1.4",
+                        "latestRemoteVersion": "1.1.4",
+                        "latestRemoteModified": "2022-06-13T06:31:20.486Z",
                         "author": "DY <dfcreative@gmail.com>"
                       }
                     ]
@@ -854,9 +968,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/supports-color.git",
                 "installedFrom": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
+                "remoteVersion": "8.1.1",
                 "installedVersion": "8.1.1",
                 "definedVersion": "8.1.1",
-                "remoteVersion": "8.1.1",
+                "latestRemoteVersion": "9.2.2",
+                "latestRemoteModified": "2022-06-27T02:25:05.278Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
                 "requires": [
                   {
@@ -868,9 +984,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/has-flag.git",
                     "installedFrom": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+                    "remoteVersion": "4.0.0",
                     "installedVersion": "4.0.0",
                     "definedVersion": "^4.0.0",
-                    "remoteVersion": "4.0.0",
+                    "latestRemoteVersion": "5.0.1",
+                    "latestRemoteModified": "2022-06-18T19:25:24.129Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                   }
                 ]
@@ -886,9 +1004,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/is-unicode-supported.git",
             "installedFrom": "https://registry.npmjs.org/is-unicode-supported/-/is-unicode-supported-0.1.0.tgz",
+            "remoteVersion": "0.1.0",
             "installedVersion": "0.1.0",
             "definedVersion": "^0.1.0",
-            "remoteVersion": "0.1.0",
+            "latestRemoteVersion": "1.2.0",
+            "latestRemoteModified": "2022-05-06T05:28:54.468Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
           }
         ]
@@ -902,9 +1022,11 @@
         "licenseType": "ISC",
         "link": "git://github.com/isaacs/minimatch.git",
         "installedFrom": "https://registry.npmjs.org/minimatch/-/minimatch-4.2.1.tgz",
+        "remoteVersion": "4.2.1",
         "installedVersion": "4.2.1",
         "definedVersion": "4.2.1",
-        "remoteVersion": "4.2.1",
+        "latestRemoteVersion": "5.1.0",
+        "latestRemoteModified": "2022-06-19T21:21:41.166Z",
         "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
         "requires": [
           {
@@ -916,9 +1038,11 @@
             "licenseType": "MIT",
             "link": "git://github.com/juliangruber/brace-expansion.git",
             "installedFrom": "https://registry.npmjs.org/brace-expansion/-/brace-expansion-1.1.11.tgz",
+            "remoteVersion": "1.1.11",
             "installedVersion": "1.1.11",
             "definedVersion": "^1.1.7",
-            "remoteVersion": "1.1.11",
+            "latestRemoteVersion": "2.0.1",
+            "latestRemoteModified": "2022-06-13T05:03:38.580Z",
             "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
             "requires": [
               {
@@ -930,9 +1054,11 @@
                 "licenseType": "MIT",
                 "link": "git://github.com/juliangruber/balanced-match.git",
                 "installedFrom": "https://registry.npmjs.org/balanced-match/-/balanced-match-1.0.2.tgz",
+                "remoteVersion": "1.0.2",
                 "installedVersion": "1.0.2",
                 "definedVersion": "^1.0.0",
-                "remoteVersion": "1.0.2",
+                "latestRemoteVersion": "2.0.0",
+                "latestRemoteModified": "2022-06-13T04:13:47.768Z",
                 "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com"
               },
               {
@@ -944,9 +1070,11 @@
                 "licenseType": "MIT",
                 "link": "git://github.com/substack/node-concat-map.git",
                 "installedFrom": "https://registry.npmjs.org/concat-map/-/concat-map-0.0.1.tgz",
+                "remoteVersion": "0.0.1",
                 "installedVersion": "0.0.1",
                 "definedVersion": "0.0.1",
-                "remoteVersion": "0.0.1",
+                "latestRemoteVersion": "0.0.1",
+                "latestRemoteModified": "2022-06-13T20:37:30.400Z",
                 "author": "James Halliday mail@substack.net http://substack.net"
               }
             ]
@@ -962,9 +1090,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/vercel/ms.git",
         "installedFrom": "https://registry.npmjs.org/ms/-/ms-2.1.3.tgz",
+        "remoteVersion": "2.1.3",
         "installedVersion": "2.1.3",
         "definedVersion": "2.1.3",
-        "remoteVersion": "2.1.3",
+        "latestRemoteVersion": "2.1.3",
+        "latestRemoteModified": "2022-08-31T19:33:16.241Z",
         "author": "n/a"
       },
       {
@@ -976,9 +1106,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/ai/nanoid.git",
         "installedFrom": "https://registry.npmjs.org/nanoid/-/nanoid-3.3.1.tgz",
+        "remoteVersion": "3.3.1",
         "installedVersion": "3.3.1",
         "definedVersion": "3.3.1",
-        "remoteVersion": "3.3.1",
+        "latestRemoteVersion": "4.0.0",
+        "latestRemoteModified": "2022-06-08T08:11:04.024Z",
         "author": "Andrey Sitnik <andrey@sitnik.ru>"
       },
       {
@@ -990,9 +1122,11 @@
         "licenseType": "BSD-3-Clause",
         "link": "git+https://github.com/yahoo/serialize-javascript.git",
         "installedFrom": "https://registry.npmjs.org/serialize-javascript/-/serialize-javascript-6.0.0.tgz",
+        "remoteVersion": "6.0.0",
         "installedVersion": "6.0.0",
         "definedVersion": "6.0.0",
-        "remoteVersion": "6.0.0",
+        "latestRemoteVersion": "6.0.0",
+        "latestRemoteModified": "2022-06-26T17:55:35.992Z",
         "author": "Eric Ferraiuolo <edf@ericf.me>",
         "requires": [
           {
@@ -1004,9 +1138,11 @@
             "licenseType": "MIT",
             "link": "git+ssh://git@github.com/crypto-browserify/randombytes.git",
             "installedFrom": "https://registry.npmjs.org/randombytes/-/randombytes-2.1.0.tgz",
+            "remoteVersion": "2.1.0",
             "installedVersion": "2.1.0",
             "definedVersion": "^2.1.0",
-            "remoteVersion": "2.1.0",
+            "latestRemoteVersion": "2.1.0",
+            "latestRemoteModified": "2022-06-25T11:55:28.461Z",
             "author": "",
             "requires": [
               {
@@ -1018,9 +1154,11 @@
                 "licenseType": "MIT",
                 "link": "git://github.com/feross/safe-buffer.git",
                 "installedFrom": "https://registry.npmjs.org/safe-buffer/-/safe-buffer-5.2.1.tgz",
+                "remoteVersion": "5.2.1",
                 "installedVersion": "5.2.1",
                 "definedVersion": "^5.1.0",
-                "remoteVersion": "5.2.1",
+                "latestRemoteVersion": "5.2.1",
+                "latestRemoteModified": "2022-06-26T15:18:51.550Z",
                 "author": "Feross Aboukhadijeh feross@feross.org https://feross.org"
               }
             ]
@@ -1036,9 +1174,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/sindresorhus/strip-json-comments.git",
         "installedFrom": "https://registry.npmjs.org/strip-json-comments/-/strip-json-comments-3.1.1.tgz",
+        "remoteVersion": "3.1.1",
         "installedVersion": "3.1.1",
         "definedVersion": "3.1.1",
-        "remoteVersion": "3.1.1",
+        "latestRemoteVersion": "5.0.0",
+        "latestRemoteModified": "2022-07-22T09:48:13.786Z",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
       },
       {
@@ -1050,9 +1190,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/chalk/supports-color.git",
         "installedFrom": "https://registry.npmjs.org/supports-color/-/supports-color-8.1.1.tgz",
+        "remoteVersion": "8.1.1",
         "installedVersion": "8.1.1",
         "definedVersion": "8.1.1",
-        "remoteVersion": "8.1.1",
+        "latestRemoteVersion": "9.2.2",
+        "latestRemoteModified": "2022-06-27T02:25:05.278Z",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
         "requires": [
           {
@@ -1064,9 +1206,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/has-flag.git",
             "installedFrom": "https://registry.npmjs.org/has-flag/-/has-flag-4.0.0.tgz",
+            "remoteVersion": "4.0.0",
             "installedVersion": "4.0.0",
             "definedVersion": "^4.0.0",
-            "remoteVersion": "4.0.0",
+            "latestRemoteVersion": "5.0.1",
+            "latestRemoteModified": "2022-06-18T19:25:24.129Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
           }
         ]
@@ -1080,9 +1224,11 @@
         "licenseType": "ISC",
         "link": "git://github.com/isaacs/node-which.git",
         "installedFrom": "https://registry.npmjs.org/which/-/which-2.0.2.tgz",
+        "remoteVersion": "2.0.2",
         "installedVersion": "2.0.2",
         "definedVersion": "2.0.2",
-        "remoteVersion": "2.0.2",
+        "latestRemoteVersion": "2.0.2",
+        "latestRemoteModified": "2022-06-29T01:28:22.723Z",
         "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
         "requires": [
           {
@@ -1094,9 +1240,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/isaacs/isexe.git",
             "installedFrom": "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz",
+            "remoteVersion": "2.0.0",
             "installedVersion": "2.0.0",
             "definedVersion": "^2.0.0",
-            "remoteVersion": "2.0.0",
+            "latestRemoteVersion": "2.0.0",
+            "latestRemoteModified": "2022-06-19T02:57:17.473Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
           }
         ]
@@ -1110,9 +1258,11 @@
         "licenseType": "Apache-2.0",
         "link": "git://github.com/josdejong/workerpool.git",
         "installedFrom": "https://registry.npmjs.org/workerpool/-/workerpool-6.2.0.tgz",
+        "remoteVersion": "6.2.0",
         "installedVersion": "6.2.0",
         "definedVersion": "6.2.0",
-        "remoteVersion": "6.2.0",
+        "latestRemoteVersion": "6.2.1",
+        "latestRemoteModified": "2022-06-29T03:21:34.581Z",
         "author": "Jos de Jong <wjosdejong@gmail.com> (https://github.com/josdejong)"
       },
       {
@@ -1124,9 +1274,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/yargs/yargs.git",
         "installedFrom": "https://registry.npmjs.org/yargs/-/yargs-16.2.0.tgz",
+        "remoteVersion": "16.2.0",
         "installedVersion": "16.2.0",
         "definedVersion": "16.2.0",
-        "remoteVersion": "16.2.0",
+        "latestRemoteVersion": "17.5.1",
+        "latestRemoteModified": "2022-08-10T09:44:33.035Z",
         "author": "n/a",
         "requires": [
           {
@@ -1138,9 +1290,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/yargs/cliui.git",
             "installedFrom": "https://registry.npmjs.org/cliui/-/cliui-7.0.4.tgz",
+            "remoteVersion": "7.0.4",
             "installedVersion": "7.0.4",
             "definedVersion": "^7.0.2",
-            "remoteVersion": "7.0.4",
+            "latestRemoteVersion": "7.0.4",
+            "latestRemoteModified": "2022-06-13T06:11:03.758Z",
             "author": "Ben Coe <ben@npmjs.com>",
             "requires": [
               {
@@ -1152,9 +1306,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/string-width.git",
                 "installedFrom": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
+                "remoteVersion": "4.2.3",
                 "installedVersion": "4.2.3",
                 "definedVersion": "^4.2.0",
-                "remoteVersion": "4.2.3",
+                "latestRemoteVersion": "5.1.2",
+                "latestRemoteModified": "2022-06-27T01:04:47.708Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "requires": [
                   {
@@ -1166,9 +1322,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
                     "installedFrom": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
+                    "remoteVersion": "8.0.0",
                     "installedVersion": "8.0.0",
                     "definedVersion": "^8.0.0",
-                    "remoteVersion": "8.0.0",
+                    "latestRemoteVersion": "10.1.0",
+                    "latestRemoteModified": "2022-06-17T03:40:11.547Z",
                     "author": "Mathias Bynens https://mathiasbynens.be/"
                   },
                   {
@@ -1180,9 +1338,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
                     "installedFrom": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
+                    "remoteVersion": "3.0.0",
                     "installedVersion": "3.0.0",
                     "definedVersion": "^3.0.0",
-                    "remoteVersion": "3.0.0",
+                    "latestRemoteVersion": "4.0.0",
+                    "latestRemoteModified": "2022-06-19T02:41:42.053Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                   },
                   {
@@ -1194,9 +1354,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/strip-ansi.git",
                     "installedFrom": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+                    "remoteVersion": "6.0.1",
                     "installedVersion": "6.0.1",
                     "definedVersion": "^6.0.0",
-                    "remoteVersion": "6.0.1",
+                    "latestRemoteVersion": "7.0.1",
+                    "latestRemoteModified": "2022-06-27T01:11:48.186Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "requires": [
                       {
@@ -1208,9 +1370,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/ansi-regex.git",
                         "installedFrom": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+                        "remoteVersion": "5.0.1",
                         "installedVersion": "5.0.1",
                         "definedVersion": "^5.0.1",
-                        "remoteVersion": "5.0.1",
+                        "latestRemoteVersion": "6.0.1",
+                        "latestRemoteModified": "2022-06-13T03:05:25.696Z",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                       }
                     ]
@@ -1226,9 +1390,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/strip-ansi.git",
                 "installedFrom": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+                "remoteVersion": "6.0.1",
                 "installedVersion": "6.0.1",
                 "definedVersion": "^6.0.0",
-                "remoteVersion": "6.0.1",
+                "latestRemoteVersion": "7.0.1",
+                "latestRemoteModified": "2022-06-27T01:11:48.186Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "requires": [
                   {
@@ -1240,9 +1406,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/ansi-regex.git",
                     "installedFrom": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+                    "remoteVersion": "5.0.1",
                     "installedVersion": "5.0.1",
                     "definedVersion": "^5.0.1",
-                    "remoteVersion": "5.0.1",
+                    "latestRemoteVersion": "6.0.1",
+                    "latestRemoteModified": "2022-06-13T03:05:25.696Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                   }
                 ]
@@ -1256,9 +1424,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/wrap-ansi.git",
                 "installedFrom": "https://registry.npmjs.org/wrap-ansi/-/wrap-ansi-7.0.0.tgz",
+                "remoteVersion": "7.0.0",
                 "installedVersion": "7.0.0",
                 "definedVersion": "^7.0.0",
-                "remoteVersion": "7.0.0",
+                "latestRemoteVersion": "8.0.1",
+                "latestRemoteModified": "2022-06-29T03:43:03.916Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
                 "requires": [
                   {
@@ -1270,9 +1440,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/ansi-styles.git",
                     "installedFrom": "https://registry.npmjs.org/ansi-styles/-/ansi-styles-4.3.0.tgz",
+                    "remoteVersion": "4.3.0",
                     "installedVersion": "4.3.0",
                     "definedVersion": "^4.1.0",
-                    "remoteVersion": "4.3.0",
+                    "latestRemoteVersion": "6.1.0",
+                    "latestRemoteModified": "2022-06-13T03:05:27.416Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "requires": [
                       {
@@ -1284,9 +1456,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/Qix-/color-convert.git",
                         "installedFrom": "https://registry.npmjs.org/color-convert/-/color-convert-2.0.1.tgz",
+                        "remoteVersion": "2.0.1",
                         "installedVersion": "2.0.1",
                         "definedVersion": "^2.0.1",
-                        "remoteVersion": "2.0.1",
+                        "latestRemoteVersion": "2.0.1",
+                        "latestRemoteModified": "2022-06-30T11:24:38.239Z",
                         "author": "Heather Arthur <fayearthur@gmail.com>",
                         "requires": [
                           {
@@ -1298,9 +1472,11 @@
                             "licenseType": "MIT",
                             "link": "git+ssh://git@github.com/colorjs/color-name.git",
                             "installedFrom": "https://registry.npmjs.org/color-name/-/color-name-1.1.4.tgz",
+                            "remoteVersion": "1.1.4",
                             "installedVersion": "1.1.4",
                             "definedVersion": "~1.1.4",
-                            "remoteVersion": "1.1.4",
+                            "latestRemoteVersion": "1.1.4",
+                            "latestRemoteModified": "2022-06-13T06:31:20.486Z",
                             "author": "DY <dfcreative@gmail.com>"
                           }
                         ]
@@ -1316,9 +1492,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/string-width.git",
                     "installedFrom": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
+                    "remoteVersion": "4.2.3",
                     "installedVersion": "4.2.3",
                     "definedVersion": "^4.2.0",
-                    "remoteVersion": "4.2.3",
+                    "latestRemoteVersion": "5.1.2",
+                    "latestRemoteModified": "2022-06-27T01:04:47.708Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "requires": [
                       {
@@ -1330,9 +1508,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
                         "installedFrom": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
+                        "remoteVersion": "8.0.0",
                         "installedVersion": "8.0.0",
                         "definedVersion": "^8.0.0",
-                        "remoteVersion": "8.0.0",
+                        "latestRemoteVersion": "10.1.0",
+                        "latestRemoteModified": "2022-06-17T03:40:11.547Z",
                         "author": "Mathias Bynens https://mathiasbynens.be/"
                       },
                       {
@@ -1344,9 +1524,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
                         "installedFrom": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
+                        "remoteVersion": "3.0.0",
                         "installedVersion": "3.0.0",
                         "definedVersion": "^3.0.0",
-                        "remoteVersion": "3.0.0",
+                        "latestRemoteVersion": "4.0.0",
+                        "latestRemoteModified": "2022-06-19T02:41:42.053Z",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                       },
                       {
@@ -1358,9 +1540,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/strip-ansi.git",
                         "installedFrom": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+                        "remoteVersion": "6.0.1",
                         "installedVersion": "6.0.1",
                         "definedVersion": "^6.0.0",
-                        "remoteVersion": "6.0.1",
+                        "latestRemoteVersion": "7.0.1",
+                        "latestRemoteModified": "2022-06-27T01:11:48.186Z",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "requires": [
                           {
@@ -1372,9 +1556,11 @@
                             "licenseType": "MIT",
                             "link": "git+https://github.com/chalk/ansi-regex.git",
                             "installedFrom": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+                            "remoteVersion": "5.0.1",
                             "installedVersion": "5.0.1",
                             "definedVersion": "^5.0.1",
-                            "remoteVersion": "5.0.1",
+                            "latestRemoteVersion": "6.0.1",
+                            "latestRemoteModified": "2022-06-13T03:05:25.696Z",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                           }
                         ]
@@ -1390,9 +1576,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/strip-ansi.git",
                     "installedFrom": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+                    "remoteVersion": "6.0.1",
                     "installedVersion": "6.0.1",
                     "definedVersion": "^6.0.0",
-                    "remoteVersion": "6.0.1",
+                    "latestRemoteVersion": "7.0.1",
+                    "latestRemoteModified": "2022-06-27T01:11:48.186Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "requires": [
                       {
@@ -1404,9 +1592,11 @@
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/ansi-regex.git",
                         "installedFrom": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+                        "remoteVersion": "5.0.1",
                         "installedVersion": "5.0.1",
                         "definedVersion": "^5.0.1",
-                        "remoteVersion": "5.0.1",
+                        "latestRemoteVersion": "6.0.1",
+                        "latestRemoteModified": "2022-06-13T03:05:25.696Z",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                       }
                     ]
@@ -1424,9 +1614,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/lukeed/escalade.git",
             "installedFrom": "https://registry.npmjs.org/escalade/-/escalade-3.1.1.tgz",
+            "remoteVersion": "3.1.1",
             "installedVersion": "3.1.1",
             "definedVersion": "^3.1.1",
-            "remoteVersion": "3.1.1",
+            "latestRemoteVersion": "3.1.1",
+            "latestRemoteModified": "2022-05-01T11:56:42.212Z",
             "author": "Luke Edwards luke.edwards05@gmail.com https://lukeed.com"
           },
           {
@@ -1438,9 +1630,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/stefanpenner/get-caller-file.git",
             "installedFrom": "https://registry.npmjs.org/get-caller-file/-/get-caller-file-2.0.5.tgz",
+            "remoteVersion": "2.0.5",
             "installedVersion": "2.0.5",
             "definedVersion": "^2.0.5",
-            "remoteVersion": "2.0.5",
+            "latestRemoteVersion": "2.0.5",
+            "latestRemoteModified": "2022-06-18T07:45:48.695Z",
             "author": "Stefan Penner"
           },
           {
@@ -1452,9 +1646,11 @@
             "licenseType": "MIT",
             "link": "git://github.com/troygoode/node-require-directory.git",
             "installedFrom": "https://registry.npmjs.org/require-directory/-/require-directory-2.1.1.tgz",
+            "remoteVersion": "2.1.1",
             "installedVersion": "2.1.1",
             "definedVersion": "^2.1.1",
-            "remoteVersion": "2.1.1",
+            "latestRemoteVersion": "2.1.1",
+            "latestRemoteModified": "2022-06-26T11:36:41.323Z",
             "author": "Troy Goode <troygoode@gmail.com> (http://github.com/troygoode/)"
           },
           {
@@ -1466,9 +1662,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/string-width.git",
             "installedFrom": "https://registry.npmjs.org/string-width/-/string-width-4.2.3.tgz",
+            "remoteVersion": "4.2.3",
             "installedVersion": "4.2.3",
             "definedVersion": "^4.2.0",
-            "remoteVersion": "4.2.3",
+            "latestRemoteVersion": "5.1.2",
+            "latestRemoteModified": "2022-06-27T01:04:47.708Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
             "requires": [
               {
@@ -1480,9 +1678,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/mathiasbynens/emoji-regex.git",
                 "installedFrom": "https://registry.npmjs.org/emoji-regex/-/emoji-regex-8.0.0.tgz",
+                "remoteVersion": "8.0.0",
                 "installedVersion": "8.0.0",
                 "definedVersion": "^8.0.0",
-                "remoteVersion": "8.0.0",
+                "latestRemoteVersion": "10.1.0",
+                "latestRemoteModified": "2022-06-17T03:40:11.547Z",
                 "author": "Mathias Bynens https://mathiasbynens.be/"
               },
               {
@@ -1494,9 +1694,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/is-fullwidth-code-point.git",
                 "installedFrom": "https://registry.npmjs.org/is-fullwidth-code-point/-/is-fullwidth-code-point-3.0.0.tgz",
+                "remoteVersion": "3.0.0",
                 "installedVersion": "3.0.0",
                 "definedVersion": "^3.0.0",
-                "remoteVersion": "3.0.0",
+                "latestRemoteVersion": "4.0.0",
+                "latestRemoteModified": "2022-06-19T02:41:42.053Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
               },
               {
@@ -1508,9 +1710,11 @@
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/strip-ansi.git",
                 "installedFrom": "https://registry.npmjs.org/strip-ansi/-/strip-ansi-6.0.1.tgz",
+                "remoteVersion": "6.0.1",
                 "installedVersion": "6.0.1",
                 "definedVersion": "^6.0.0",
-                "remoteVersion": "6.0.1",
+                "latestRemoteVersion": "7.0.1",
+                "latestRemoteModified": "2022-06-27T01:11:48.186Z",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "requires": [
                   {
@@ -1522,9 +1726,11 @@
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/ansi-regex.git",
                     "installedFrom": "https://registry.npmjs.org/ansi-regex/-/ansi-regex-5.0.1.tgz",
+                    "remoteVersion": "5.0.1",
                     "installedVersion": "5.0.1",
                     "definedVersion": "^5.0.1",
-                    "remoteVersion": "5.0.1",
+                    "latestRemoteVersion": "6.0.1",
+                    "latestRemoteModified": "2022-06-13T03:05:25.696Z",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
                   }
                 ]
@@ -1540,9 +1746,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/yargs/y18n.git",
             "installedFrom": "https://registry.npmjs.org/y18n/-/y18n-5.0.8.tgz",
+            "remoteVersion": "5.0.8",
             "installedVersion": "5.0.8",
             "definedVersion": "^5.0.5",
-            "remoteVersion": "5.0.8",
+            "latestRemoteVersion": "5.0.8",
+            "latestRemoteModified": "2022-06-29T06:29:54.567Z",
             "author": "Ben Coe <bencoe@gmail.com>"
           },
           {
@@ -1554,9 +1762,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/yargs/yargs-parser.git",
             "installedFrom": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.4.tgz",
+            "remoteVersion": "20.2.4",
             "installedVersion": "20.2.4",
             "definedVersion": "20.2.4",
-            "remoteVersion": "20.2.4",
+            "latestRemoteVersion": "21.1.1",
+            "latestRemoteModified": "2022-08-04T21:13:43.483Z",
             "author": "Ben Coe <ben@npmjs.com>"
           }
         ]
@@ -1570,9 +1780,11 @@
         "licenseType": "ISC",
         "link": "git+https://github.com/yargs/yargs-parser.git",
         "installedFrom": "https://registry.npmjs.org/yargs-parser/-/yargs-parser-20.2.4.tgz",
+        "remoteVersion": "20.2.4",
         "installedVersion": "20.2.4",
         "definedVersion": "20.2.4",
-        "remoteVersion": "20.2.4",
+        "latestRemoteVersion": "21.1.1",
+        "latestRemoteModified": "2022-08-04T21:13:43.483Z",
         "author": "Ben Coe <ben@npmjs.com>"
       },
       {
@@ -1584,9 +1796,11 @@
         "licenseType": "MIT",
         "link": "git+https://github.com/yargs/yargs-unparser.git",
         "installedFrom": "https://registry.npmjs.org/yargs-unparser/-/yargs-unparser-2.0.0.tgz",
+        "remoteVersion": "2.0.0",
         "installedVersion": "2.0.0",
         "definedVersion": "2.0.0",
-        "remoteVersion": "2.0.0",
+        "latestRemoteVersion": "2.0.0",
+        "latestRemoteModified": "2022-05-25T04:08:49.699Z",
         "author": "André Cruz <andre@moxy.studio>",
         "requires": [
           {
@@ -1598,9 +1812,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/camelcase.git",
             "installedFrom": "https://registry.npmjs.org/camelcase/-/camelcase-6.3.0.tgz",
+            "remoteVersion": "6.3.0",
             "installedVersion": "6.3.0",
             "definedVersion": "^6.0.0",
-            "remoteVersion": "6.3.0",
+            "latestRemoteVersion": "7.0.0",
+            "latestRemoteModified": "2022-06-13T05:30:29.295Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com"
           },
           {
@@ -1612,9 +1828,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/decamelize.git",
             "installedFrom": "https://registry.npmjs.org/decamelize/-/decamelize-4.0.0.tgz",
+            "remoteVersion": "4.0.0",
             "installedVersion": "4.0.0",
             "definedVersion": "^4.0.0",
-            "remoteVersion": "4.0.0",
+            "latestRemoteVersion": "6.0.0",
+            "latestRemoteModified": "2022-06-14T22:18:23.110Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
           },
           {
@@ -1626,9 +1844,11 @@
             "licenseType": "BSD-3-Clause",
             "link": "git://github.com/hughsk/flat.git",
             "installedFrom": "https://registry.npmjs.org/flat/-/flat-5.0.2.tgz",
+            "remoteVersion": "5.0.2",
             "installedVersion": "5.0.2",
             "definedVersion": "^5.0.2",
-            "remoteVersion": "5.0.2",
+            "latestRemoteVersion": "5.0.2",
+            "latestRemoteModified": "2022-06-18T01:57:00.755Z",
             "author": "Hugh Kennedy <hughskennedy@gmail.com> (http://hughskennedy.com)"
           },
           {
@@ -1640,9 +1860,11 @@
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/is-plain-obj.git",
             "installedFrom": "https://registry.npmjs.org/is-plain-obj/-/is-plain-obj-2.1.0.tgz",
+            "remoteVersion": "2.1.0",
             "installedVersion": "2.1.0",
             "definedVersion": "^2.1.0",
-            "remoteVersion": "2.1.0",
+            "latestRemoteVersion": "4.1.0",
+            "latestRemoteModified": "2022-06-19T02:48:06.169Z",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com"
           }
         ]
@@ -1658,9 +1880,11 @@
     "licenseType": "MIT",
     "link": "git+https://github.com/lodash/lodash.git",
     "installedFrom": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
+    "remoteVersion": "4.17.21",
     "installedVersion": "4.17.21",
     "definedVersion": "^4.17.20",
-    "remoteVersion": "4.17.21",
+    "latestRemoteVersion": "4.17.21",
+    "latestRemoteModified": "2022-08-22T06:48:03.620Z",
     "author": "John-David Dalton <john.david.dalton@gmail.com>"
   },
   {
@@ -1672,9 +1896,11 @@
     "licenseType": "ISC",
     "link": "git+https://github.com/npm/node-semver.git",
     "installedFrom": "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz",
+    "remoteVersion": "7.3.7",
     "installedVersion": "7.3.7",
     "definedVersion": "^7.3.5",
-    "remoteVersion": "7.3.7",
+    "latestRemoteVersion": "7.3.7",
+    "latestRemoteModified": "2022-07-25T16:10:58.611Z",
     "author": "GitHub Inc.",
     "requires": [
       {
@@ -1686,9 +1912,11 @@
         "licenseType": "ISC",
         "link": "git://github.com/isaacs/node-lru-cache.git",
         "installedFrom": "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz",
+        "remoteVersion": "6.0.0",
         "installedVersion": "6.0.0",
         "definedVersion": "^6.0.0",
-        "remoteVersion": "6.0.0",
+        "latestRemoteVersion": "7.14.0",
+        "latestRemoteModified": "2022-08-16T22:14:17.835Z",
         "author": "Isaac Z. Schlueter <i@izs.me>",
         "requires": [
           {
@@ -1700,9 +1928,11 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/isaacs/yallist.git",
             "installedFrom": "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz",
+            "remoteVersion": "4.0.0",
             "installedVersion": "4.0.0",
             "definedVersion": "^4.0.0",
-            "remoteVersion": "4.0.0",
+            "latestRemoteVersion": "4.0.0",
+            "latestRemoteModified": "2022-06-29T06:45:35.755Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
           }
         ]

@@ -8,9 +8,11 @@
 		"licenseType",
 		"link",
 		"installedFrom",
+		"remoteVersion",
 		"installedVersion",
 		"definedVersion",
-		"remoteVersion",
+		"latestRemoteVersion",
+		"latestRemoteModified",
 		"author"
   ]
 }
