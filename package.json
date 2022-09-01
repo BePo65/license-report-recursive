@@ -28,7 +28,7 @@
   "homepage": "https://github.com/bepo65/license-report-recursive",
   "dependencies": {
     "debug": "^4.3.4",
-    "license-report": "^6.0.0"
+    "license-report": "^6.1.0"
   },
   "devDependencies": {
     "@commitlint/cli": "^17.1.2",
