@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.1.0](https://github.com/bepo65/license-report-recursive/compare/v6.0.0...v6.1.0) (2022-09-01)
+
+
+### Features
+
+* update to license-report 6.1.0 - add new fields ([7cde713](https://github.com/bepo65/license-report-recursive/commit/7cde71322b2942c53283e5d8b0cbe76789178244))
+  + 'latestRemoteVersion' for the latest version available in the registry,
+  + 'latestRemoteModified' for finding out, if package is still maintained.
+
 ## [6.0.0](https://github.com/bepo65/license-report-recursive/compare/v1.0.1...v6.0.0) (2022-08-03)
 
 
