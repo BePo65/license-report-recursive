@@ -1,5 +1,6 @@
 // precommit.js
 // update the version of license-report-recurse in the README.md file
+// when running "npm run release"
 
 import fs from 'fs';
 import path from 'node:path';

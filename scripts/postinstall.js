@@ -1,5 +1,6 @@
 // postinstall.js
 // update the version of license-report in the README.md file
+// after updating the "license-report" package
 
 import fs from 'fs';
 import path from 'node:path';
