@@ -9,7 +9,7 @@
     "lint": "eslint --report-unused-disable-directives -c .eslintrc.json index.js lib/**/*.js test/**/*.test.js",
     "postinstall": "node scripts/postinstall.js",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
-    "release": "standard-version",
+    "release": "standard-version --commit-all",
     "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\""
   },
   "bin": {
