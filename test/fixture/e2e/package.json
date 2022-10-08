@@ -4,9 +4,6 @@
   "dependencies": {
     "@kessler/tableify": "^1.0.2"
   },
-  "devDependencies": {
-    "mocha": "^9.1.1"
-  },
   "optionalDependencies": {
     "semver": "^7.3.5"
   },

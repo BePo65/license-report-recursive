@@ -8,15 +8,15 @@ import config from '../../lib/config.js';
 
 const debug = createDebugMessages('license-report-recursive:expectedOutput');
 
-/*
-	get latest version from registry and add it to the entry in the expectedData;
-	the field 'definedVersion' in the packagesData entries must contain the
-	package name with the range character from the package.json to find the
-	latest version satisfying the defined range (the range character will be
-	removed later)
-*/
+/**
+ * Get the latest version from registry and add it to the entry in the expectedData;
+ * the field 'definedVersion' in the packagesData entries must contain the
+ * package name with the range character from the package.json to find the
+ * latest version satisfying the defined range (the range character will be
+ * removed later)
+ * @param {object} dependency - object with expected data containing placeholders for remote versions
+ */
 async function addRemoteVersion(dependency) {
-	dependency.remoteVersion = 'n/a'
 	let uri = path.join(config.registry, dependency.name)
 
 	debug('addRemoteVersion - REQUEST %s', uri)
@@ -46,24 +46,46 @@ async function addRemoteVersion(dependency) {
 		packagesJson.error = `http request to npm for package "${dependency.name}" failed with error '${error}'`
 	}
 
-	// find the right version for this package
-	if(packagesJson.versions) {
-		const versions = Object.keys(packagesJson.versions)
-		const version = semver.maxSatisfying(versions, dependency.definedVersion)
-		if (version) {
-			dependency.remoteVersion = version.toString()
+	// 'remoteVersion': find the right version for this package
+	if(dependency.remoteVersion !== undefined) {
+		dependency.remoteVersion = 'n/a'
+		if(packagesJson.versions) {
+			const versions = Object.keys(packagesJson.versions)
+			const version = semver.maxSatisfying(versions, dependency.definedVersion)
+			if (version) {
+				dependency.remoteVersion = version.toString()
+			}
+		}
+	}
+
+	// latestRemoteVersion
+	if(dependency.latestRemoteVersion !== undefined) {
+		dependency.latestRemoteVersion = 'n/a'
+		if ((packagesJson['dist-tags'] !== undefined) && (packagesJson['dist-tags'].latest !== undefined)) {
+			dependency.latestRemoteVersion = packagesJson['dist-tags'].latest
+		}
+	}
+
+	// latestRemoteModified
+	if(dependency.latestRemoteModified !== undefined) {
+		dependency.latestRemoteModified = 'n/a'
+		if ((packagesJson.time !== undefined) && (packagesJson.time.modified !== undefined)) {
+			dependency.latestRemoteModified = packagesJson.time.modified
 		}
 	}
 }
 
 /**
- * Add remoteVersion to objects in array of expectedData
- * @param {[object]} expectedData - array with expected data containing placeholders for remote versions
+ * Recursively add remoteVersion to objects in array of expectedData
+ * @param {[object]} expectedData - array with expected data objects containing placeholders for remote versions
  */
 async function addRemoteVersionsToExpectedData(expectedData) {
-	await Promise.all(expectedData.map(async (packageData) => {
+	for (const packageData of expectedData) {
 		await addRemoteVersion(packageData)
-	}))
+		if (packageData.requires !== undefined) {
+			await addRemoteVersionsToExpectedData(packageData.requires)
+		}
+	}
 }
 
 export default {
