@@ -13,7 +13,7 @@
     "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\""
   },
   "bin": {
-    "license-report": "index.js"
+    "license-report-recursive": "index.js"
   },
   "type": "module",
   "repository": {
