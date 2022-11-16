@@ -8,8 +8,9 @@
     "test": "npx mocha -R spec",
     "lint": "eslint --report-unused-disable-directives -c .eslintrc.json index.js lib/**/*.js test/**/*.test.js",
     "postinstall": "node scripts/postinstall.js",
+    "build": "node scripts/build.js",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
-    "release": "standard-version --commit-all",
+    "release": "standard-version --commit-all && npm run build",
     "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\""
   },
   "bin": {
@@ -40,6 +41,7 @@
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-mocha": "^10.1.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
+    "fs-extra": "^10.1.0",
     "husky": "^8.0.1",
     "mocha": "^10.1.0",
     "standard-version": "^9.5.0"
