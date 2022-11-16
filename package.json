@@ -10,7 +10,7 @@
     "postinstall": "node scripts/postinstall.js",
     "build": "node scripts/build.js",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
-    "release": "standard-version --commit-all",
+    "release": "standard-version --commit-all && npm run build",
     "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\""
   },
   "bin": {
