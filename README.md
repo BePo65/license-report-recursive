@@ -11,12 +11,12 @@ Based on the [license-report](https://github.com/ironSource/license-report). The
 ### Enable recursion:
 ```
 cd your/project/
-license-report --recurse
+license-report-recursive --recurse
 ```
 
 ### Generate json tree output:
 ```
-license-report --recurse --output=tree
+license-report-recursive --recurse --output=tree
 ```
 
 ### Open issues
