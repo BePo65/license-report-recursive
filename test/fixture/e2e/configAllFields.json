@@ -3,6 +3,7 @@
 		"department",
 		"relatedTo",
 		"name",
+		"alias",
 		"licensePeriod",
 		"material",
 		"licenseType",
