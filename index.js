@@ -14,7 +14,7 @@ import getFormatter from './lib/getFormatter.js';
 import getTree from './lib/getTree.js';
 import util from './lib/util.js';
 
-const debug = createDebugMessages('license-report');
+const debug = createDebugMessages('license-report-recurse');
 
 (async () => {
   if (config.help) {
@@ -38,6 +38,8 @@ const debug = createDebugMessages('license-report');
 
   try {
     const resolvedPackageJson = path.resolve(process.cwd(), config.package);
+    const projectRootPath = path.dirname(resolvedPackageJson);
+
     debug('loading %s', resolvedPackageJson);
 
     let packageJson
@@ -52,11 +54,15 @@ const debug = createDebugMessages('license-report');
     const parentPath = `>${packageJson.name}`;
 
     // an array with all the dependencies in the package.json under inspection
-    let depsIndex = getDependencies(packageJson, exclusions, inclusions, parentPath)
-
-    const projectRootPath = path.dirname(resolvedPackageJson)
-    let depsIndexRecursiveFlat = depsIndex
-    let depsIndexRecursiveTree = depsIndex
+    let depsPackageJson = getDependencies(packageJson, exclusions, inclusions, parentPath);
+    const depsIndex = await Promise.all(
+      depsPackageJson.map(async (element) => {
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath);
+        const packagesData = await addPackageDataFromRepository(localDataForPackages);
+        const basicFields = { alias: element.alias, fullName: element.fullName, scope: element.scope, path: element.path };
+        return Object.assign(packagesData, basicFields);
+      })
+    )
 
     // add dependencies of dependencies
     if ((config.recurse === true) || (config.recurse === 'true')) {
@@ -64,24 +70,34 @@ const debug = createDebugMessages('license-report');
       if (inclusions !== null) {
         inclusionsSubDeps = inclusions.filter(entry => entry !== 'dev');
       }
-      const { depsIndexRecursiveFlat: flat, depsIndexRecursiveTree: tree } = await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath)
-      depsIndexRecursiveFlat = flat
-      depsIndexRecursiveTree = tree
+      await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath);
     }
 
-    const packagesData = await Promise.all(
-      depsIndexRecursiveFlat.map(async (element) => {
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath)
-        const packagesData = await addPackageDataFromRepository(localDataForPackages)
-        return packageDataToReportData(packagesData, config)
-      })
-    )
-
     if (config.output !== 'tree') {
-      console.log(outputFormatter(packagesData, config))
+      const sortedList = depsIndex.sort(util.alphaSort);
+
+      // remove duplicates
+      let lastPackage = '';
+      const dedupedSortedList = sortedList.filter((element) => {
+        const currentPackage = `${element.name}@${element.installedVersion}`;
+        if (currentPackage !== lastPackage) {
+          lastPackage = currentPackage;
+          return true;
+        }
+        return false;
+      });
+
+      // keep only fields that are defined in the configuration
+      const packagesList = await Promise.all(
+        dedupedSortedList.map(async element => {
+          return packageDataToReportData(element, config);
+        })
+      )
+      console.log(outputFormatter(packagesList, config));
+      debug(`emitted list with ${packagesList.length} entries`);
     } else {
-      const packagesDataTree = getTree(depsIndexRecursiveTree, packagesData)
-      console.log(outputFormatter(packagesDataTree, config))
+      // TODO const packagesDataTree = getTree(depsIndexRecursiveTree, packagesData);
+      // TODO console.log(outputFormatter(packagesDataTree, config));
     }
   } catch (e) {
     console.error(e.stack);
