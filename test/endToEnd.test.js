@@ -13,7 +13,7 @@ const scriptPath = path
 	.resolve(__dirname, '..', 'index.js')
 	.replace(/(\s+)/g, '\\$1')
 
-// test data for e2e test using the default fields
+// test data for e2e test
 const e2ePackageJsonPath = path
 	.resolve(__dirname, 'fixture', 'e2e', 'package.json')
 	.replace(/(\s+)/g, '\\$1')
@@ -29,12 +29,21 @@ const allFieldsConfigPath = path
 	.resolve(__dirname, 'fixture', 'e2e', 'configAllFields.json')
 	.replace(/(\s+)/g, '\\$1')
 
+// test data for dependencyLoop test
+const loopPackageJsonPath = path
+	.resolve(__dirname, 'fixture', 'dependencyLoop', 'package.json')
+	.replace(/(\s+)/g, '\\$1')
+
+const loopExpectedDataPath = path
+	.resolve(__dirname, 'fixture', 'dependencyLoop', 'expectedData.json')
+	.replace(/(\s+)/g, '\\$1')
+
 const execAsPromise = nodeUtil.promisify(cp.exec)
 
 let expectedData
 describe('end to end test', function() {
 	this.timeout(50000)
-	this.slow(12000)
+	this.slow(16000)
 
 	it('produce a tree report for default fields', async () => {
 		expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath)
@@ -52,6 +61,15 @@ describe('end to end test', function() {
 		await expectedOutput.addRemoteVersionsToExpectedData(expectedData)
 
 		const { stdout, stderr } = await execAsPromise(`node ${scriptPath} --package=${e2ePackageJsonPath} --config=${allFieldsConfigPath} --output=tree`)
+		const result = JSON.parse(stdout)
+
+		assert.deepStrictEqual(result, expectedData)
+		assert.strictEqual(stderr, '', 'expected no warnings')
+	})
+
+	it('produce a tree report for project with dependency loops', async () => {
+		expectedData = await util.readJson(loopExpectedDataPath)
+		const { stdout, stderr } = await execAsPromise(`node ${scriptPath} --package=${loopPackageJsonPath} --output=tree`)
 		const result = JSON.parse(stdout)
 
 		assert.deepStrictEqual(result, expectedData)
