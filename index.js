@@ -11,7 +11,7 @@ import getDependencies from './lib/getDependencies.js';
 import addDependenciesRecursive from './lib/addDependenciesRecursive.js';
 import config from './lib/config.js';
 import getFormatter from './lib/getFormatter.js';
-import getTree from './lib/getTree.js';
+import listToTree from './lib/listToTree.js';
 import util from './lib/util.js';
 
 const debug = createDebugMessages('license-report-recurse');
@@ -59,10 +59,15 @@ const debug = createDebugMessages('license-report-recurse');
       depsPackageJson.map(async (element) => {
         const localDataForPackages = await addLocalPackageData(element, projectRootPath);
         const packagesData = await addPackageDataFromRepository(localDataForPackages);
-        const basicFields = { alias: element.alias, fullName: element.fullName, scope: element.scope, path: element.path };
+        const basicFields = {
+          alias: element.alias,
+          fullName: element.fullName,
+          path: element.path,
+          isRootNode: true // to identify the root nodes when generating the tree view
+        };
         return Object.assign(packagesData, basicFields);
       })
-    )
+    );
 
     // add dependencies of dependencies
     if ((config.recurse === true) || (config.recurse === 'true')) {
@@ -73,20 +78,19 @@ const debug = createDebugMessages('license-report-recurse');
       await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath);
     }
 
+    const sortedList = depsIndex.sort(util.alphaSort);
+    // remove duplicates as they are only needed to identify dependency loops
+    let lastPackage = '';
+    const dedupedSortedList = sortedList.filter((element) => {
+      const currentPackage = `${element.name}@${element.installedVersion}`;
+      if ((currentPackage !== lastPackage) || element.isRootNode) {
+        lastPackage = currentPackage;
+        return true;
+      }
+      return false;
+    });
+
     if (config.output !== 'tree') {
-      const sortedList = depsIndex.sort(util.alphaSort);
-
-      // remove duplicates
-      let lastPackage = '';
-      const dedupedSortedList = sortedList.filter((element) => {
-        const currentPackage = `${element.name}@${element.installedVersion}`;
-        if (currentPackage !== lastPackage) {
-          lastPackage = currentPackage;
-          return true;
-        }
-        return false;
-      });
-
       // keep only fields that are defined in the configuration
       const packagesList = await Promise.all(
         dedupedSortedList.map(async element => {
@@ -96,8 +100,9 @@ const debug = createDebugMessages('license-report-recurse');
       console.log(outputFormatter(packagesList, config));
       debug(`emitted list with ${packagesList.length} entries`);
     } else {
-      // TODO const packagesDataTree = getTree(depsIndexRecursiveTree, packagesData);
-      // TODO console.log(outputFormatter(packagesDataTree, config));
+      const packagesTree = await listToTree(dedupedSortedList, config);
+      console.log(outputFormatter(packagesTree, config));
+      debug(`emitted tree with ${packagesTree.length} base nodes`);
     }
   } catch (e) {
     console.error(e.stack);

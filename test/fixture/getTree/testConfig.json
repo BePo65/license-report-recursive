@@ -1,5 +1,5 @@
 {
-  "fields": [
+	"fields": [
 		"department",
 		"relatedTo",
 		"name",
@@ -8,12 +8,9 @@
 		"material",
 		"licenseType",
 		"link",
-		"installedFrom",
 		"definedVersion",
 		"installedVersion",
 		"remoteVersion",
-		"latestRemoteVersion",
-		"latestRemoteModified",
 		"author"
-  ]
+	]
 }
