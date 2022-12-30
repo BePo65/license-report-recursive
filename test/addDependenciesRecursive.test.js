@@ -24,6 +24,8 @@ const projectRootPath = path
 
 describe('addDependenciesRecursive', function () {
 	let packageJson
+
+	this.timeout(5000)
 	this.slow(5000)
 
 	beforeEach(async () => {
