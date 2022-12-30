@@ -21,8 +21,9 @@ license-report-recursive --recurse --output=tree
 
 ### General notes
 * The program looks for packages in nested node_modules directories. If more than 1 version is installed (in different nesting levels), all installed versions are reported.
-* The programm adds the field 'alias' to the configuration and uses it in the default field list. 'alias' is the alias name of a dependency (for more details see the 'npm-install' documentation).
-* The programm adds the field 'dependencyLoop' to the configuration (not used it in the default field list). 'dependencyLoop' is true, if this package is part of a dependency loop (i.e. dependency is indirectly a dependant of itself).
+* The programm adds the field 'alias' to the configuration and uses it in the default field list. 'alias' is the alias name of a dependency (for more details see the 'npm-install' documentation; an example is 'babel-register > babel-core > babel-register').
+* The programm adds the field 'dependencyLoop' to the configuration (not used it in the default field list). 'dependencyLoop' is true, if this package is part of a dependency loop (i.e. dependency is indirectly a dependant of itself).  
+In case of dependency loops, the 'requires' field of the package, resulting in a dependency loop, contains an entry with 'dependencyLoop: true'.
 
 ## Show detailed progress during report generation (Debug information)
 
