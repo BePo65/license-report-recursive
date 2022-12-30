@@ -2,6 +2,21 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.2.0](https://github.com/bepo65/license-report-recursive/compare/v6.1.3...v6.2.0) (2022-12-30)
+
+
+### Features
+
+* add field 'alias' to list of possible fields and to default output ([83f378e](https://github.com/bepo65/license-report-recursive/commit/83f378e9bbf3a9f4fa9b6cc1c160f9220295184c))
+* add field 'dependencyLoop' to list of possible fields ([af4735d](https://github.com/bepo65/license-report-recursive/commit/af4735db291ea88b3eec4f29676ce07d063e4ccf))
+* add tree generation with loops instead of recursion ([51ae914](https://github.com/bepo65/license-report-recursive/commit/51ae91431acf98fffd3ecc4d617a90248ff7e2f4))
+
+
+### Bug Fixes
+
+* refactor recursion to loops; tree output not yet functional! ([83c5eb2](https://github.com/bepo65/license-report-recursive/commit/83c5eb23ac9f6f556807fd73b690942c2b70908b))
+* sort list by name and installedVersion ([85d8ad7](https://github.com/bepo65/license-report-recursive/commit/85d8ad7c8745e91c9897380feab67c33f1bd93c9))
+
 ### [6.1.3](https://github.com/bepo65/license-report-recursive/compare/v6.1.2...v6.1.3) (2022-11-16)
 
 ### [6.1.2](https://github.com/bepo65/license-report-recursive/compare/v6.1.1...v6.1.2) (2022-11-15)
