@@ -10,7 +10,9 @@
     "remoteVersion": "1.0.2",
     "installedVersion": "1.0.2",
     "definedVersion": "^1.0.2",
-    "author": "Dan VerWeire, Yaniv Kessler"
+    "author": "Dan VerWeire, Yaniv Kessler",
+    "alias": "",
+    "requires": ""
   },
   {
     "department": "kessler",
@@ -23,7 +25,9 @@
     "remoteVersion": "4.17.21",
     "installedVersion": "4.17.21",
     "definedVersion": "^4.17.20",
-    "author": "John-David Dalton <john.david.dalton@gmail.com>"
+    "author": "John-David Dalton <john.david.dalton@gmail.com>",
+    "alias": "",
+    "requires": ""
   },
   {
     "department": "kessler",
@@ -37,6 +41,7 @@
     "installedVersion": "7.3.7",
     "definedVersion": "^7.3.5",
     "author": "GitHub Inc.",
+    "alias": "",
     "requires": [
       {
         "department": "kessler",
@@ -50,6 +55,7 @@
         "installedVersion": "6.0.0",
         "definedVersion": "^6.0.0",
         "author": "Isaac Z. Schlueter <i@izs.me>",
+        "alias": "",
         "requires": [
           {
             "department": "kessler",
@@ -62,7 +68,9 @@
             "remoteVersion": "4.0.0",
             "installedVersion": "4.0.0",
             "definedVersion": "^4.0.0",
-            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)"
+            "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
+            "alias": "",
+            "requires": ""
           }
         ]
       }

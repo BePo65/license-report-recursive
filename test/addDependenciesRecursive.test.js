@@ -22,75 +22,57 @@ const projectRootPath = path
 	.resolve(__dirname, 'fixture', 'addDependenciesRecursive')
 	.replace(/(\s+)/g, '\\$1')
 
-describe('addDependenciesRecursive', () => {
+describe('addDependenciesRecursive', function () {
 	let packageJson
+
+	this.timeout(5000)
+	this.slow(5000)
 
 	beforeEach(async () => {
 		packageJson = await util.readJson(packageJsonPath)
 	})
 
-	it('generates flat list and tree for all dependency types', async () => {
+	it('generates flat list for all dependency types', async () => {
 		const depsIndex = getDependencies(packageJson, [], null, '')
-		const { depsIndexRecursiveFlat, depsIndexRecursiveTree } = await addDependenciesRecursive(depsIndex, projectRootPath, [], [], '')
-
 		expect(depsIndex.length).to.equal(4)
-		expect(depsIndexRecursiveFlat.length).to.equal(10)
-		expect(depsIndexRecursiveTree.length).to.equal(4)
-		expect(depsIndexRecursiveTree[0].fullName).to.equal('once')
-		expect(depsIndexRecursiveTree[0].requires.length).to.equal(2)
-		expect(depsIndexRecursiveTree[0].requires[0].fullName).to.equal('wrappy')
-		expect(depsIndexRecursiveTree[0].requires[0].requires.length).to.equal(1)
+
+		await addDependenciesRecursive(depsIndex, projectRootPath, [], [], '')
+		expect(depsIndex.length).to.equal(10)
 	})
 
-	it('generates flat list and tree for prod only', async () => {
+	it('generates flat list for prod only', async () => {
 		const inclusions = ['prod']
 		const depsIndex = getDependencies(packageJson, [], inclusions, '')
-		const { depsIndexRecursiveFlat, depsIndexRecursiveTree } = await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
-
 		expect(depsIndex.length).to.equal(3)
-		expect(depsIndexRecursiveFlat.length).to.equal(4)
-		expect(depsIndexRecursiveTree.length).to.equal(3)
-		expect(depsIndexRecursiveTree[0].fullName).to.equal('once')
-		expect(depsIndexRecursiveTree[0].requires.length).to.equal(1)
-		expect(depsIndexRecursiveTree[0].requires[0].fullName).to.equal('wrappy')
-		expect(depsIndexRecursiveTree[0].requires[0].requires).to.be.undefined
+
+		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
+		expect(depsIndex.length).to.equal(4)
 	})
 
-	it('generates flat list and tree for prod and opt only', async () => {
+	it('generates flat list for prod and opt only', async () => {
 		const inclusions = ['prod', 'opt']
 		const depsIndex = getDependencies(packageJson, [], inclusions, '')
-		const { depsIndexRecursiveFlat, depsIndexRecursiveTree } = await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
-
 		expect(depsIndex.length).to.equal(4)
-		expect(depsIndexRecursiveFlat.length).to.equal(5)
-		expect(depsIndexRecursiveTree.length).to.equal(4)
-		expect(depsIndexRecursiveTree[0].fullName).to.equal('once')
-		expect(depsIndexRecursiveTree[0].requires.length).to.equal(1)
-		expect(depsIndexRecursiveTree[0].requires[0].fullName).to.equal('wrappy')
-		expect(depsIndexRecursiveTree[0].requires[0].requires).to.be.undefined
+
+		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
+		expect(depsIndex.length).to.equal(5)
 	})
 
-	it('generates flat list and tree for empty only definition', async () => {
+	it('generates flat list for empty only definition', async () => {
 		const inclusions = []
 		const depsIndex = getDependencies(packageJson, [], inclusions, '')
-		const { depsIndexRecursiveFlat, depsIndexRecursiveTree } = await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
-
 		expect(depsIndex.length).to.equal(4)
-		expect(depsIndexRecursiveFlat.length).to.equal(10)
-		expect(depsIndexRecursiveTree.length).to.equal(4)
-		expect(depsIndexRecursiveTree[0].fullName).to.equal('once')
-		expect(depsIndexRecursiveTree[0].requires.length).to.equal(2)
-		expect(depsIndexRecursiveTree[0].requires[0].fullName).to.equal('wrappy')
-		expect(depsIndexRecursiveTree[0].requires[0].requires.length).to.equal(1)
+
+		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '')
+		expect(depsIndex.length).to.equal(10)
 	})
 
 	it('generates flat list and tree with empty string in only definition', async () => {
 		const inclusions = ['']
 		const depsIndex = getDependencies(packageJson, [], inclusions)
-		const { depsIndexRecursiveFlat, depsIndexRecursiveTree } = await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions)
-
 		expect(depsIndex.length).to.equal(0)
-		expect(depsIndexRecursiveFlat.length).to.equal(0)
-		expect(depsIndexRecursiveTree.length).to.equal(0)
+
+		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions)
+		expect(depsIndex.length).to.equal(0)
 	})
 });
