@@ -3147,7 +3147,7 @@
             "link": "git://github.com/minimistjs/minimist.git",
             "definedVersion": "^1.2.6",
             "installedVersion": "1.2.7",
-            "remoteVersion": "1.2.7",
+            "remoteVersion": "1.2.8",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",

@@ -26,6 +26,7 @@ async function addRemoteVersion(dependency) {
 		timeout: config.httpTimeoutOptions,
 		hooks: {
 			beforeRetry: [
+				// eslint-disable-next-line no-unused-vars
 				(options, error, retryCount) => {
 					debug(`http request to npm for package "${dependency.name}" failed, retrying again soon...`)
 				}

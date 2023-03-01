@@ -69,6 +69,7 @@ describe('end to end test', function() {
 
 	it('produce a tree report for project with dependency loops', async () => {
 		expectedData = await util.readJson(loopExpectedDataPath)
+
 		const { stdout, stderr } = await execAsPromise(`node ${scriptPath} --package=${loopPackageJsonPath} --output=tree`)
 		const result = JSON.parse(stdout)
 
