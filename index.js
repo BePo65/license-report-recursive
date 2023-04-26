@@ -57,12 +57,11 @@ const debug = createDebugMessages('license-report-recurse');
     let depsPackageJson = getDependencies(packageJson, exclusions, inclusions, parentPath);
     const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath);
+				const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath, config.fields);
         const packagesData = await addPackageDataFromRepository(localDataForPackages);
         const basicFields = {
-          alias: element.alias,
-          fullName: element.fullName,
-          path: element.path,
+          alias: alias, // to get the local path of the package
           isRootNode: true // to identify the root nodes when generating the tree view
         };
         return Object.assign(packagesData, basicFields);
@@ -75,7 +74,7 @@ const debug = createDebugMessages('license-report-recurse');
       if (inclusions !== null) {
         inclusionsSubDeps = inclusions.filter(entry => entry !== 'dev');
       }
-      await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath);
+      await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath, config.fields);
     }
 
     const sortedList = depsIndex.sort(util.alphaSort);

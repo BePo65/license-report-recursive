@@ -29,14 +29,14 @@
   "homepage": "https://github.com/bepo65/license-report-recursive",
   "dependencies": {
     "debug": "^4.3.4",
-    "license-report": "^6.3.0"
+    "license-report": "^6.4.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.5.1",
-    "@commitlint/config-conventional": "^17.4.4",
+    "@commitlint/cli": "^17.6.1",
+    "@commitlint/config-conventional": "^17.6.1",
     "chai": "^4.3.7",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.37.0",
+    "eslint": "^8.39.0",
     "eslint-plugin-chai-expect": "^3.0.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-mocha": "^10.1.0",

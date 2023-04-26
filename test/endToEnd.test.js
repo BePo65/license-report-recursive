@@ -42,8 +42,8 @@ const execAsPromise = nodeUtil.promisify(cp.exec)
 
 let expectedData
 describe('end to end test', function() {
-	this.timeout(50000)
-	this.slow(16000)
+	this.timeout(100000)
+	this.slow(50000)
 
 	it('produce a tree report for default fields', async () => {
 		expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath)

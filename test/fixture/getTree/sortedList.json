@@ -11,7 +11,6 @@
     "latestRemoteVersion": "5.3.0",
     "latestRemoteModified": "2022-07-21T14:31:14.757Z",
     "comment": "5.3.0",
-    "fullName": "@sindresorhus/is",
     "alias": "",
     "path": ">getTree>got>@sindresorhus/is"
   },
@@ -27,12 +26,10 @@
     "latestRemoteVersion": "5.0.1",
     "latestRemoteModified": "2022-04-07T03:49:45.986Z",
     "comment": "5.0.1",
-    "fullName": "@szmarczak/http-timer",
     "alias": "",
     "path": ">getTree>got>@szmarczak/http-timer",
     "requires": [
       {
-        "fullName": "defer-to-connect",
         "alias": "",
         "name": "defer-to-connect",
         "version": "^2.0.1",
@@ -55,49 +52,40 @@
     "latestRemoteVersion": "8.3.2",
     "latestRemoteModified": "2022-11-23T18:19:37.435Z",
     "comment": "6.0.3",
-    "fullName": "@types/cacheable-request",
     "alias": "",
     "path": ">getTree>got>@types/cacheable-request",
     "requires": [
       {
-        "fullName": "@types/http-cache-semantics",
+        "name": "@types/http-cache-semantics",
         "alias": "",
-        "name": "http-cache-semantics",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request>@types/http-cache-semantics",
         "installedVersion": "4.0.1",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@types/keyv",
+        "name": "@types/keyv",
         "alias": "",
-        "name": "keyv",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request>@types/keyv",
         "installedVersion": "3.1.4",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@types/node",
+        "name": "@types/node",
         "alias": "",
-        "name": "node",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request>@types/node",
         "installedVersion": "18.6.2",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@types/responselike",
+        "name": "@types/responselike",
         "alias": "",
-        "name": "responselike",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request>@types/responselike",
         "installedVersion": "1.0.0",
         "author": "n/a",
@@ -117,7 +105,6 @@
     "latestRemoteVersion": "4.0.1",
     "latestRemoteModified": "2022-11-14T08:27:02.142Z",
     "comment": "4.0.1",
-    "fullName": "@types/http-cache-semantics",
     "alias": "",
     "path": ">getTree>got>@types/cacheable-request>@types/http-cache-semantics"
   },
@@ -133,7 +120,6 @@
     "latestRemoteVersion": "3.0.0",
     "latestRemoteModified": "2022-11-14T08:27:39.632Z",
     "comment": "3.0.0",
-    "fullName": "@types/json-buffer",
     "alias": "",
     "path": ">getTree>got>cacheable-request>keyv>compress-brotli>@types/json-buffer"
   },
@@ -149,16 +135,13 @@
     "latestRemoteVersion": "4.2.0",
     "latestRemoteModified": "2022-10-18T21:04:34.655Z",
     "comment": "4.2.0",
-    "fullName": "@types/keyv",
     "alias": "",
     "path": ">getTree>got>@types/cacheable-request>@types/keyv",
     "requires": [
       {
-        "fullName": "@types/node",
+        "name": "@types/node",
         "alias": "",
-        "name": "node",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request>@types/keyv>@types/node",
         "installedVersion": "18.6.2",
         "author": "n/a",
@@ -178,7 +161,6 @@
     "latestRemoteVersion": "18.11.18",
     "latestRemoteModified": "2022-12-26T17:34:12.613Z",
     "comment": "18.11.18",
-    "fullName": "@types/node",
     "alias": "",
     "path": ">getTree>got>@types/cacheable-request>@types/node"
   },
@@ -194,16 +176,13 @@
     "latestRemoteVersion": "1.0.0",
     "latestRemoteModified": "2022-11-14T08:29:17.736Z",
     "comment": "1.0.0",
-    "fullName": "@types/responselike",
     "alias": "",
     "path": ">getTree>got>@types/responselike",
     "requires": [
       {
-        "fullName": "@types/node",
+        "name": "@types/node",
         "alias": "",
-        "name": "node",
         "version": "*",
-        "scope": "types",
         "path": ">getTree>got>@types/responselike>@types/node",
         "installedVersion": "18.6.2",
         "author": "n/a",
@@ -223,7 +202,6 @@
     "latestRemoteVersion": "7.0.0",
     "latestRemoteModified": "2022-09-27T07:11:14.853Z",
     "comment": "6.1.0",
-    "fullName": "cacheable-lookup",
     "alias": "",
     "path": ">getTree>got>cacheable-lookup"
   },
@@ -239,14 +217,12 @@
     "latestRemoteVersion": "10.2.4",
     "latestRemoteModified": "2022-12-23T01:10:34.167Z",
     "comment": "7.0.2",
-    "fullName": "cacheable-request",
     "alias": "",
     "path": ">getTree>got>cacheable-request",
     "requires": [
       {
-        "fullName": "clone-response",
-        "alias": "",
         "name": "clone-response",
+        "alias": "",
         "version": "^1.0.2",
         "path": ">getTree>got>cacheable-request>clone-response",
         "installedVersion": "1.0.3",
@@ -254,9 +230,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "get-stream",
-        "alias": "",
         "name": "get-stream",
+        "alias": "",
         "version": "^5.1.0",
         "path": ">getTree>got>cacheable-request>get-stream",
         "installedVersion": "5.2.0",
@@ -264,9 +239,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "http-cache-semantics",
-        "alias": "",
         "name": "http-cache-semantics",
+        "alias": "",
         "version": "^4.0.0",
         "path": ">getTree>got>cacheable-request>http-cache-semantics",
         "installedVersion": "4.1.0",
@@ -274,9 +248,8 @@
         "licenseType": "BSD-2-Clause"
       },
       {
-        "fullName": "keyv",
-        "alias": "",
         "name": "keyv",
+        "alias": "",
         "version": "^4.0.0",
         "path": ">getTree>got>cacheable-request>keyv",
         "installedVersion": "4.3.3",
@@ -284,9 +257,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "lowercase-keys",
-        "alias": "",
         "name": "lowercase-keys",
+        "alias": "",
         "version": "^2.0.0",
         "path": ">getTree>got>cacheable-request>lowercase-keys",
         "installedVersion": "2.0.0",
@@ -294,9 +266,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "normalize-url",
-        "alias": "",
         "name": "normalize-url",
+        "alias": "",
         "version": "^6.0.1",
         "path": ">getTree>got>cacheable-request>normalize-url",
         "installedVersion": "6.1.0",
@@ -304,9 +275,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "responselike",
-        "alias": "",
         "name": "responselike",
+        "alias": "",
         "version": "^2.0.0",
         "path": ">getTree>got>cacheable-request>responselike",
         "installedVersion": "2.0.1",
@@ -327,14 +297,12 @@
     "latestRemoteVersion": "2.0.0",
     "latestRemoteModified": "2022-10-07T10:29:10.943Z",
     "comment": "1.0.3",
-    "fullName": "clone-response",
     "alias": "",
     "path": ">getTree>got>cacheable-request>clone-response",
     "requires": [
       {
-        "fullName": "mimic-response",
-        "alias": "",
         "name": "mimic-response",
+        "alias": "",
         "version": "^1.0.0",
         "path": ">getTree>got>cacheable-request>clone-response>mimic-response",
         "installedVersion": "1.0.1",
@@ -355,25 +323,21 @@
     "latestRemoteVersion": "1.3.8",
     "latestRemoteModified": "2022-05-06T11:11:02.913Z",
     "comment": "1.3.8",
-    "fullName": "compress-brotli",
     "alias": "",
     "path": ">getTree>got>cacheable-request>keyv>compress-brotli",
     "requires": [
       {
-        "fullName": "@types/json-buffer",
+        "name": "@types/json-buffer",
         "alias": "",
-        "name": "json-buffer",
         "version": "~3.0.0",
-        "scope": "types",
         "path": ">getTree>got>cacheable-request>keyv>compress-brotli>@types/json-buffer",
         "installedVersion": "3.0.0",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "json-buffer",
-        "alias": "",
         "name": "json-buffer",
+        "alias": "",
         "version": "~3.0.1",
         "path": ">getTree>got>cacheable-request>keyv>compress-brotli>json-buffer",
         "installedVersion": "3.0.1",
@@ -394,14 +358,12 @@
     "latestRemoteVersion": "8.0.0",
     "latestRemoteModified": "2022-06-14T22:35:56.233Z",
     "comment": "6.0.0",
-    "fullName": "decompress-response",
     "alias": "",
     "path": ">getTree>got>decompress-response",
     "requires": [
       {
-        "fullName": "mimic-response",
-        "alias": "",
         "name": "mimic-response",
+        "alias": "",
         "version": "^3.1.0",
         "path": ">getTree>got>decompress-response>mimic-response",
         "installedVersion": "3.1.0",
@@ -422,7 +384,6 @@
     "latestRemoteVersion": "2.0.1",
     "latestRemoteModified": "2022-04-28T08:39:03.442Z",
     "comment": "2.0.1",
-    "fullName": "defer-to-connect",
     "alias": "",
     "path": ">getTree>got>@szmarczak/http-timer>defer-to-connect"
   },
@@ -438,7 +399,6 @@
     "latestRemoteVersion": "2.1.4",
     "latestRemoteModified": "2022-11-24T14:13:20.298Z",
     "comment": "2.1.4",
-    "fullName": "form-data-encoder",
     "alias": "",
     "path": ">getTree>got>form-data-encoder"
   },
@@ -454,7 +414,6 @@
     "latestRemoteVersion": "6.0.1",
     "latestRemoteModified": "2022-06-18T07:55:16.774Z",
     "comment": "5.2.0",
-    "fullName": "get-stream",
     "alias": "",
     "path": ">getTree>got>cacheable-request>get-stream"
   },
@@ -470,7 +429,6 @@
     "latestRemoteVersion": "6.0.1",
     "latestRemoteModified": "2022-06-18T07:55:16.774Z",
     "comment": "6.0.1",
-    "fullName": "get-stream",
     "alias": "",
     "path": ">getTree>got>get-stream"
   },
@@ -487,58 +445,48 @@
     "latestRemoteModified": "2022-12-08T23:31:44.179Z",
     "comment": "12.5.3",
     "alias": "",
-    "fullName": "got",
     "path": ">getTree>got",
     "isRootNode": true,
     "requires": [
       {
-        "fullName": "@sindresorhus/is",
+        "name": "@sindresorhus/is",
         "alias": "",
-        "name": "is",
         "version": "^5.2.0",
-        "scope": "sindresorhus",
         "path": ">getTree>got>@sindresorhus/is",
         "installedVersion": "5.3.0",
         "author": "Sindre Sorhus sindresorhus@gmail.com https://sindresorhus.com",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@szmarczak/http-timer",
+        "name": "@szmarczak/http-timer",
         "alias": "",
-        "name": "http-timer",
         "version": "^5.0.1",
-        "scope": "szmarczak",
         "path": ">getTree>got>@szmarczak/http-timer",
         "installedVersion": "5.0.1",
         "author": "Szymon Marczak",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@types/cacheable-request",
+        "name": "@types/cacheable-request",
         "alias": "",
-        "name": "cacheable-request",
         "version": "^6.0.2",
-        "scope": "types",
         "path": ">getTree>got>@types/cacheable-request",
         "installedVersion": "6.0.2",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "@types/responselike",
+        "name": "@types/responselike",
         "alias": "",
-        "name": "responselike",
         "version": "^1.0.0",
-        "scope": "types",
         "path": ">getTree>got>@types/responselike",
         "installedVersion": "1.0.0",
         "author": "n/a",
         "licenseType": "MIT"
       },
       {
-        "fullName": "cacheable-lookup",
-        "alias": "",
         "name": "cacheable-lookup",
+        "alias": "",
         "version": "^6.0.4",
         "path": ">getTree>got>cacheable-lookup",
         "installedVersion": "6.0.4",
@@ -546,9 +494,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "cacheable-request",
-        "alias": "",
         "name": "cacheable-request",
+        "alias": "",
         "version": "^7.0.2",
         "path": ">getTree>got>cacheable-request",
         "installedVersion": "7.0.2",
@@ -556,9 +503,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "decompress-response",
-        "alias": "",
         "name": "decompress-response",
+        "alias": "",
         "version": "^6.0.0",
         "path": ">getTree>got>decompress-response",
         "installedVersion": "6.0.0",
@@ -566,9 +512,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "form-data-encoder",
-        "alias": "",
         "name": "form-data-encoder",
+        "alias": "",
         "version": "^2.0.1",
         "path": ">getTree>got>form-data-encoder",
         "installedVersion": "2.0.1",
@@ -576,9 +521,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "get-stream",
-        "alias": "",
         "name": "get-stream",
+        "alias": "",
         "version": "^6.0.1",
         "path": ">getTree>got>get-stream",
         "installedVersion": "6.0.1",
@@ -586,9 +530,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "http2-wrapper",
-        "alias": "",
         "name": "http2-wrapper",
+        "alias": "",
         "version": "^2.1.10",
         "path": ">getTree>got>http2-wrapper",
         "installedVersion": "2.1.11",
@@ -596,9 +539,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "lowercase-keys",
-        "alias": "",
         "name": "lowercase-keys",
+        "alias": "",
         "version": "^3.0.0",
         "path": ">getTree>got>lowercase-keys",
         "installedVersion": "3.0.0",
@@ -606,9 +548,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "p-cancelable",
-        "alias": "",
         "name": "p-cancelable",
+        "alias": "",
         "version": "^3.0.0",
         "path": ">getTree>got>p-cancelable",
         "installedVersion": "3.0.0",
@@ -616,9 +557,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "responselike",
-        "alias": "",
         "name": "responselike",
+        "alias": "",
         "version": "^2.0.0",
         "path": ">getTree>got>responselike",
         "installedVersion": "2.0.1",
@@ -639,7 +579,6 @@
     "latestRemoteVersion": "4.1.0",
     "latestRemoteModified": "2022-06-18T22:09:43.711Z",
     "comment": "4.1.0",
-    "fullName": "http-cache-semantics",
     "alias": "",
     "path": ">getTree>got>cacheable-request>http-cache-semantics"
   },
@@ -655,14 +594,12 @@
     "latestRemoteVersion": "2.2.0",
     "latestRemoteModified": "2022-11-15T14:09:51.819Z",
     "comment": "2.2.0",
-    "fullName": "http2-wrapper",
     "alias": "",
     "path": ">getTree>got>http2-wrapper",
     "requires": [
       {
-        "fullName": "quick-lru",
-        "alias": "",
         "name": "quick-lru",
+        "alias": "",
         "version": "^5.1.1",
         "path": ">getTree>got>http2-wrapper>quick-lru",
         "installedVersion": "5.1.1",
@@ -670,9 +607,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "resolve-alpn",
-        "alias": "",
         "name": "resolve-alpn",
+        "alias": "",
         "version": "^1.2.0",
         "path": ">getTree>got>http2-wrapper>resolve-alpn",
         "installedVersion": "1.2.1",
@@ -693,7 +629,6 @@
     "latestRemoteVersion": "3.0.1",
     "latestRemoteModified": "2022-06-19T06:12:08.317Z",
     "comment": "3.0.1",
-    "fullName": "json-buffer",
     "alias": "",
     "path": ">getTree>got>cacheable-request>keyv>json-buffer"
   },
@@ -709,14 +644,12 @@
     "latestRemoteVersion": "4.5.2",
     "latestRemoteModified": "2022-11-07T15:23:30.763Z",
     "comment": "4.5.2",
-    "fullName": "keyv",
     "alias": "",
     "path": ">getTree>got>cacheable-request>keyv",
     "requires": [
       {
-        "fullName": "compress-brotli",
-        "alias": "",
         "name": "compress-brotli",
+        "alias": "",
         "version": "^1.3.8",
         "path": ">getTree>got>cacheable-request>keyv>compress-brotli",
         "installedVersion": "1.3.8",
@@ -724,9 +657,8 @@
         "licenseType": "MIT"
       },
       {
-        "fullName": "json-buffer",
-        "alias": "",
         "name": "json-buffer",
+        "alias": "",
         "version": "3.0.1",
         "path": ">getTree>got>cacheable-request>keyv>json-buffer",
         "installedVersion": "3.0.1",
@@ -747,7 +679,6 @@
     "latestRemoteVersion": "3.0.0",
     "latestRemoteModified": "2022-06-19T14:25:31.574Z",
     "comment": "2.0.0",
-    "fullName": "lowercase-keys",
     "alias": "",
     "path": ">getTree>got>cacheable-request>lowercase-keys"
   },
@@ -763,7 +694,6 @@
     "latestRemoteVersion": "3.0.0",
     "latestRemoteModified": "2022-06-19T14:25:31.574Z",
     "comment": "3.0.0",
-    "fullName": "lowercase-keys",
     "alias": "",
     "path": ">getTree>got>lowercase-keys"
   },
@@ -779,7 +709,6 @@
     "latestRemoteVersion": "4.0.0",
     "latestRemoteModified": "2022-06-19T19:59:36.358Z",
     "comment": "1.0.1",
-    "fullName": "mimic-response",
     "alias": "",
     "path": ">getTree>got>cacheable-request>clone-response>mimic-response"
   },
@@ -795,7 +724,6 @@
     "latestRemoteVersion": "4.0.0",
     "latestRemoteModified": "2022-06-19T19:59:36.358Z",
     "comment": "3.1.0",
-    "fullName": "mimic-response",
     "alias": "",
     "path": ">getTree>got>decompress-response>mimic-response"
   },
@@ -811,7 +739,6 @@
     "latestRemoteVersion": "8.0.0",
     "latestRemoteModified": "2022-11-04T08:18:35.111Z",
     "comment": "6.1.0",
-    "fullName": "normalize-url",
     "alias": "",
     "path": ">getTree>got>cacheable-request>normalize-url"
   },
@@ -827,7 +754,6 @@
     "latestRemoteVersion": "4.0.1",
     "latestRemoteModified": "2022-07-19T14:03:33.995Z",
     "comment": "3.0.0",
-    "fullName": "p-cancelable",
     "alias": "",
     "path": ">getTree>got>p-cancelable"
   },
@@ -843,7 +769,6 @@
     "latestRemoteVersion": "6.1.1",
     "latestRemoteModified": "2022-06-25T07:09:21.209Z",
     "comment": "5.1.1",
-    "fullName": "quick-lru",
     "alias": "",
     "path": ">getTree>got>http2-wrapper>quick-lru"
   },
@@ -859,7 +784,6 @@
     "latestRemoteVersion": "1.2.1",
     "latestRemoteModified": "2022-05-15T21:07:49.469Z",
     "comment": "1.2.1",
-    "fullName": "resolve-alpn",
     "alias": "",
     "path": ">getTree>got>http2-wrapper>resolve-alpn"
   },
@@ -875,14 +799,12 @@
     "latestRemoteVersion": "3.0.0",
     "latestRemoteModified": "2022-10-07T10:28:55.516Z",
     "comment": "2.0.1",
-    "fullName": "responselike",
     "alias": "",
     "path": ">getTree>got>responselike",
     "requires": [
       {
-        "fullName": "lowercase-keys",
-        "alias": "",
         "name": "lowercase-keys",
+        "alias": "",
         "version": "^2.0.0",
         "path": ">getTree>got>responselike>lowercase-keys",
         "installedVersion": "2.0.0",

@@ -3184,7 +3184,11 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": [
+              {
+                "dependencyLoop": true
+              }
+            ]
           }
         ],
         "department": "kessler",
