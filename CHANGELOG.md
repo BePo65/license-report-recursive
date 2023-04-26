@@ -2,6 +2,10 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [6.4.0](https://github.com/bepo65/license-report-recursive/compare/v6.2.0...v6.4.0) (2023-04-26)
+
+* make program use 'license-report' version 6.4.0
+
 ## [6.2.0](https://github.com/bepo65/license-report-recursive/compare/v6.1.3...v6.2.0) (2022-12-30)
 
 
