@@ -54,9 +54,9 @@ const debug = createDebugMessages('license-report-recurse');
     const parentPath = `>${packageJson.name}`;
 
     // an array with all the dependencies in the package.json under inspection
-    let depsPackageJson = getDependencies(packageJson, exclusions, inclusions, parentPath);
+    let depsIndexBase = getDependencies(packageJson, exclusions, inclusions, parentPath);
     const depsIndex = await Promise.all(
-      depsPackageJson.map(async (element) => {
+      depsIndexBase.map(async (element) => {
 				const alias = element.alias;
         const localDataForPackages = await addLocalPackageData(element, projectRootPath, config.fields);
         const packagesData = await addPackageDataFromRepository(localDataForPackages);
