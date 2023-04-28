@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [6.4.1](https://github.com/bepo65/license-report-recursive/compare/v6.4.0...v6.4.1) (2023-04-28)
+
+
+### Bug Fixes
+
+* issue [#27](https://github.com/bepo65/license-report-recursive/issues/27) (throw when parsing indirect dependencies) ([dde6dc8](https://github.com/bepo65/license-report-recursive/commit/dde6dc8ae9bcb6fad49b9665f6abe3954b335e9c))
+
 ## [6.4.0](https://github.com/bepo65/license-report-recursive/compare/v6.2.0...v6.4.0) (2023-04-26)
 
 * make program use 'license-report' version 6.4.0
