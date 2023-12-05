@@ -29,24 +29,24 @@
   "homepage": "https://github.com/bepo65/license-report-recursive",
   "dependencies": {
     "debug": "^4.3.4",
-    "license-report": "^6.4.0"
+    "license-report": "^6.5.0"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.6",
-    "@commitlint/config-conventional": "^17.6.6",
-    "chai": "^4.3.7",
+    "@commitlint/cli": "^18.4.3",
+    "@commitlint/config-conventional": "^18.4.3",
+    "chai": "^4.3.10",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.43.0",
+    "eslint": "^8.55.0",
     "eslint-plugin-chai-expect": "^3.0.0",
     "eslint-plugin-json": "^3.1.0",
-    "eslint-plugin-mocha": "^10.1.0",
+    "eslint-plugin-mocha": "^10.2.0",
     "eslint-plugin-prefer-arrow": "^1.2.3",
-    "fs-extra": "^11.1.1",
+    "fs-extra": "^11.2.0",
     "husky": "^8.0.3",
     "mocha": "^10.2.0",
     "standard-version": "^9.5.0"
   },
   "engines": {
-    "node": ">=14.0"
+    "node": ">=18"
   }
 }
