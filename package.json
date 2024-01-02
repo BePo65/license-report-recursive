@@ -6,7 +6,7 @@
   "scripts": {
     "start": "node index.js",
     "test": "npx mocha -R spec",
-    "lint": "eslint --report-unused-disable-directives -c .eslintrc.json index.js lib/**/*.js test/**/*.test.js",
+    "lint": "eslint -c .eslintrc.json index.js lib/**/*.js test/**/*.test.js",
     "postinstall": "node scripts/postinstall.js",
     "build": "node scripts/build.js",
     "init-changelog": "standard-version -i CHANGELOG.md --same-file --first-release",
@@ -36,7 +36,7 @@
     "@commitlint/config-conventional": "^18.4.3",
     "chai": "^4.3.10",
     "chai-as-promised": "^7.1.1",
-    "eslint": "^8.55.0",
+    "eslint": "^8.56.0",
     "eslint-plugin-chai-expect": "^3.0.0",
     "eslint-plugin-json": "^3.1.0",
     "eslint-plugin-mocha": "^10.2.0",
