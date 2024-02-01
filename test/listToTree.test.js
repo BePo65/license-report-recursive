@@ -4,14 +4,11 @@ process.env.NODE_ENV = 'test';
 import path from 'node:path';
 import url from 'node:url';
 
-import chai from 'chai';
-import chaiAsPromised from 'chai-as-promised';
+import { expect } from 'chai';
 
 import listToTree from '../lib/listToTree.js';
 import util from '../lib/util.js';
 
-chai.use(chaiAsPromised);
-const expect = chai.expect;
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const dedupedSortedListPath = path

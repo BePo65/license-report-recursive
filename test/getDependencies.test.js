@@ -1,16 +1,13 @@
 // During the test the env variable is set to test
 process.env.NODE_ENV = 'test';
 
-import chai from 'chai';
-import chaiAsPromised from 'chai-as-promised';
+import { expect } from 'chai';
 import path from 'node:path';
 import url from 'node:url';
 
 import getDependencies from '../lib/getDependencies.js';
 import util from '../lib/util.js';
 
-chai.use(chaiAsPromised);
-const expect = chai.expect;
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const packageJsonPath = path
