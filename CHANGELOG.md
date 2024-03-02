@@ -1,6 +1,8 @@
 # Changelog
 
-All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
+
+## [6.4.2](https://github.com/bepo65/license-report-recursive/compare/v6.4.1...v6.4.2) (2024-03-02)
 
 ### [6.4.1](https://github.com/bepo65/license-report-recursive/compare/v6.4.0...v6.4.1) (2023-04-28)
 

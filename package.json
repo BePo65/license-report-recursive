@@ -1,6 +1,6 @@
 {
   "name": "license-report-recursive",
-  "version": "6.4.1",
+  "version": "6.4.2",
   "description": "Wrapper around license-report to add recursion",
   "main": "index.js",
   "scripts": {
