@@ -66,3 +66,6 @@ The following is the list of supported types of commit messages:
 * test: changes that add missing tests or correct existing tests.
 
 To ensure the syntax of commit messages `commitlint` is used, triggered by `husky`. This feature must be activated with `npm run activate-commitlint` once for every local clone of `license-report`.
+
+## Hints
+As `eslint-plugin-chai-expect` V3.0.0 requires eslint < 8.57, eslint cannot be updated to v9, before this is fixed.
