@@ -9,7 +9,7 @@
     "eslint:recommended",
     "plugin:mocha/recommended",
     "plugin:chai-expect/recommended",
-    "plugin:json/recommended"
+    "plugin:json/recommended-legacy"
   ],
   "parserOptions": {
     "sourceType": "module"
