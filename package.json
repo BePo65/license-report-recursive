@@ -28,7 +28,7 @@
   },
   "homepage": "https://github.com/bepo65/license-report-recursive",
   "dependencies": {
-    "debug": "^4.3.4",
+    "debug": "^4.3.5",
     "license-report": "^6.5.0"
   },
   "devDependencies": {
