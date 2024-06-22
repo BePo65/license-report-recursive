@@ -2,6 +2,8 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.4.5](https://github.com/bepo65/license-report-recursive/compare/v6.4.4...v6.4.5) (2024-06-22)
+
 ## [6.4.4](https://github.com/bepo65/license-report-recursive/compare/v6.4.3...v6.4.4) (2024-06-22)
 
 ## [6.4.3](https://github.com/bepo65/license-report-recursive/compare/v6.4.2...v6.4.3) (2024-06-05)
