@@ -3,16 +3,6 @@
   "version": "6.4.4",
   "description": "Wrapper around license-report to add recursion",
   "main": "index.js",
-  "scripts": {
-    "start": "node index.js",
-    "test": "npx mocha -R spec",
-    "lint": "npx eslint index.js lib/**/*.js test/**/*.test.js",
-    "postinstall": "node scripts/postinstall.js",
-    "build": "node scripts/build.js",
-    "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --first-release",
-    "release": "commit-and-tag-version --commit-all && npm run build",
-    "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\""
-  },
   "bin": {
     "license-report-recursive": "./index.js"
   },
@@ -27,6 +17,19 @@
     "url": "https://github.com/bepo65/license-report-recursive/issues"
   },
   "homepage": "https://github.com/bepo65/license-report-recursive",
+  "scripts": {
+    "start": "node index.js",
+    "test": "npx mocha -R spec",
+    "lint": "npx eslint index.js lib/**/*.js test/**/*.test.js",
+    "postinstall": "node scripts/postinstall.js",
+    "build": "node scripts/build.js",
+    "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --first-release",
+    "release": "commit-and-tag-version -i CHANGELOG.md --same-file",
+    "activate-commitlint": "npx husky install && npx husky add .husky/commit-msg \"npx --no -- commitlint --edit $1\"",
+    "prepare": "husky"
+  },
+  "author": "BePo65",
+  "license": "MIT",
   "dependencies": {
     "debug": "^4.3.5",
     "license-report": "^6.5.0"
@@ -45,6 +48,11 @@
     "fs-extra": "^11.2.0",
     "husky": "^9.0.11",
     "mocha": "^10.4.0"
+  },
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
   },
   "engines": {
     "node": ">=18"
