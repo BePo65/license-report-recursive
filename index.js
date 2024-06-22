@@ -18,6 +18,7 @@ const debug = createDebugMessages('license-report-recurse');
 
 (async () => {
   if (config.help) {
+    // eslint-disable-next-line security-node/detect-crlf
     console.log(util.helpText);
     return;
   }
@@ -96,15 +97,19 @@ const debug = createDebugMessages('license-report-recurse');
           return packageDataToReportData(element, config);
         })
       )
+
+      // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesList, config));
       debug(`emitted list with ${packagesList.length} entries`);
     } else {
       const packagesTree = await listToTree(dedupedSortedList, config);
+      // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesTree, config));
       debug(`emitted tree with ${packagesTree.length} base nodes`);
     }
   } catch (e) {
     console.error(e.stack);
+    // eslint-disable-next-line n/no-process-exit
     process.exit(1);
   }
 })();
