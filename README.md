@@ -72,6 +72,3 @@ To ensure the syntax of commit messages `commitlint` is used, triggered by `husk
 Copyright © 2024 [Bernhard Pottler](https://github.com/BePo65).
 
 Distributed under the MIT License. See `LICENSE` for more information.
-
-## Hints
-As `eslint-plugin-chai-expect` V3.0.0 requires eslint < 8.57, eslint cannot be updated to v9, before this is fixed.
