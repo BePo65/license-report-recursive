@@ -26,10 +26,9 @@
     "start": "node index.js",
     "test": "npx mocha -R spec",
     "lint": "npx eslint index.js lib/**/*.js test/**/*.test.js",
-    "postinstall": "node scripts/postinstall.js",
     "lint-commits": "commitlint --from 64d1e0f800b1 --to HEAD --verbose",
     "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --first-release",
-    "release": "commit-and-tag-version -i CHANGELOG.md --same-file"
+    "release": "node scripts/readme-set-dep-version.js && commit-and-tag-version -i CHANGELOG.md --same-file"
   },
   "author": "BePo65",
   "license": "MIT",
