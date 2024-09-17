@@ -4,8 +4,8 @@ process.env.NODE_ENV = 'test';
 import { expect } from 'chai';
 import path from 'node:path';
 import url from 'node:url';
-import addLocalPackageData from 'license-report/lib/addLocalPackageData.js';
-import addPackageDataFromRepository from 'license-report/lib/addPackageDataFromRepository.js';
+import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
+import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
 
 import addDependenciesRecursive from '../lib/addDependenciesRecursive.js';
 import getDependencies from '../lib/getDependencies.js';

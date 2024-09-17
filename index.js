@@ -3,9 +3,9 @@
 import fs from 'fs';
 import path from 'path';
 import createDebugMessages from 'debug';
-import addLocalPackageData from 'license-report/lib/addLocalPackageData.js';
-import addPackageDataFromRepository from 'license-report/lib/addPackageDataFromRepository.js';
-import packageDataToReportData from 'license-report/lib/packageDataToReportData.js';
+import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
+import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
+import { packageDataToReportData } from 'license-report/lib/packageDataToReportData.js';
 
 import getDependencies from './lib/getDependencies.js';
 import addDependenciesRecursive from './lib/addDependenciesRecursive.js';
