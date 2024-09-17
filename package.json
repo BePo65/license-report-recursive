@@ -28,7 +28,8 @@
     "lint": "npx eslint index.js lib/**/*.js test/**/*.test.js",
     "lint-commits": "commitlint --from 64d1e0f800b1 --to HEAD --verbose",
     "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --first-release",
-    "release": "node scripts/readme-set-dep-version.js && commit-and-tag-version -i CHANGELOG.md --same-file"
+    "release": "node scripts/readme-set-dep-version.js && commit-and-tag-version -i CHANGELOG.md --same-file",
+    "prepare": "husky"
   },
   "author": "BePo65",
   "license": "MIT",
@@ -59,11 +60,6 @@
   },
   "lint-staged": {
     "**/*": "prettier --write --ignore-unknown"
-  },
-  "husky": {
-    "hooks": {
-      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
-    }
   },
   "commit-and-tag-version": {
     "packageFiles": [
