@@ -14,15 +14,15 @@ import util from '../lib/util.js';
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const packageJsonPath = path
-	.resolve(__dirname, 'fixture', 'addDependenciesRecursive', 'package.json')
-	.replace(/(\s+)/g, '\\$1')
+  .resolve(__dirname, 'fixture', 'addDependenciesRecursive', 'package.json')
+  .replace(/(\s+)/g, '\\$1');
 
 const projectRootPath = path
-	.resolve(__dirname, 'fixture', 'addDependenciesRecursive')
-	.replace(/(\s+)/g, '\\$1')
+  .resolve(__dirname, 'fixture', 'addDependenciesRecursive')
+  .replace(/(\s+)/g, '\\$1');
 
 describe('addDependenciesRecursive', function () {
-	let packageJson
+  let packageJson;
   const fields = [
     'relatedTo',
     'name',
@@ -31,117 +31,177 @@ describe('addDependenciesRecursive', function () {
     'licenseType',
     'link',
     'definedVersion',
-    'author'
-  ]
+    'author',
+  ];
 
-	this.timeout(6000)
-	this.slow(6000)
+  this.timeout(6000);
+  this.slow(6000);
 
-	beforeEach(async () => {
-		packageJson = await util.readJson(packageJsonPath)
-	})
+  beforeEach(async () => {
+    packageJson = await util.readJson(packageJsonPath);
+  });
 
-	it('generates flat list for all dependency types', async () => {
-		const depsPackageJson = getDependencies(packageJson, [], null, '')
-		const depsIndex = await Promise.all(
+  it('generates flat list for all dependency types', async () => {
+    const depsPackageJson = getDependencies(packageJson, [], null, '');
+    const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
         const basicFields = {
           alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
+          isRootNode: true, // to identify the root nodes when generating the tree view
         };
         return Object.assign(packagesData, basicFields);
-      })
-    )
-		expect(depsIndex.length).to.equal(4)
-
-		await addDependenciesRecursive(depsIndex, projectRootPath, [], [], '', fields)
-		expect(depsIndex.length).to.equal(10)
-	})
-
-	it('generates flat list for prod only', async () => {
-		const inclusions = ['prod']
-		const depsPackageJson = getDependencies(packageJson, [], inclusions, '')
-		const depsIndex = await Promise.all(
-      depsPackageJson.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
-        const basicFields = {
-          alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
-        };
-        return Object.assign(packagesData, basicFields);
-      })
-    )
-		expect(depsIndex.length).to.equal(3)
-
-		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields)
-		expect(depsIndex.length).to.equal(4)
-	})
-
-	it('generates flat list for prod and opt only', async () => {
-		const inclusions = ['prod', 'opt']
-		const depsPackageJson = getDependencies(packageJson, [], inclusions, '')
-		const depsIndex = await Promise.all(
-      depsPackageJson.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
-        const basicFields = {
-          alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
-        };
-        return Object.assign(packagesData, basicFields);
-      })
-    )
-		expect(depsIndex.length).to.equal(4)
-
-		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields)
-		expect(depsIndex.length).to.equal(5)
-	})
-
-	it('generates flat list for empty only definition', async () => {
-		const inclusions = []
-		const depsPackageJson = getDependencies(packageJson, [], inclusions, '')
-		const depsIndex = await Promise.all(
-      depsPackageJson.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
-        const basicFields = {
-          alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
-        };
-        return Object.assign(packagesData, basicFields);
-      })
+      }),
     );
-		expect(depsIndex.length).to.equal(4)
+    expect(depsIndex.length).to.equal(4);
 
-		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields)
-		expect(depsIndex.length).to.equal(10)
-	})
+    await addDependenciesRecursive(
+      depsIndex,
+      projectRootPath,
+      [],
+      [],
+      '',
+      fields,
+    );
+    expect(depsIndex.length).to.equal(10);
+  });
 
-	it('generates flat list and tree with empty string in only definition', async () => {
-		const inclusions = ['']
-		const depsPackageJson = getDependencies(packageJson, [], inclusions)
-		const depsIndex = await Promise.all(
+  it('generates flat list for prod only', async () => {
+    const inclusions = ['prod'];
+    const depsPackageJson = getDependencies(packageJson, [], inclusions, '');
+    const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
         const basicFields = {
           alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
+          isRootNode: true, // to identify the root nodes when generating the tree view
         };
         return Object.assign(packagesData, basicFields);
-      })
-    )
-		expect(depsIndex.length).to.equal(0)
+      }),
+    );
+    expect(depsIndex.length).to.equal(3);
 
-		await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields)
-		expect(depsIndex.length).to.equal(0)
-	})
+    await addDependenciesRecursive(
+      depsIndex,
+      projectRootPath,
+      [],
+      inclusions,
+      '',
+      fields,
+    );
+    expect(depsIndex.length).to.equal(4);
+  });
+
+  it('generates flat list for prod and opt only', async () => {
+    const inclusions = ['prod', 'opt'];
+    const depsPackageJson = getDependencies(packageJson, [], inclusions, '');
+    const depsIndex = await Promise.all(
+      depsPackageJson.map(async (element) => {
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
+        const basicFields = {
+          alias: alias, // to get the local path of the package
+          isRootNode: true, // to identify the root nodes when generating the tree view
+        };
+        return Object.assign(packagesData, basicFields);
+      }),
+    );
+    expect(depsIndex.length).to.equal(4);
+
+    await addDependenciesRecursive(
+      depsIndex,
+      projectRootPath,
+      [],
+      inclusions,
+      '',
+      fields,
+    );
+    expect(depsIndex.length).to.equal(5);
+  });
+
+  it('generates flat list for empty only definition', async () => {
+    const inclusions = [];
+    const depsPackageJson = getDependencies(packageJson, [], inclusions, '');
+    const depsIndex = await Promise.all(
+      depsPackageJson.map(async (element) => {
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
+        const basicFields = {
+          alias: alias, // to get the local path of the package
+          isRootNode: true, // to identify the root nodes when generating the tree view
+        };
+        return Object.assign(packagesData, basicFields);
+      }),
+    );
+    expect(depsIndex.length).to.equal(4);
+
+    await addDependenciesRecursive(
+      depsIndex,
+      projectRootPath,
+      [],
+      inclusions,
+      '',
+      fields,
+    );
+    expect(depsIndex.length).to.equal(10);
+  });
+
+  it('generates flat list and tree with empty string in only definition', async () => {
+    const inclusions = [''];
+    const depsPackageJson = getDependencies(packageJson, [], inclusions);
+    const depsIndex = await Promise.all(
+      depsPackageJson.map(async (element) => {
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
+        const basicFields = {
+          alias: alias, // to get the local path of the package
+          isRootNode: true, // to identify the root nodes when generating the tree view
+        };
+        return Object.assign(packagesData, basicFields);
+      }),
+    );
+    expect(depsIndex.length).to.equal(0);
+
+    await addDependenciesRecursive(
+      depsIndex,
+      projectRootPath,
+      [],
+      inclusions,
+      '',
+      fields,
+    );
+    expect(depsIndex.length).to.equal(0);
+  });
 });

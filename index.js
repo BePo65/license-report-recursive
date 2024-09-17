@@ -31,7 +31,7 @@ const debug = createDebugMessages('license-report-recurse');
     throw new Error('invalid package.json ' + config.package);
   }
 
-  if ((config.output === 'tree') && !config.recurse) {
+  if (config.output === 'tree' && !config.recurse) {
     throw new Error('output=tree requires --recurse option');
   }
 
@@ -43,39 +43,62 @@ const debug = createDebugMessages('license-report-recurse');
 
     debug('loading %s', resolvedPackageJson);
 
-    let packageJson
+    let packageJson;
     if (fs.existsSync(resolvedPackageJson)) {
       packageJson = await util.readJson(resolvedPackageJson);
     } else {
-      throw new Error(`Warning: the file '${resolvedPackageJson}' is required to get installed versions of packages`);
+      throw new Error(
+        `Warning: the file '${resolvedPackageJson}' is required to get installed versions of packages`,
+      );
     }
 
-    const inclusions = util.isNullOrUndefined(config.only) ? null : config.only.split(',');
-    const exclusions = Array.isArray(config.exclude) ? config.exclude : [config.exclude];
+    const inclusions = util.isNullOrUndefined(config.only)
+      ? null
+      : config.only.split(',');
+    const exclusions = Array.isArray(config.exclude)
+      ? config.exclude
+      : [config.exclude];
     const parentPath = `>${packageJson.name}`;
 
     // an array with all the dependencies in the package.json under inspection
-    let depsIndexBase = getDependencies(packageJson, exclusions, inclusions, parentPath);
+    let depsIndexBase = getDependencies(
+      packageJson,
+      exclusions,
+      inclusions,
+      parentPath,
+    );
     const depsIndex = await Promise.all(
       depsIndexBase.map(async (element) => {
-				const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(element, projectRootPath, config.fields);
-        const packagesData = await addPackageDataFromRepository(localDataForPackages);
+        const alias = element.alias;
+        const localDataForPackages = await addLocalPackageData(
+          element,
+          projectRootPath,
+          config.fields,
+        );
+        const packagesData =
+          await addPackageDataFromRepository(localDataForPackages);
         const basicFields = {
           alias: alias, // to get the local path of the package
-          isRootNode: true // to identify the root nodes when generating the tree view
+          isRootNode: true, // to identify the root nodes when generating the tree view
         };
         return Object.assign(packagesData, basicFields);
-      })
+      }),
     );
 
     // add dependencies of dependencies
-    if ((config.recurse === true) || (config.recurse === 'true')) {
+    if (config.recurse === true || config.recurse === 'true') {
       let inclusionsSubDeps = ['prod', 'opt', 'peer'];
       if (inclusions !== null) {
-        inclusionsSubDeps = inclusions.filter(entry => entry !== 'dev');
+        inclusionsSubDeps = inclusions.filter((entry) => entry !== 'dev');
       }
-      await addDependenciesRecursive(depsIndex, projectRootPath, exclusions, inclusionsSubDeps, parentPath, config.fields);
+      await addDependenciesRecursive(
+        depsIndex,
+        projectRootPath,
+        exclusions,
+        inclusionsSubDeps,
+        parentPath,
+        config.fields,
+      );
     }
 
     const sortedList = depsIndex.sort(util.alphaSort);
@@ -83,7 +106,7 @@ const debug = createDebugMessages('license-report-recurse');
     let lastPackage = '';
     const dedupedSortedList = sortedList.filter((element) => {
       const currentPackage = `${element.name}@${element.installedVersion}`;
-      if ((currentPackage !== lastPackage) || element.isRootNode) {
+      if (currentPackage !== lastPackage || element.isRootNode) {
         lastPackage = currentPackage;
         return true;
       }
@@ -93,10 +116,10 @@ const debug = createDebugMessages('license-report-recurse');
     if (config.output !== 'tree') {
       // keep only fields that are defined in the configuration
       const packagesList = await Promise.all(
-        dedupedSortedList.map(async element => {
+        dedupedSortedList.map(async (element) => {
           return packageDataToReportData(element, config);
-        })
-      )
+        }),
+      );
 
       // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesList, config));

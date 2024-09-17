@@ -1,20 +1,20 @@
-import globals from "globals";
+import globals from 'globals';
 import pluginJs from '@eslint/js';
 import pluginJsdoc from 'eslint-plugin-jsdoc';
 import pluginJson from 'eslint-plugin-json';
 import pluginMocha from 'eslint-plugin-mocha';
 import pluginNode from 'eslint-plugin-n';
-import pluginPreferArrow from "eslint-plugin-prefer-arrow";
+import pluginPreferArrow from 'eslint-plugin-prefer-arrow';
 import pluginChaiExpect from 'eslint-plugin-chai-expect';
 import pluginSecurity from 'eslint-plugin-security';
 import pluginSecurityNode from 'eslint-plugin-security-node';
 // TODO wait for eslint-plugin-import to be usable in eslint v9; corresponding
 // issue see https://github.com/import-js/eslint-plugin-import/issues/2948
 
-
-export default [{
-  ignores: ["**/.vscode/"],
-  }, 
+export default [
+  {
+    ignores: ['**/.vscode/'],
+  },
   pluginJs.configs.recommended,
   pluginJsdoc.configs['flat/recommended'],
   pluginMocha.configs.flat.recommended,
@@ -31,7 +31,7 @@ export default [{
     },
     plugins: {
       preferArrow: pluginPreferArrow,
-      'security-node': pluginSecurityNode
+      'security-node': pluginSecurityNode,
     },
     rules: {
       'mocha/no-mocha-arrows': 'off',
@@ -39,14 +39,14 @@ export default [{
       'preferArrow/prefer-arrow-functions': [
         'warn',
         {
-          'disallowPrototype': true,
-          'singleReturnOnly': false,
-          'classPropertiesAllowed': false
-        }
+          disallowPrototype: true,
+          singleReturnOnly: false,
+          classPropertiesAllowed: false,
+        },
       ],
       ...pluginSecurityNode.configs.recommended.rules,
       // disable redundant check (already exists as security/detect-possible-timing-attacks)
-      'security-node/detect-possible-timing-attacks': 'off'
+      'security-node/detect-possible-timing-attacks': 'off',
     },
   },
   {
