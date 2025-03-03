@@ -5,6 +5,7 @@ import semver from 'semver';
 import createDebugMessages from 'debug';
 
 import config from '../../lib/config.js';
+import { joinUrlPath } from 'license-report/lib/util.js';
 
 const debug = createDebugMessages('license-report-recursive:expectedOutput');
 
@@ -17,7 +18,7 @@ const debug = createDebugMessages('license-report-recursive:expectedOutput');
  * @param {object} dependency - object with expected data containing placeholders for remote versions
  */
 async function addRemoteVersion(dependency) {
-  let uri = path.join(config.registry, dependency.name);
+  let uri = joinUrlPath(config.registry, dependency.name);
 
   debug('addRemoteVersion - REQUEST %s', uri);
 
