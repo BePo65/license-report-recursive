@@ -5,6 +5,7 @@ import path from 'path';
 import createDebugMessages from 'debug';
 import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
 import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
+import { getNpmConfig } from 'license-report/lib/getNpmrc.js';
 import { packageDataToReportData } from 'license-report/lib/packageDataToReportData.js';
 
 import getDependencies from './lib/getDependencies.js';
@@ -26,6 +27,9 @@ const debug = createDebugMessages('license-report-recurse');
   if (!config.package) {
     config.package = './package.json';
   }
+
+  // get path to .npmrc to use; 'config.npmrc' can be undefined
+  let npmrc = getNpmConfig(config.npmrc);
 
   if (path.extname(config.package) !== '.json') {
     throw new Error('invalid package.json ' + config.package);
@@ -75,8 +79,10 @@ const debug = createDebugMessages('license-report-recurse');
           projectRootPath,
           config.fields,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -98,6 +104,7 @@ const debug = createDebugMessages('license-report-recurse');
         inclusionsSubDeps,
         parentPath,
         config.fields,
+        npmrc,
       );
     }
 

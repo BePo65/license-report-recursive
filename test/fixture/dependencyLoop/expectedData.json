@@ -2897,7 +2897,7 @@
                 "link": "git://github.com/juliangruber/brace-expansion.git",
                 "definedVersion": "^1.1.7",
                 "installedVersion": "1.1.11",
-                "remoteVersion": "1.1.11",
+                "remoteVersion": "1.1.12",
                 "alias": "",
                 "requires": [
                   {

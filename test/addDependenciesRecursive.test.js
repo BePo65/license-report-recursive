@@ -8,6 +8,7 @@ import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
 import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
 
 import addDependenciesRecursive from '../lib/addDependenciesRecursive.js';
+import config from '../lib/config.js';
 import getDependencies from '../lib/getDependencies.js';
 import util from '../lib/util.js';
 
@@ -33,9 +34,16 @@ describe('addDependenciesRecursive', function () {
     'definedVersion',
     'author',
   ];
+  let npmrc;
 
   this.timeout(6000);
   this.slow(6000);
+
+  before(() => {
+    npmrc = {
+      defaultRegistry: config.registry,
+    };
+  });
 
   beforeEach(async () => {
     packageJson = await util.readJson(packageJsonPath);
@@ -51,8 +59,10 @@ describe('addDependenciesRecursive', function () {
           projectRootPath,
           fields,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -69,6 +79,7 @@ describe('addDependenciesRecursive', function () {
       [],
       '',
       fields,
+      npmrc,
     );
     expect(depsIndex.length).to.equal(10);
   });
@@ -83,9 +94,12 @@ describe('addDependenciesRecursive', function () {
           element,
           projectRootPath,
           fields,
+          npmrc,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -102,6 +116,7 @@ describe('addDependenciesRecursive', function () {
       inclusions,
       '',
       fields,
+      npmrc,
     );
     expect(depsIndex.length).to.equal(4);
   });
@@ -117,8 +132,10 @@ describe('addDependenciesRecursive', function () {
           projectRootPath,
           fields,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -135,6 +152,7 @@ describe('addDependenciesRecursive', function () {
       inclusions,
       '',
       fields,
+      npmrc,
     );
     expect(depsIndex.length).to.equal(5);
   });
@@ -150,8 +168,10 @@ describe('addDependenciesRecursive', function () {
           projectRootPath,
           fields,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -168,6 +188,7 @@ describe('addDependenciesRecursive', function () {
       inclusions,
       '',
       fields,
+      npmrc,
     );
     expect(depsIndex.length).to.equal(10);
   });
@@ -183,8 +204,10 @@ describe('addDependenciesRecursive', function () {
           projectRootPath,
           fields,
         );
-        const packagesData =
-          await addPackageDataFromRepository(localDataForPackages);
+        const packagesData = await addPackageDataFromRepository(
+          localDataForPackages,
+          npmrc,
+        );
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -201,6 +224,7 @@ describe('addDependenciesRecursive', function () {
       inclusions,
       '',
       fields,
+      npmrc,
     );
     expect(depsIndex.length).to.equal(0);
   });
