@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.8.0](https://github.com/bepo65/license-report-recursive/compare/v6.7.2...v6.8.0) (2025-09-18)
+
+### Bug Fixes
+
+- make project run with license-report@6.8.0 ([1b8e1e2](https://github.com/bepo65/license-report-recursive/commit/1b8e1e217698c4d2328d213a3febe94d7d5c7eb3))
+- update packages to fix github dependabot security warnings ([8896226](https://github.com/bepo65/license-report-recursive/commit/8896226ff62bd0909aeed5fd98b8f8ada33faa63))
+- update packages to fix security warnings ([8d66d4a](https://github.com/bepo65/license-report-recursive/commit/8d66d4a55c59dcdb33f4e5095b803b0ba66da9bd))
+
 ## [6.7.2](https://github.com/bepo65/license-report-recursive/compare/v6.7.1...v6.7.2) (2025-03-03)
 
 ### Bug Fixes
