@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.8.1](https://github.com/bepo65/license-report-recursive/compare/v6.8.0...v6.8.1) (2025-09-28)
+
+### Bug Fixes
+
+- fixed version number of license-report dependency to fix issue [#81](https://github.com/bepo65/license-report-recursive/issues/81) ([83bdbd4](https://github.com/bepo65/license-report-recursive/commit/83bdbd45f924d96854deaa5ed84f3cfac6b7a1e8))
+
 ## [6.8.0](https://github.com/bepo65/license-report-recursive/compare/v6.7.2...v6.8.0) (2025-09-18)
 
 ### Bug Fixes
