@@ -1,8 +1,8 @@
 # license report tool with recursion
 
-[![Version](https://img.shields.io/badge/version-6.8.1-blue.svg?cacheSeconds=2592000)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/kefranabg/readme-md-generator/blob/master/LICENSE)
-based on <a href="https://www.npmjs.com/package/license-report"><img src="https://img.shields.io/badge/license--report-6.8.0-green.svg"/></a>
+[![Version](https://img.shields.io/badge/version-6.8.1-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/LICENSE)
+based on [![license-report](https://img.shields.io/badge/license--report-6.8.0-green.svg?cacheSeconds=86400)](https://www.npmjs.com/package/license-report)
 
 > Generate a license report of the projects dependencies, optionally with recursion.
 
@@ -80,6 +80,6 @@ To ensure the syntax of commit messages `commitlint` is used, triggered by `husk
 
 ## License
 
-Copyright © 2024 [Bernhard Pottler](https://github.com/BePo65).
+Copyright © 2025 [Bernhard Pottler](https://github.com/BePo65).
 
-Distributed under the MIT License. See `LICENSE` for more information.
+Distributed under the MIT License. See file `LICENSE` for more information.
