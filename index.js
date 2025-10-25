@@ -132,7 +132,7 @@ const debug = createDebugMessages('license-report-recurse');
       console.log(outputFormatter(packagesList, config));
       debug(`emitted list with ${packagesList.length} entries`);
     } else {
-      const packagesTree = await listToTree(dedupedSortedList, config);
+      const packagesTree = listToTree(dedupedSortedList, config);
       // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesTree, config));
       debug(`emitted tree with ${packagesTree.length} base nodes`);

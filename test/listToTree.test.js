@@ -29,7 +29,7 @@ describe('getTree', () => {
   });
 
   it('does get json tree of dependencies', async () => {
-    const packagesTree = await listToTree(dedupedSortedList, testConfig);
+    const packagesTree = listToTree(dedupedSortedList, testConfig);
 
     expect(packagesTree.length).to.equal(1);
     expect(packagesTree[0].name).to.equal('got');
