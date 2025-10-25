@@ -52,7 +52,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "escape-string-regexp",
@@ -67,7 +67,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "has-ansi",
@@ -92,7 +92,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -123,7 +123,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -144,7 +144,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -165,7 +165,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "js-tokens",
@@ -180,7 +180,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -231,7 +231,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -246,7 +246,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -283,7 +283,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -298,7 +298,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -339,7 +339,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -354,7 +354,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -375,7 +375,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "lodash",
@@ -390,7 +390,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "to-fast-properties",
@@ -405,7 +405,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -446,7 +446,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -473,7 +473,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "lodash",
@@ -488,7 +488,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "source-map",
@@ -503,7 +503,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "trim-right",
@@ -518,7 +518,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -559,7 +559,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -574,7 +574,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -615,7 +615,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -630,7 +630,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -681,7 +681,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               },
                               {
                                 "name": "escape-string-regexp",
@@ -696,7 +696,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               },
                               {
                                 "name": "has-ansi",
@@ -721,7 +721,7 @@
                                     "relatedTo": "stuff",
                                     "licensePeriod": "perpetual",
                                     "material": "material",
-                                    "requires": ""
+                                    "requires": []
                                   }
                                 ],
                                 "department": "kessler",
@@ -752,7 +752,7 @@
                                     "relatedTo": "stuff",
                                     "licensePeriod": "perpetual",
                                     "material": "material",
-                                    "requires": ""
+                                    "requires": []
                                   }
                                 ],
                                 "department": "kessler",
@@ -773,7 +773,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -794,7 +794,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "js-tokens",
@@ -809,7 +809,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -850,7 +850,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               },
                               {
                                 "name": "regenerator-runtime",
@@ -865,7 +865,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -902,7 +902,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "regenerator-runtime",
@@ -917,7 +917,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -958,7 +958,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               },
                               {
                                 "name": "regenerator-runtime",
@@ -973,7 +973,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -994,7 +994,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "lodash",
@@ -1009,7 +1009,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "to-fast-properties",
@@ -1024,7 +1024,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1045,7 +1045,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "debug",
@@ -1070,7 +1070,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1091,7 +1091,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "invariant",
@@ -1126,7 +1126,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -1153,7 +1153,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1194,7 +1194,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "regenerator-runtime",
@@ -1209,7 +1209,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1230,7 +1230,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "lodash",
@@ -1245,7 +1245,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "to-fast-properties",
@@ -1260,7 +1260,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1281,7 +1281,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "lodash",
@@ -1296,7 +1296,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -1343,7 +1343,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -1358,7 +1358,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -1414,7 +1414,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "regenerator-runtime",
@@ -1429,7 +1429,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -1470,7 +1470,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -1485,7 +1485,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -1536,7 +1536,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "escape-string-regexp",
@@ -1551,7 +1551,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "has-ansi",
@@ -1576,7 +1576,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -1607,7 +1607,7 @@
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
                                 "material": "material",
-                                "requires": ""
+                                "requires": []
                               }
                             ],
                             "department": "kessler",
@@ -1628,7 +1628,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1649,7 +1649,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "js-tokens",
@@ -1664,7 +1664,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1705,7 +1705,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "regenerator-runtime",
@@ -1720,7 +1720,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1757,7 +1757,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -1772,7 +1772,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1813,7 +1813,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           },
                           {
                             "name": "regenerator-runtime",
@@ -1828,7 +1828,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -1849,7 +1849,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "lodash",
@@ -1864,7 +1864,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "to-fast-properties",
@@ -1879,7 +1879,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1900,7 +1900,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "debug",
@@ -1925,7 +1925,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -1946,7 +1946,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "invariant",
@@ -1981,7 +1981,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -2008,7 +2008,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2049,7 +2049,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -2064,7 +2064,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -2085,7 +2085,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "lodash",
@@ -2100,7 +2100,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "to-fast-properties",
@@ -2115,7 +2115,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2136,7 +2136,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "lodash",
@@ -2151,7 +2151,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -2202,7 +2202,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "escape-string-regexp",
@@ -2217,7 +2217,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "has-ansi",
@@ -2242,7 +2242,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -2273,7 +2273,7 @@
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
                             "material": "material",
-                            "requires": ""
+                            "requires": []
                           }
                         ],
                         "department": "kessler",
@@ -2294,7 +2294,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -2315,7 +2315,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "js-tokens",
@@ -2330,7 +2330,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2371,7 +2371,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -2386,7 +2386,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -2423,7 +2423,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -2438,7 +2438,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2479,7 +2479,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       },
                       {
                         "name": "regenerator-runtime",
@@ -2494,7 +2494,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -2515,7 +2515,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "lodash",
@@ -2530,7 +2530,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "to-fast-properties",
@@ -2545,7 +2545,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2566,7 +2566,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "debug",
@@ -2591,7 +2591,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2612,7 +2612,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "invariant",
@@ -2647,7 +2647,7 @@
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
                         "material": "material",
-                        "requires": ""
+                        "requires": []
                       }
                     ],
                     "department": "kessler",
@@ -2674,7 +2674,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -2715,7 +2715,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "regenerator-runtime",
@@ -2730,7 +2730,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2751,7 +2751,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "lodash",
@@ -2766,7 +2766,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               },
               {
                 "name": "to-fast-properties",
@@ -2781,7 +2781,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -2802,7 +2802,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "convert-source-map",
@@ -2817,7 +2817,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "debug",
@@ -2842,7 +2842,7 @@
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
                 "material": "material",
-                "requires": ""
+                "requires": []
               }
             ],
             "department": "kessler",
@@ -2863,7 +2863,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "lodash",
@@ -2878,7 +2878,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "minimatch",
@@ -2913,7 +2913,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   },
                   {
                     "name": "concat-map",
@@ -2928,7 +2928,7 @@
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
                     "material": "material",
-                    "requires": ""
+                    "requires": []
                   }
                 ],
                 "department": "kessler",
@@ -2955,7 +2955,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "private",
@@ -2970,7 +2970,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "slash",
@@ -2985,7 +2985,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "source-map",
@@ -3000,7 +3000,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           }
         ],
         "department": "kessler",
@@ -3031,7 +3031,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "regenerator-runtime",
@@ -3046,7 +3046,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           }
         ],
         "department": "kessler",
@@ -3067,7 +3067,7 @@
         "relatedTo": "stuff",
         "licensePeriod": "perpetual",
         "material": "material",
-        "requires": ""
+        "requires": []
       },
       {
         "name": "home-or-tmp",
@@ -3092,7 +3092,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           },
           {
             "name": "os-tmpdir",
@@ -3107,7 +3107,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           }
         ],
         "department": "kessler",
@@ -3128,7 +3128,7 @@
         "relatedTo": "stuff",
         "licensePeriod": "perpetual",
         "material": "material",
-        "requires": ""
+        "requires": []
       },
       {
         "name": "mkdirp",
@@ -3153,7 +3153,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           }
         ],
         "department": "kessler",
@@ -3184,7 +3184,7 @@
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
             "material": "material",
-            "requires": ""
+            "requires": []
           }
         ],
         "department": "kessler",

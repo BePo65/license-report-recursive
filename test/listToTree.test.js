@@ -1,10 +1,10 @@
 // During the test the env variable is set to test
 process.env.NODE_ENV = 'test';
 
+import assert from 'node:assert';
 import path from 'node:path';
+import { beforeEach, describe, it } from 'node:test';
 import url from 'node:url';
-
-import { expect } from 'chai';
 
 import listToTree from '../lib/listToTree.js';
 import util from '../lib/util.js';
@@ -31,17 +31,18 @@ describe('getTree', () => {
   it('does get json tree of dependencies', async () => {
     const packagesTree = listToTree(dedupedSortedList, testConfig);
 
-    expect(packagesTree.length).to.equal(1);
-    expect(packagesTree[0].name).to.equal('got');
-    expect(packagesTree[0].isRootNode).to.be.undefined;
-    expect(packagesTree[0].requires).not.to.be.undefined;
-    expect(packagesTree[0].requires.length).to.equal(13);
-    expect(packagesTree[0].requires[1].requires).not.to.be.undefined;
-    expect(packagesTree[0].requires[1].name).to.equal('@szmarczak/http-timer');
-    expect(packagesTree[0].requires[1].requires.length).to.equal(1);
-    expect(packagesTree[0].requires[1].requires[0].name).to.equal(
+    assert.equal(packagesTree.length, 1);
+    assert.equal(packagesTree[0].name, 'got');
+    assert.ok(packagesTree[0].isRootNode === undefined);
+    assert.ok(packagesTree[0].requires !== undefined);
+    assert.equal(packagesTree[0].requires.length, 13);
+    assert.ok(packagesTree[0].requires[1].requires !== undefined);
+    assert.equal(packagesTree[0].requires[1].name, '@szmarczak/http-timer');
+    assert.equal(packagesTree[0].requires[1].requires.length, 1);
+    assert.equal(
+      packagesTree[0].requires[1].requires[0].name,
       'defer-to-connect',
     );
-    expect(packagesTree[0].requires[1].requires[0].requires).to.be.undefined;
+    assert.equal(packagesTree[0].requires[1].requires[0].requires.length, 0);
   });
 });

@@ -1,4 +1,5 @@
 import assert from 'node:assert';
+import { describe, it } from 'node:test';
 
 import config from '../lib/config.js';
 import getFormatter from '../lib/getFormatter.js';

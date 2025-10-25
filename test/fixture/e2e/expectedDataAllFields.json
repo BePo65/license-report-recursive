@@ -15,7 +15,7 @@
     "latestRemoteModified": "",
     "author": "Dan VerWeire, Yaniv Kessler",
     "alias": "",
-    "requires": ""
+    "requires": []
   },
   {
     "department": "kessler",
@@ -33,7 +33,7 @@
     "latestRemoteModified": "2022-09-25T22:09:28.381Z",
     "author": "John-David Dalton <john.david.dalton@gmail.com>",
     "alias": "",
-    "requires": ""
+    "requires": []
   },
   {
     "department": "kessler",
@@ -85,7 +85,7 @@
             "latestRemoteModified": "2022-06-29T06:45:35.755Z",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
             "alias": "",
-            "requires": ""
+            "requires": []
           }
         ]
       }

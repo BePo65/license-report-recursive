@@ -1,6 +1,7 @@
 import assert from 'node:assert';
 import cp from 'node:child_process';
 import path from 'node:path';
+import { describe, it } from 'node:test';
 import url from 'node:url';
 import nodeUtil from 'node:util';
 
@@ -42,10 +43,7 @@ const execAsPromise = nodeUtil.promisify(cp.exec);
 
 let expectedData;
 
-describe('end to end test', function () {
-  this.timeout(100000);
-  this.slow(50000);
-
+describe('end to end test', { timeout: 100000 }, () => {
   it('produce a tree report for default fields', async () => {
     expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath);
     await expectedOutput.addRemoteVersionsToExpectedData(expectedData);

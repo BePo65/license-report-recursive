@@ -1,8 +1,9 @@
 // During the test the env variable is set to test
 process.env.NODE_ENV = 'test';
 
-import { expect } from 'chai';
+import assert from 'node:assert';
 import path from 'node:path';
+import { before, beforeEach, describe, it } from 'node:test';
 import url from 'node:url';
 import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
 import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
@@ -22,7 +23,7 @@ const projectRootPath = path
   .resolve(__dirname, 'fixture', 'addDependenciesRecursive')
   .replace(/(\s+)/g, '\\$1');
 
-describe('addDependenciesRecursive', function () {
+describe('addDependenciesRecursive', { timeout: 6000 }, () => {
   let packageJson;
   const fields = [
     'relatedTo',
@@ -35,9 +36,6 @@ describe('addDependenciesRecursive', function () {
     'author',
   ];
   let npmrc;
-
-  this.timeout(6000);
-  this.slow(6000);
 
   before(() => {
     npmrc = {
@@ -70,7 +68,7 @@ describe('addDependenciesRecursive', function () {
         return Object.assign(packagesData, basicFields);
       }),
     );
-    expect(depsIndex.length).to.equal(4);
+    assert.equal(depsIndex.length, 4);
 
     await addDependenciesRecursive(
       depsIndex,
@@ -81,7 +79,7 @@ describe('addDependenciesRecursive', function () {
       fields,
       npmrc,
     );
-    expect(depsIndex.length).to.equal(10);
+    assert.equal(depsIndex.length, 10);
   });
 
   it('generates flat list for prod only', async () => {
@@ -107,7 +105,7 @@ describe('addDependenciesRecursive', function () {
         return Object.assign(packagesData, basicFields);
       }),
     );
-    expect(depsIndex.length).to.equal(3);
+    assert.equal(depsIndex.length, 3);
 
     await addDependenciesRecursive(
       depsIndex,
@@ -118,7 +116,7 @@ describe('addDependenciesRecursive', function () {
       fields,
       npmrc,
     );
-    expect(depsIndex.length).to.equal(4);
+    assert.equal(depsIndex.length, 4);
   });
 
   it('generates flat list for prod and opt only', async () => {
@@ -143,7 +141,7 @@ describe('addDependenciesRecursive', function () {
         return Object.assign(packagesData, basicFields);
       }),
     );
-    expect(depsIndex.length).to.equal(4);
+    assert.equal(depsIndex.length, 4);
 
     await addDependenciesRecursive(
       depsIndex,
@@ -154,7 +152,7 @@ describe('addDependenciesRecursive', function () {
       fields,
       npmrc,
     );
-    expect(depsIndex.length).to.equal(5);
+    assert.equal(depsIndex.length, 5);
   });
 
   it('generates flat list for empty only definition', async () => {
@@ -179,7 +177,7 @@ describe('addDependenciesRecursive', function () {
         return Object.assign(packagesData, basicFields);
       }),
     );
-    expect(depsIndex.length).to.equal(4);
+    assert.equal(depsIndex.length, 4);
 
     await addDependenciesRecursive(
       depsIndex,
@@ -190,7 +188,7 @@ describe('addDependenciesRecursive', function () {
       fields,
       npmrc,
     );
-    expect(depsIndex.length).to.equal(10);
+    assert.equal(depsIndex.length, 10);
   });
 
   it('generates flat list and tree with empty string in only definition', async () => {
@@ -215,7 +213,7 @@ describe('addDependenciesRecursive', function () {
         return Object.assign(packagesData, basicFields);
       }),
     );
-    expect(depsIndex.length).to.equal(0);
+    assert.equal(depsIndex.length, 0);
 
     await addDependenciesRecursive(
       depsIndex,
@@ -226,6 +224,6 @@ describe('addDependenciesRecursive', function () {
       fields,
       npmrc,
     );
-    expect(depsIndex.length).to.equal(0);
+    assert.equal(depsIndex.length, 0);
   });
 });

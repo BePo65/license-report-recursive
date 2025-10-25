@@ -12,5 +12,57 @@
     "installedVersion",
     "remoteVersion",
     "author"
-  ]
+  ],
+  "department": {
+    "value": "kessler",
+    "label": "department"
+  },
+  "relatedTo": {
+    "value": "stuff",
+    "label": "related to"
+  },
+  "licensePeriod": {
+    "value": "perpetual",
+    "label": "license period"
+  },
+  "material": {
+    "value": "material",
+    "label": "material / not material"
+  },
+  "name": {
+    "value": "",
+    "label": "name"
+  },
+  "alias": {
+    "value": "",
+    "label": "alias"
+  },
+  "licenseType": {
+    "value": "n/a",
+    "label": "license type"
+  },
+  "link": {
+    "value": "n/a",
+    "label": "link"
+  },
+  "remoteVersion": {
+    "value": "",
+    "label": "remote version"
+  },
+  "installedVersion": {
+    "value": "n/a",
+    "label": "installed version"
+  },
+  "definedVersion": {
+    "value": "n/a",
+    "label": "defined version"
+  },
+  "author": {
+    "value": "n/a",
+    "label": "author"
+  },
+  "requires": {
+    "value": [],
+    "label": "requires"
+  }
 }
