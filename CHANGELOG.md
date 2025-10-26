@@ -2,6 +2,12 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.8.2](https://github.com/bepo65/license-report-recursive/compare/v6.8.1...v6.8.2) (2025-10-26)
+
+### Bug Fixes
+
+- remove unnecessary async; changed default value 'requires':[] ([59f6c0c](https://github.com/bepo65/license-report-recursive/commit/59f6c0c7afa0dcb386cde90730a8a9410908bd79))
+
 ## [6.8.1](https://github.com/bepo65/license-report-recursive/compare/v6.8.0...v6.8.1) (2025-09-28)
 
 ### Bug Fixes

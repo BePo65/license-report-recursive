@@ -1,8 +1,8 @@
 # license report tool with recursion
 
-[![Version](https://img.shields.io/badge/version-6.8.1-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-6.8.2-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/LICENSE)
-based on [![license-report](https://img.shields.io/badge/license--report-6.8.0-green.svg?cacheSeconds=86400)](https://www.npmjs.com/package/license-report)
+based on [![license-report](https://img.shields.io/badge/license--report-6.8.1-green.svg?cacheSeconds=86400)](https://www.npmjs.com/package/license-report)
 
 > Generate a license report of the projects dependencies, optionally with recursion.
 
