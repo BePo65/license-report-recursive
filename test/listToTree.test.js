@@ -45,4 +45,53 @@ describe('getTree', () => {
     );
     assert.equal(packagesTree[0].requires[1].requires[0].requires.length, 0);
   });
+
+  it('keeps scoped packages with equal name/version distinct', () => {
+    const testList = [
+      {
+        fullName: 'root',
+        name: 'root',
+        installedVersion: '1.0.0',
+        isRootNode: true,
+        requires: [
+          {
+            fullName: '@scope-a/core',
+            name: 'core',
+            installedVersion: '1.2.3',
+          },
+          {
+            fullName: '@scope-b/core',
+            name: 'core',
+            installedVersion: '1.2.3',
+          },
+        ],
+      },
+      {
+        fullName: '@scope-a/core',
+        name: 'core',
+        installedVersion: '1.2.3',
+        requires: [],
+      },
+      {
+        fullName: '@scope-b/core',
+        name: 'core',
+        installedVersion: '1.2.3',
+        requires: [],
+      },
+    ];
+    const cfg = {
+      fields: ['name', 'fullName', 'installedVersion', 'requires'],
+      name: { value: '' },
+      fullName: { value: '' },
+      installedVersion: { value: '' },
+      requires: { value: [] },
+    };
+
+    const packagesTree = listToTree(testList, cfg);
+
+    assert.equal(packagesTree.length, 1);
+    assert.equal(packagesTree[0].requires.length, 2);
+    assert.equal(packagesTree[0].requires[0].fullName, '@scope-a/core');
+    assert.equal(packagesTree[0].requires[1].fullName, '@scope-b/core');
+  });
 });
