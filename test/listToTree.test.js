@@ -94,4 +94,63 @@ describe('getTree', () => {
     assert.equal(packagesTree[0].requires[0].fullName, '@scope-a/core');
     assert.equal(packagesTree[0].requires[1].fullName, '@scope-b/core');
   });
+
+  it('keeps tree JSON-serializable when dependency loops are flagged', () => {
+    const testList = [
+      {
+        fullName: 'root',
+        name: 'root',
+        installedVersion: '1.0.0',
+        isRootNode: true,
+        requires: [
+          {
+            fullName: '@scope/a',
+            name: 'a',
+            installedVersion: '1.0.0',
+          },
+        ],
+      },
+      {
+        fullName: '@scope/a',
+        name: 'a',
+        installedVersion: '1.0.0',
+        requires: [
+          {
+            fullName: '@scope/b',
+            name: 'b',
+            installedVersion: '1.0.0',
+          },
+        ],
+      },
+      {
+        fullName: '@scope/b',
+        name: 'b',
+        installedVersion: '1.0.0',
+        requires: [
+          {
+            fullName: '@scope/a',
+            name: 'a',
+            installedVersion: '1.0.0',
+            dependencyLoop: true,
+          },
+        ],
+      },
+    ];
+    const cfg = {
+      fields: ['name', 'fullName', 'installedVersion', 'requires'],
+      name: { value: '' },
+      fullName: { value: '' },
+      installedVersion: { value: '' },
+      requires: { value: [] },
+    };
+
+    const packagesTree = listToTree(testList, cfg);
+    const json = JSON.stringify(packagesTree);
+    const parsed = JSON.parse(json);
+
+    assert.equal(
+      parsed[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop,
+      true,
+    );
+  });
 });

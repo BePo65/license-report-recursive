@@ -19,6 +19,26 @@ describe('getFormatter', () => {
 
       assert.strictEqual(jsonResult, '[]');
     });
+
+    it('handles circular structures without throwing', () => {
+      const packageA = {
+        name: '@scope/a',
+        installedVersion: '1.0.0',
+        requires: [],
+      };
+      const packageB = {
+        name: '@scope/b',
+        installedVersion: '1.0.0',
+        requires: [packageA],
+      };
+      packageA.requires.push(packageB);
+
+      const jsonFormatter = getFormatter('tree');
+      const jsonResult = jsonFormatter([packageA], config);
+      const parsed = JSON.parse(jsonResult);
+
+      assert.equal(parsed[0].requires[0].requires[0].dependencyLoop, true);
+    });
   });
 });
 
