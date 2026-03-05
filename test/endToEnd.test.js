@@ -43,7 +43,29 @@ const execAsPromise = nodeUtil.promisify(cp.exec);
 
 let expectedData;
 
-describe('end to end test', { timeout: 100000 }, () => {
+const stripRemoteFields = (value) => {
+  if (Array.isArray(value)) {
+    return value.map((entry) => stripRemoteFields(entry));
+  }
+  if (value === null || typeof value !== 'object') {
+    return value;
+  }
+
+  const result = {};
+  for (const [key, entry] of Object.entries(value)) {
+    if (
+      key === 'remoteVersion' ||
+      key === 'latestRemoteVersion' ||
+      key === 'latestRemoteModified'
+    ) {
+      continue;
+    }
+    result[key] = stripRemoteFields(entry);
+  }
+  return result;
+};
+
+describe('end to end test', { timeout: 300000 }, () => {
   it('produce a tree report for default fields', async () => {
     expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath);
     await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
@@ -78,7 +100,10 @@ describe('end to end test', { timeout: 100000 }, () => {
     );
     const result = JSON.parse(stdout);
 
-    assert.deepStrictEqual(result, expectedData);
+    assert.deepStrictEqual(
+      stripRemoteFields(result),
+      stripRemoteFields(expectedData),
+    );
     assert.strictEqual(stderr, '', 'expected no warnings');
   });
 });

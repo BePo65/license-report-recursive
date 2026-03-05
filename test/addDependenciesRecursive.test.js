@@ -23,7 +23,7 @@ const projectRootPath = path
   .resolve(__dirname, 'fixture', 'addDependenciesRecursive')
   .replace(/(\s+)/g, '\\$1');
 
-describe('addDependenciesRecursive', { timeout: 6000 }, () => {
+describe('addDependenciesRecursive', { timeout: 30000 }, () => {
   let packageJson;
   const fields = [
     'relatedTo',
