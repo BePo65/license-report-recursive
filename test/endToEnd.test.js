@@ -4,15 +4,12 @@ import path from 'node:path';
 import { describe, it } from 'node:test';
 import url from 'node:url';
 import nodeUtil from 'node:util';
-
-import expectedOutput from './fixture/expectedOutput.js';
 import util from '../lib/util.js';
+import expectedOutput from './fixture/expectedOutput.js';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-const scriptPath = path
-  .resolve(__dirname, '..', 'index.js')
-  .replace(/(\s+)/g, '\\$1');
+const scriptPath = path.resolve(__dirname, '..', 'index.js').replace(/(\s+)/g, '\\$1');
 
 // test data for e2e test
 const e2ePackageJsonPath = path

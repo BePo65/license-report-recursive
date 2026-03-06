@@ -24,42 +24,42 @@ describe('getDependencies', () => {
 
   it('adds all dependency types to output (no "depsType" parameter)', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions);
+    const depsIndex = getDependencies(packageJson, exclusions);
 
     assert.equal(depsIndex.length, 4);
   });
 
   it('adds all dependency types to output (empty "depsType" parameter)', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions, []);
+    const depsIndex = getDependencies(packageJson, exclusions, []);
 
     assert.equal(depsIndex.length, 4);
   });
 
   it('adds dependencies to output', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions, ['prod']);
+    const depsIndex = getDependencies(packageJson, exclusions, ['prod']);
 
     assert.equal(depsIndex.length, 3);
   });
 
   it('adds optionalDependencies to output', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions, ['opt']);
+    const depsIndex = getDependencies(packageJson, exclusions, ['opt']);
 
     assert.equal(depsIndex.length, 1);
   });
 
   it('adds dependencies and optionalDependencies to output', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions, ['prod', 'opt']);
+    const depsIndex = getDependencies(packageJson, exclusions, ['prod', 'opt']);
 
     assert.equal(depsIndex.length, 4);
   });
 
   it('adds peerDependencies to output', () => {
     const exclusions = [];
-    let depsIndex = getDependencies(packageJson, exclusions, ['peer']);
+    const depsIndex = getDependencies(packageJson, exclusions, ['peer']);
 
     assert.equal(depsIndex.length, 0);
   });
