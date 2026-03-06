@@ -1,16 +1,15 @@
 #!/usr/bin/env node
 
-import fs from 'fs';
-import path from 'path';
+import fs from 'node:fs';
+import path from 'node:path';
 import createDebugMessages from 'debug';
 import { addLocalPackageData } from 'license-report/lib/addLocalPackageData.js';
 import { addPackageDataFromRepository } from 'license-report/lib/addPackageDataFromRepository.js';
 import { getNpmConfig } from 'license-report/lib/getNpmrc.js';
 import { packageDataToReportData } from 'license-report/lib/packageDataToReportData.js';
-
-import getDependencies from './lib/getDependencies.js';
 import addDependenciesRecursive from './lib/addDependenciesRecursive.js';
 import config from './lib/config.js';
+import getDependencies from './lib/getDependencies.js';
 import getFormatter from './lib/getFormatter.js';
 import listToTree from './lib/listToTree.js';
 import util from './lib/util.js';
@@ -19,7 +18,6 @@ const debug = createDebugMessages('license-report-recurse');
 
 (async () => {
   if (config.help) {
-    // eslint-disable-next-line security-node/detect-crlf
     console.log(util.helpText);
     return;
   }
@@ -29,10 +27,10 @@ const debug = createDebugMessages('license-report-recurse');
   }
 
   // get path to .npmrc to use; 'config.npmrc' can be undefined
-  let npmrc = getNpmConfig(config.npmrc);
+  const npmrc = getNpmConfig(config.npmrc);
 
   if (path.extname(config.package) !== '.json') {
-    throw new Error('invalid package.json ' + config.package);
+    throw new Error(`invalid package.json ${config.package}`);
   }
 
   if (config.output === 'tree' && !config.recurse) {
@@ -56,21 +54,12 @@ const debug = createDebugMessages('license-report-recurse');
       );
     }
 
-    const inclusions = util.isNullOrUndefined(config.only)
-      ? null
-      : config.only.split(',');
-    const exclusions = Array.isArray(config.exclude)
-      ? config.exclude
-      : [config.exclude];
+    const inclusions = util.isNullOrUndefined(config.only) ? null : config.only.split(',');
+    const exclusions = Array.isArray(config.exclude) ? config.exclude : [config.exclude];
     const parentPath = `>${packageJson.name}`;
 
     // an array with all the dependencies in the package.json under inspection
-    let depsIndexBase = getDependencies(
-      packageJson,
-      exclusions,
-      inclusions,
-      parentPath,
-    );
+    const depsIndexBase = getDependencies(packageJson, exclusions, inclusions, parentPath);
     const depsIndex = await Promise.all(
       depsIndexBase.map(async (element) => {
         const alias = element.alias;
@@ -79,10 +68,7 @@ const debug = createDebugMessages('license-report-recurse');
           projectRootPath,
           config.fields,
         );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -128,18 +114,15 @@ const debug = createDebugMessages('license-report-recurse');
         }),
       );
 
-      // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesList, config));
       debug(`emitted list with ${packagesList.length} entries`);
     } else {
       const packagesTree = listToTree(dedupedSortedList, config);
-      // eslint-disable-next-line security-node/detect-crlf
       console.log(outputFormatter(packagesTree, config));
       debug(`emitted tree with ${packagesTree.length} base nodes`);
     }
   } catch (e) {
     console.error(e.stack);
-    // eslint-disable-next-line n/no-process-exit
     process.exit(1);
   }
 })();

@@ -52,15 +52,8 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
         const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(
-          element,
-          projectRootPath,
-          fields,
-        );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -70,15 +63,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     );
     assert.equal(depsIndex.length, 4);
 
-    await addDependenciesRecursive(
-      depsIndex,
-      projectRootPath,
-      [],
-      [],
-      '',
-      fields,
-      npmrc,
-    );
+    await addDependenciesRecursive(depsIndex, projectRootPath, [], [], '', fields, npmrc);
     assert.equal(depsIndex.length, 10);
   });
 
@@ -94,10 +79,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
           fields,
           npmrc,
         );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -107,15 +89,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     );
     assert.equal(depsIndex.length, 3);
 
-    await addDependenciesRecursive(
-      depsIndex,
-      projectRootPath,
-      [],
-      inclusions,
-      '',
-      fields,
-      npmrc,
-    );
+    await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields, npmrc);
     assert.equal(depsIndex.length, 4);
   });
 
@@ -125,15 +99,8 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
         const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(
-          element,
-          projectRootPath,
-          fields,
-        );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -143,15 +110,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     );
     assert.equal(depsIndex.length, 4);
 
-    await addDependenciesRecursive(
-      depsIndex,
-      projectRootPath,
-      [],
-      inclusions,
-      '',
-      fields,
-      npmrc,
-    );
+    await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields, npmrc);
     assert.equal(depsIndex.length, 5);
   });
 
@@ -161,15 +120,8 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
         const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(
-          element,
-          projectRootPath,
-          fields,
-        );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -179,15 +131,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     );
     assert.equal(depsIndex.length, 4);
 
-    await addDependenciesRecursive(
-      depsIndex,
-      projectRootPath,
-      [],
-      inclusions,
-      '',
-      fields,
-      npmrc,
-    );
+    await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields, npmrc);
     assert.equal(depsIndex.length, 10);
   });
 
@@ -197,15 +141,8 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     const depsIndex = await Promise.all(
       depsPackageJson.map(async (element) => {
         const alias = element.alias;
-        const localDataForPackages = await addLocalPackageData(
-          element,
-          projectRootPath,
-          fields,
-        );
-        const packagesData = await addPackageDataFromRepository(
-          localDataForPackages,
-          npmrc,
-        );
+        const localDataForPackages = await addLocalPackageData(element, projectRootPath, fields);
+        const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
           isRootNode: true, // to identify the root nodes when generating the tree view
@@ -215,15 +152,7 @@ describe('addDependenciesRecursive', { timeout: 6000 }, () => {
     );
     assert.equal(depsIndex.length, 0);
 
-    await addDependenciesRecursive(
-      depsIndex,
-      projectRootPath,
-      [],
-      inclusions,
-      '',
-      fields,
-      npmrc,
-    );
+    await addDependenciesRecursive(depsIndex, projectRootPath, [], inclusions, '', fields, npmrc);
     assert.equal(depsIndex.length, 0);
   });
 });
