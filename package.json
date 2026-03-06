@@ -25,7 +25,8 @@
   "scripts": {
     "start": "node index.js",
     "test": "node --test --test-reporter=spec",
-    "lint": "npx eslint index.js lib/**/*.js test/**/*.test.js",
+    "lint": "npx @biomejs/biome check .",
+    "lint:fix": "npx @biomejs/biome check --write .",
     "lint-commits": "commitlint --from 64d1e0f800b1 --to HEAD --verbose",
     "init-changelog": "commit-and-tag-version -i CHANGELOG.md --same-file --first-release",
     "release": "node scripts/readme-set-dep-version.js && commit-and-tag-version -i CHANGELOG.md --same-file",
@@ -40,22 +41,15 @@
     "semver": "^7.7.4"
   },
   "devDependencies": {
+    "@biomejs/biome": "^2.4.6",
     "@commitlint/cli": "^20.4.3",
     "@commitlint/config-conventional": "^20.4.3",
     "commit-and-tag-version": "^12.6.1",
-    "eslint": "^9.39.2",
-    "eslint-plugin-jsdoc": "^62.5.5",
-    "eslint-plugin-json": "^4.0.1",
-    "eslint-plugin-n": "^17.24.0",
-    "eslint-plugin-prefer-arrow": "^1.2.3",
-    "eslint-plugin-security": "^3.0.1",
-    "eslint-plugin-security-node": "^1.1.4",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2",
-    "prettier": "^3.8.1"
+    "lint-staged": "^16.3.2"
   },
   "lint-staged": {
-    "**/*": "prettier --write --ignore-unknown"
+    "**/*": "npx @biomejs/biome check --write ."
   },
   "commit-and-tag-version": {
     "packageFiles": [
