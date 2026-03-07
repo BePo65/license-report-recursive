@@ -44,8 +44,13 @@
       "linter": { "rules": {} }
     },
     {
-      "includes": ["**/*.json", "!**/.vscode/launch.json"],
-      "linter": { "rules": {} }
+      "includes": [".vscode/**"],
+      "json": {
+        "parser": {
+          "allowComments": true,
+          "allowTrailingCommas": true
+        }
+      }
     }
   ],
   "assist": {
