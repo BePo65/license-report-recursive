@@ -26,7 +26,7 @@ const readmePath = path.resolve(__dirname, '..', 'README.md').replace(/(\s+)/g, 
   const readmeContentAsBuffer = await fs.promises.readFile(readmePath);
   const readmeContentAsString = readmeContentAsBuffer.toString();
   const versionSearchPattern =
-    /(.*https:\/\/img.shields.io\/badge\/license--report-)(.+)(-green\.svg.*)/is;
+    /(.*https:\/\/img\.shields\.io\/badge\/license--report-)(.+)(-green\.svg.*)/is;
   const regexResult = readmeContentAsString.match(versionSearchPattern);
   let newReadmeContent = readmeContentAsString;
   if (regexResult?.length === 4) {

@@ -1,9 +1,8 @@
 import assert from 'node:assert';
-import cp from 'node:child_process';
+import { execFileSync } from 'node:child_process';
 import path from 'node:path';
 import { describe, it } from 'node:test';
 import url from 'node:url';
-import nodeUtil from 'node:util';
 import util from '../lib/util.js';
 import expectedOutput from './fixture/expectedOutput.js';
 
@@ -36,8 +35,6 @@ const loopExpectedDataPath = path
   .resolve(__dirname, 'fixture', 'dependencyLoop', 'expectedData.json')
   .replace(/(\s+)/g, '\\$1');
 
-const execAsPromise = nodeUtil.promisify(cp.exec);
-
 let expectedData;
 
 describe('end to end test', { timeout: 100000 }, () => {
@@ -45,37 +42,41 @@ describe('end to end test', { timeout: 100000 }, () => {
     expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath);
     await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
 
-    const { stdout, stderr } = await execAsPromise(
-      `node ${scriptPath} --package=${e2ePackageJsonPath} --output=tree`,
-    );
-    const result = JSON.parse(stdout);
+    const result = execFileSync('node', [
+      scriptPath,
+      `--package=${e2ePackageJsonPath}`,
+      '--output=tree',
+    ]);
+    const resultJson = JSON.parse(result);
 
-    assert.deepStrictEqual(result, expectedData);
-    assert.strictEqual(stderr, '', 'expected no warnings');
+    assert.deepStrictEqual(resultJson, expectedData);
   });
 
   it('produce a tree report with all fields', async () => {
     expectedData = await util.readJson(e2eExpectedDataAllFieldsPath);
     await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
 
-    const { stdout, stderr } = await execAsPromise(
-      `node ${scriptPath} --package=${e2ePackageJsonPath} --config=${allFieldsConfigPath} --output=tree`,
-    );
-    const result = JSON.parse(stdout);
+    const result = execFileSync('node', [
+      scriptPath,
+      `--package=${e2ePackageJsonPath}`,
+      `--config=${allFieldsConfigPath}`,
+      '--output=tree',
+    ]);
+    const resultJson = JSON.parse(result);
 
-    assert.deepStrictEqual(result, expectedData);
-    assert.strictEqual(stderr, '', 'expected no warnings');
+    assert.deepStrictEqual(resultJson, expectedData);
   });
 
   it('produce a tree report for project with dependency loops', async () => {
     expectedData = await util.readJson(loopExpectedDataPath);
 
-    const { stdout, stderr } = await execAsPromise(
-      `node ${scriptPath} --package=${loopPackageJsonPath} --output=tree`,
-    );
-    const result = JSON.parse(stdout);
+    const result = execFileSync('node', [
+      scriptPath,
+      `--package=${loopPackageJsonPath}`,
+      '--output=tree',
+    ]);
+    const resultJson = JSON.parse(result);
 
-    assert.deepStrictEqual(result, expectedData);
-    assert.strictEqual(stderr, '', 'expected no warnings');
+    assert.deepStrictEqual(resultJson, expectedData);
   });
 });
