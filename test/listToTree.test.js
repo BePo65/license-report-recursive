@@ -39,10 +39,7 @@ describe('getTree', () => {
     assert.ok(packagesTree[0].requires[1].requires !== undefined);
     assert.equal(packagesTree[0].requires[1].name, '@szmarczak/http-timer');
     assert.equal(packagesTree[0].requires[1].requires.length, 1);
-    assert.equal(
-      packagesTree[0].requires[1].requires[0].name,
-      'defer-to-connect',
-    );
+    assert.equal(packagesTree[0].requires[1].requires[0].name, 'defer-to-connect');
     assert.equal(packagesTree[0].requires[1].requires[0].requires.length, 0);
   });
 

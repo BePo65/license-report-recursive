@@ -2887,7 +2887,7 @@
             "link": "git://github.com/isaacs/minimatch.git",
             "definedVersion": "^3.0.4",
             "installedVersion": "3.1.2",
-            "remoteVersion": "3.1.2",
+            "remoteVersion": "3.1.5",
             "alias": "",
             "requires": [
               {
