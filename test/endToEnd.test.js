@@ -43,29 +43,7 @@ const execAsPromise = nodeUtil.promisify(cp.exec);
 
 let expectedData;
 
-const stripRemoteFields = (value) => {
-  if (Array.isArray(value)) {
-    return value.map((entry) => stripRemoteFields(entry));
-  }
-  if (value === null || typeof value !== 'object') {
-    return value;
-  }
-
-  const result = {};
-  for (const [key, entry] of Object.entries(value)) {
-    if (
-      key === 'remoteVersion' ||
-      key === 'latestRemoteVersion' ||
-      key === 'latestRemoteModified'
-    ) {
-      continue;
-    }
-    result[key] = stripRemoteFields(entry);
-  }
-  return result;
-};
-
-describe('end to end test', { timeout: 300000 }, () => {
+describe('end to end test', { timeout: 100000 }, () => {
   it('produce a tree report for default fields', async () => {
     expectedData = await util.readJson(e2eExpectedDataDefaultFieldsPath);
     await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
@@ -94,16 +72,14 @@ describe('end to end test', { timeout: 300000 }, () => {
 
   it('produce a tree report for project with dependency loops', async () => {
     expectedData = await util.readJson(loopExpectedDataPath);
+    await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
 
     const { stdout, stderr } = await execAsPromise(
       `node ${scriptPath} --package=${loopPackageJsonPath} --output=tree`,
     );
     const result = JSON.parse(stdout);
 
-    assert.deepStrictEqual(
-      stripRemoteFields(result),
-      stripRemoteFields(expectedData),
-    );
+    assert.deepStrictEqual(result, expectedData);
     assert.strictEqual(stderr, '', 'expected no warnings');
   });
 });

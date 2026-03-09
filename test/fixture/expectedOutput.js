@@ -18,6 +18,10 @@ const debug = createDebugMessages('license-report-recursive:expectedOutput');
  * @param {object} dependency - object with expected data containing placeholders for remote versions
  */
 async function addRemoteVersion(dependency) {
+  if (dependency.dependencyLoop === true) {
+    return;
+  }
+
   let uri = joinUrlPath(config.registry, dependency.name);
 
   debug('addRemoteVersion - REQUEST %s', uri);
