@@ -16,6 +16,7 @@ const debug = createDebugMessages('license-report-recursive:expectedOutput');
  */
 async function addRemoteVersion(dependency) {
   if (dependency.dependencyLoop === true) {
+    debug('addRemoteVersion - loop at %s', dependency.fullName ?? dependency.name);
     return;
   }
 

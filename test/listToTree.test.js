@@ -19,6 +19,22 @@ const testConfigPath = path
   .resolve(__dirname, 'fixture', 'getTree', 'testConfig.json')
   .replace(/(\s+)/g, '\\$1');
 
+const scopedDistinctSortedListPath = path
+  .resolve(__dirname, 'fixture', 'getTreeScopedDistinct', 'sortedList.json')
+  .replace(/(\s+)/g, '\\$1');
+
+const scopedDistinctConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTreeScopedDistinct', 'testConfig.json')
+  .replace(/(\s+)/g, '\\$1');
+
+const dependencyLoopSortedListPath = path
+  .resolve(__dirname, 'fixture', 'getTreeDependencyLoopFlagged', 'sortedList.json')
+  .replace(/(\s+)/g, '\\$1');
+
+const dependencyLoopConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTreeDependencyLoopFlagged', 'testConfig.json')
+  .replace(/(\s+)/g, '\\$1');
+
 describe('getTree', () => {
   let dedupedSortedList;
   let testConfig;
@@ -43,46 +59,9 @@ describe('getTree', () => {
     assert.equal(packagesTree[0].requires[1].requires[0].requires.length, 0);
   });
 
-  it('keeps scoped packages with equal name/version distinct', () => {
-    const testList = [
-      {
-        fullName: 'root',
-        name: 'root',
-        installedVersion: '1.0.0',
-        isRootNode: true,
-        requires: [
-          {
-            fullName: '@scope-a/core',
-            name: 'core',
-            installedVersion: '1.2.3',
-          },
-          {
-            fullName: '@scope-b/core',
-            name: 'core',
-            installedVersion: '1.2.3',
-          },
-        ],
-      },
-      {
-        fullName: '@scope-a/core',
-        name: 'core',
-        installedVersion: '1.2.3',
-        requires: [],
-      },
-      {
-        fullName: '@scope-b/core',
-        name: 'core',
-        installedVersion: '1.2.3',
-        requires: [],
-      },
-    ];
-    const cfg = {
-      fields: ['name', 'fullName', 'installedVersion', 'requires'],
-      name: { value: '' },
-      fullName: { value: '' },
-      installedVersion: { value: '' },
-      requires: { value: [] },
-    };
+  it('keeps scoped packages with equal name/version distinct', async () => {
+    const testList = await util.readJson(scopedDistinctSortedListPath);
+    const cfg = await util.readJson(scopedDistinctConfigPath);
 
     const packagesTree = listToTree(testList, cfg);
 
@@ -92,62 +71,14 @@ describe('getTree', () => {
     assert.equal(packagesTree[0].requires[1].fullName, '@scope-b/core');
   });
 
-  it('keeps tree JSON-serializable when dependency loops are flagged', () => {
-    const testList = [
-      {
-        fullName: 'root',
-        name: 'root',
-        installedVersion: '1.0.0',
-        isRootNode: true,
-        requires: [
-          {
-            fullName: '@scope/a',
-            name: 'a',
-            installedVersion: '1.0.0',
-          },
-        ],
-      },
-      {
-        fullName: '@scope/a',
-        name: 'a',
-        installedVersion: '1.0.0',
-        requires: [
-          {
-            fullName: '@scope/b',
-            name: 'b',
-            installedVersion: '1.0.0',
-          },
-        ],
-      },
-      {
-        fullName: '@scope/b',
-        name: 'b',
-        installedVersion: '1.0.0',
-        requires: [
-          {
-            fullName: '@scope/a',
-            name: 'a',
-            installedVersion: '1.0.0',
-            dependencyLoop: true,
-          },
-        ],
-      },
-    ];
-    const cfg = {
-      fields: ['name', 'fullName', 'installedVersion', 'requires'],
-      name: { value: '' },
-      fullName: { value: '' },
-      installedVersion: { value: '' },
-      requires: { value: [] },
-    };
+  it('keeps tree JSON-serializable when dependency loops are flagged', async () => {
+    const testList = await util.readJson(dependencyLoopSortedListPath);
+    const cfg = await util.readJson(dependencyLoopConfigPath);
 
     const packagesTree = listToTree(testList, cfg);
     const json = JSON.stringify(packagesTree);
     const parsed = JSON.parse(json);
 
-    assert.equal(
-      parsed[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop,
-      true,
-    );
+    assert.equal(parsed[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop, true);
   });
 });
