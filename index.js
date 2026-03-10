@@ -12,6 +12,7 @@ import config from './lib/config.js';
 import getDependencies from './lib/getDependencies.js';
 import getFormatter from './lib/getFormatter.js';
 import listToTree from './lib/listToTree.js';
+import { getPackageIdWithVersion } from './lib/packageIdentity.js';
 import util from './lib/util.js';
 
 const debug = createDebugMessages('license-report-recurse');
@@ -98,7 +99,7 @@ const debug = createDebugMessages('license-report-recurse');
     // remove duplicates as they are only needed to identify dependency loops
     let lastPackage = '';
     const dedupedSortedList = sortedList.filter((element) => {
-      const currentPackage = `${element.name}@${element.installedVersion}`;
+      const currentPackage = getPackageIdWithVersion(element);
       if (currentPackage !== lastPackage || element.isRootNode) {
         lastPackage = currentPackage;
         return true;

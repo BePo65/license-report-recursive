@@ -69,6 +69,7 @@ describe('end to end test', { timeout: 100000 }, () => {
 
   it('produce a tree report for project with dependency loops', async () => {
     expectedData = await util.readJson(loopExpectedDataPath);
+    await expectedOutput.addRemoteVersionsToExpectedData(expectedData);
 
     const result = execFileSync('node', [
       scriptPath,
