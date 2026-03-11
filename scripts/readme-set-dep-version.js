@@ -18,7 +18,7 @@ const readmePath = path.resolve(__dirname, '..', 'README.md').replace(/(\s+)/g, 
   const packageJsonAsBuffer = await fs.promises.readFile(packageLockJsonPath);
   const packageJson = JSON.parse(packageJsonAsBuffer.toString());
 
-  let licenseReportVersion = packageJson.dependencies['license-report']?.version;
+  let licenseReportVersion = packageJson.packages['node_modules/license-report']?.version;
   if (!licenseReportVersion) {
     licenseReportVersion = '0.0.0';
   }
