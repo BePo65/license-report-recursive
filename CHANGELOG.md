@@ -2,6 +2,16 @@
 
 All notable changes to this project will be documented in this file. See [commit-and-tag-version](https://github.com/absolute-version/commit-and-tag-version) for commit guidelines.
 
+## [6.8.3](https://github.com/bepo65/license-report-recursive/compare/v6.8.2...v6.8.3) (2026-03-11)
+
+
+### Bug Fixes
+
+* fix error in dependency loops with scoped packages
+* update packages to fix dependabot security warnings ([885968d](https://github.com/bepo65/license-report-recursive/commit/885968dcf79998472be2ab2b93479043d473fd43))
+* update packages to fix dependabot security warnings ([4684c23](https://github.com/bepo65/license-report-recursive/commit/4684c23f6679d8bd01506f18e5448150f7f65ec8))
+* update packages to fix github dependabot security warnings ([113d247](https://github.com/bepo65/license-report-recursive/commit/113d247d33c56e49ea3df5b692c6a0b8bf21ef3c))
+
 ## [6.8.2](https://github.com/bepo65/license-report-recursive/compare/v6.8.1...v6.8.2) (2025-10-26)
 
 ### Bug Fixes
