@@ -1,0 +1,8 @@
+{
+  "name": "tri1-cycle-fixture",
+  "version": "1.0.0",
+  "dependencies": {
+    "es-abstract": "1.24.1",
+    "typed-array-byte-offset": "1.0.4"
+  }
+}

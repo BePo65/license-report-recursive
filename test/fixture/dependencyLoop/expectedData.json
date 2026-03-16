@@ -3197,24 +3197,5 @@
     "relatedTo": "stuff",
     "licensePeriod": "perpetual",
     "material": "material"
-  },
-  {
-    "name": "babel-register",
-    "author": "Sebastian McKenzie <sebmck@gmail.com>",
-    "licenseType": "MIT",
-    "link": "https://github.com/babel/babel/tree/master/packages/babel-register",
-    "definedVersion": "^6.26.0",
-    "installedVersion": "6.26.0",
-    "remoteVersion": "6.26.0",
-    "alias": "",
-    "requires": [
-      {
-        "dependencyLoop": true
-      }
-    ],
-    "department": "kessler",
-    "relatedTo": "stuff",
-    "licensePeriod": "perpetual",
-    "material": "material"
   }
 ]

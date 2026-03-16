@@ -1,0 +1,19 @@
+{
+  "fields": ["name", "fullName", "installedVersion", "requires"],
+  "name": {
+    "value": "",
+    "label": "name"
+  },
+  "fullName": {
+    "value": "",
+    "label": "fullName"
+  },
+  "installedVersion": {
+    "value": "",
+    "label": "installedVersion"
+  },
+  "requires": {
+    "value": [],
+    "label": "requires"
+  }
+}

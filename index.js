@@ -77,7 +77,6 @@ const debug = createDebugMessages('license-report-recurse');
         return Object.assign(packagesData, basicFields);
       }),
     );
-
     // add dependencies of dependencies
     if (config.recurse === true || config.recurse === 'true') {
       let inclusionsSubDeps = ['prod', 'opt', 'peer'];
@@ -96,7 +95,8 @@ const debug = createDebugMessages('license-report-recurse');
     }
 
     const sortedList = depsIndex.sort(util.alphaSort);
-    // remove duplicates as they are only needed to identify dependency loops
+    // collapse the recursive scan to one canonical source node per package id/version
+    // before materializing the output tree
     let lastPackage = '';
     const dedupedSortedList = sortedList.filter((element) => {
       const currentPackage = getPackageIdWithVersion(element);
@@ -106,7 +106,6 @@ const debug = createDebugMessages('license-report-recurse');
       }
       return false;
     });
-
     if (config.output !== 'tree') {
       // keep only fields that are defined in the configuration
       const packagesList = await Promise.all(

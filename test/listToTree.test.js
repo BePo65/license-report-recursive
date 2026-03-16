@@ -35,6 +35,14 @@ const dependencyLoopConfigPath = path
   .resolve(__dirname, 'fixture', 'getTreeDependencyLoopFlagged', 'testConfig.json')
   .replace(/(\s+)/g, '\\$1');
 
+const dedupeCycleSortedListPath = path
+  .resolve(__dirname, 'fixture', 'getTreeDedupeCycle', 'sortedList.json')
+  .replace(/(\s+)/g, '\\$1');
+
+const dedupeCycleConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTreeDedupeCycle', 'testConfig.json')
+  .replace(/(\s+)/g, '\\$1');
+
 describe('getTree', () => {
   let dedupedSortedList;
   let testConfig;
@@ -80,5 +88,20 @@ describe('getTree', () => {
     const parsed = JSON.parse(json);
 
     assert.equal(parsed[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop, true);
+  });
+
+  it('keeps tree JSON-serializable when a cycle is introduced by canonical package ids', async () => {
+    const testList = await util.readJson(dedupeCycleSortedListPath);
+    const cfg = await util.readJson(dedupeCycleConfigPath);
+
+    const packagesTree = listToTree(testList, cfg);
+    const json = JSON.stringify(packagesTree);
+    const parsed = JSON.parse(json);
+
+    const alphaBranch = parsed[0].requires.find((entry) => entry.fullName === 'alpha');
+    const loopPlaceholder = alphaBranch.requires[0].requires[0].requires[0].requires[0].requires[0];
+
+    assert.equal(loopPlaceholder.fullName, 'alpha');
+    assert.equal(loopPlaceholder.requires[0].dependencyLoop, true);
   });
 });
