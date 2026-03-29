@@ -59,13 +59,19 @@ const debug = createDebugMessages('license-report-recurse');
     const exclusions = Array.isArray(config.exclude) ? config.exclude : [config.exclude];
     const parentPath = `>${packageJson.name}`;
 
-    // Create an array with all the dependencies in the package.json under inspection
-    // Fields in an entry: 'name', 'fullName', 'scope', 'alias', 'version'
+    /**
+     * Create an array with all the dependencies in the package.json under inspection
+     * Fields in an entry are
+     * 'name', 'fullName', 'scope', 'alias', 'version'
+     */
     const depsIndexBase = getDependencies(packageJson, exclusions, inclusions, parentPath);
 
     const depsIndex = await Promise.all(
-      // Add fields from the local directory node_modules
-      // Fields are 'path', 'author', 'installedVersion', 'licenseType' + fields from configuration
+      /**
+       * Add fields from the local directory node_modules
+       * Fields ar
+       * 'path', 'author', 'installedVersion', 'licenseType' + fields from configuration
+       */
       depsIndexBase.map(async (element) => {
         const alias = element.alias;
         const localDataForPackages = await addLocalPackageData(
@@ -74,9 +80,12 @@ const debug = createDebugMessages('license-report-recurse');
           config.fields,
         );
 
-        // Add fields from remote repository
-        // Fields are 'link', 'installedFrom', 'definedVersion', 'remoteVersion',
-        // 'latestRemoteVersion', 'latestRemoteModified'
+        /**
+         * Add fields from remote repository
+         * Fields are
+         * 'link', 'installedFrom', 'definedVersion', 'remoteVersion',
+         * 'latestRemoteVersion', 'latestRemoteModified'
+         */
         const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
@@ -103,6 +112,13 @@ const debug = createDebugMessages('license-report-recurse');
       );
     }
 
+    /**
+     * At this point depsIndex contains all packages of the project and,
+     * if recurse=true, each entry has a field "requires" which contains
+     * all dependencies of this dependency as a tree of objects.
+     * devDependencies of dependencies are ignored;
+     * 'config.only' defaults to 'prod', 'opt', 'peer'
+     */
     const sortedList = depsIndex.sort(util.alphaSort);
     // remove duplicates as they are only needed to identify dependency loops
     let lastPackage = '';
