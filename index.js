@@ -59,9 +59,13 @@ const debug = createDebugMessages('license-report-recurse');
     const exclusions = Array.isArray(config.exclude) ? config.exclude : [config.exclude];
     const parentPath = `>${packageJson.name}`;
 
-    // an array with all the dependencies in the package.json under inspection
+    // Create an array with all the dependencies in the package.json under inspection
+    // Fields in an entry: 'name', 'fullName', 'scope', 'alias', 'version'
     const depsIndexBase = getDependencies(packageJson, exclusions, inclusions, parentPath);
+
     const depsIndex = await Promise.all(
+      // Add fields from the local directory node_modules
+      // Fields are 'path', 'author', 'installedVersion', 'licenseType' + fields from configuration
       depsIndexBase.map(async (element) => {
         const alias = element.alias;
         const localDataForPackages = await addLocalPackageData(
@@ -69,6 +73,10 @@ const debug = createDebugMessages('license-report-recurse');
           projectRootPath,
           config.fields,
         );
+
+        // Add fields from remote repository
+        // Fields are 'link', 'installedFrom', 'definedVersion', 'remoteVersion',
+        // 'latestRemoteVersion', 'latestRemoteModified'
         const packagesData = await addPackageDataFromRepository(localDataForPackages, npmrc);
         const basicFields = {
           alias: alias, // to get the local path of the package
@@ -78,7 +86,7 @@ const debug = createDebugMessages('license-report-recurse');
       }),
     );
 
-    // add dependencies of dependencies
+    // add dependencies of dependencies (recursive)
     if (config.recurse === true || config.recurse === 'true') {
       let inclusionsSubDeps = ['prod', 'opt', 'peer'];
       if (inclusions !== null) {
