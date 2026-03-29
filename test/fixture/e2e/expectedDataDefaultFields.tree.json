@@ -5,11 +5,8 @@
     "author": "Dan VerWeire, Yaniv Kessler",
     "licenseType": "MIT",
     "link": "git+https://github.com/kessler/node-tableify.git",
-    "installedFrom": "https://registry.npmjs.org/@kessler/tableify/-/tableify-1.0.2.tgz",
     "definedVersion": "^1.0.2",
     "remoteVersion": "1.0.2",
-    "latestRemoteVersion": "1.0.2",
-    "latestRemoteModified": "2022-04-05T23:26:35.798Z",
     "alias": "",
     "requires": [
       {
@@ -18,11 +15,8 @@
         "author": "Andrea Giammarchi",
         "licenseType": "ISC",
         "link": "git+https://github.com/ungap/promise-all-settled.git",
-        "installedFrom": "https://registry.npmjs.org/@ungap/promise-all-settled/-/promise-all-settled-1.1.2.tgz",
         "definedVersion": "^1.1.2",
         "remoteVersion": "1.1.2",
-        "latestRemoteVersion": "1.1.2",
-        "latestRemoteModified": "2022-04-07T09:33:39.440Z",
         "alias": "",
         "requires": [
           {
@@ -31,11 +25,8 @@
             "author": "GitHub Inc.",
             "licenseType": "ISC",
             "link": "git+https://github.com/npm/node-semver.git",
-            "installedFrom": "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz",
             "definedVersion": "^7.3.5",
             "remoteVersion": "7.7.4",
-            "latestRemoteVersion": "7.7.4",
-            "latestRemoteModified": "2026-03-19T19:28:32.632Z",
             "alias": "",
             "requires": [
               {
@@ -44,11 +35,8 @@
                 "author": "Isaac Z. Schlueter <i@izs.me>",
                 "licenseType": "ISC",
                 "link": "git://github.com/isaacs/node-lru-cache.git",
-                "installedFrom": "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz",
                 "definedVersion": "^6.0.0",
                 "remoteVersion": "6.0.0",
-                "latestRemoteVersion": "11.2.7",
-                "latestRemoteModified": "2026-03-13T15:44:21.641Z",
                 "alias": "",
                 "requires": [
                   {
@@ -57,11 +45,8 @@
                     "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
                     "licenseType": "ISC",
                     "link": "git+https://github.com/isaacs/yallist.git",
-                    "installedFrom": "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz",
                     "definedVersion": "^4.0.0",
                     "remoteVersion": "4.0.0",
-                    "latestRemoteVersion": "5.0.0",
-                    "latestRemoteModified": "2024-04-09T19:21:45.008Z",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
@@ -98,11 +83,8 @@
     "author": "John-David Dalton <john.david.dalton@gmail.com>",
     "licenseType": "MIT",
     "link": "git+https://github.com/lodash/lodash.git",
-    "installedFrom": "https://registry.npmjs.org/lodash/-/lodash-4.17.21.tgz",
     "definedVersion": "^4.17.20",
     "remoteVersion": "4.17.23",
-    "latestRemoteVersion": "4.17.23",
-    "latestRemoteModified": "2026-03-28T00:52:17.771Z",
     "alias": "",
     "department": "kessler",
     "relatedTo": "stuff",
@@ -115,11 +97,8 @@
     "author": "GitHub Inc.",
     "licenseType": "ISC",
     "link": "git+https://github.com/npm/node-semver.git",
-    "installedFrom": "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz",
     "definedVersion": "^7.3.5",
     "remoteVersion": "7.7.4",
-    "latestRemoteVersion": "7.7.4",
-    "latestRemoteModified": "2026-03-19T19:28:32.632Z",
     "alias": "",
     "requires": [
       {
@@ -128,11 +107,8 @@
         "author": "Isaac Z. Schlueter <i@izs.me>",
         "licenseType": "ISC",
         "link": "git://github.com/isaacs/node-lru-cache.git",
-        "installedFrom": "https://registry.npmjs.org/lru-cache/-/lru-cache-6.0.0.tgz",
         "definedVersion": "^6.0.0",
         "remoteVersion": "6.0.0",
-        "latestRemoteVersion": "11.2.7",
-        "latestRemoteModified": "2026-03-13T15:44:21.641Z",
         "alias": "",
         "requires": [
           {
@@ -141,11 +117,8 @@
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me/)",
             "licenseType": "ISC",
             "link": "git+https://github.com/isaacs/yallist.git",
-            "installedFrom": "https://registry.npmjs.org/yallist/-/yallist-4.0.0.tgz",
             "definedVersion": "^4.0.0",
             "remoteVersion": "4.0.0",
-            "latestRemoteVersion": "5.0.0",
-            "latestRemoteModified": "2024-04-09T19:21:45.008Z",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
