@@ -13,7 +13,8 @@
   "files": [
     "index.js",
     "lib/",
-    "CHANGELOG.md"
+    "CHANGELOG.md",
+    "assets/"
   ],
   "repository": {
     "type": "git",
