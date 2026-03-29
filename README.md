@@ -10,14 +10,21 @@ Extends the [license-report](https://github.com/ironSource/license-report) tool.
 
 ## Usage
 
-### Enable recursion:
+### Generate flat list with recursion and json output:
 
 ```
 cd your/project/
 license-report-recursive --recurse
 ```
 
-### Generate json tree output:
+### Generate flat list with recursion and table output:
+
+```
+cd your/project/
+license-report-recursive --recurse --output=table
+```
+
+### Generate tree with recursion and json output:
 
 ```
 license-report-recursive --recurse --output=tree
