@@ -42,12 +42,12 @@
     "semver": "^7.7.4"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.6",
-    "@commitlint/cli": "^20.4.3",
-    "@commitlint/config-conventional": "^20.4.3",
-    "commit-and-tag-version": "^12.6.1",
+    "@biomejs/biome": "^2.4.10",
+    "@commitlint/cli": "^20.5.0",
+    "@commitlint/config-conventional": "^20.5.0",
+    "commit-and-tag-version": "^12.7.1",
     "husky": "^9.1.7",
-    "lint-staged": "^16.3.2"
+    "lint-staged": "^16.4.0"
   },
   "lint-staged": {
     "**/*": "npx @biomejs/biome check --write ."
