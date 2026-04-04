@@ -1,0 +1,80 @@
+[
+  {
+    "fullName": "root",
+    "name": "root",
+    "installedVersion": "1.0.0",
+    "isRootNode": true,
+    "requires": [
+      {
+        "fullName": "alpha",
+        "name": "alpha",
+        "installedVersion": "1.0.0"
+      },
+      {
+        "fullName": "delta",
+        "name": "delta",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  },
+  {
+    "fullName": "alpha",
+    "name": "alpha",
+    "installedVersion": "1.0.0",
+    "requires": [
+      {
+        "fullName": "beta",
+        "name": "beta",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  },
+  {
+    "fullName": "beta",
+    "name": "beta",
+    "installedVersion": "1.0.0",
+    "requires": [
+      {
+        "fullName": "gamma",
+        "name": "gamma",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  },
+  {
+    "fullName": "gamma",
+    "name": "gamma",
+    "installedVersion": "1.0.0",
+    "requires": [
+      {
+        "fullName": "delta",
+        "name": "delta",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  },
+  {
+    "fullName": "delta",
+    "name": "delta",
+    "installedVersion": "1.0.0",
+    "requires": [
+      {
+        "fullName": "epsilon",
+        "name": "epsilon",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  },
+  {
+    "fullName": "epsilon",
+    "name": "epsilon",
+    "installedVersion": "1.0.0",
+    "requires": [
+      {
+        "fullName": "alpha",
+        "name": "alpha",
+        "installedVersion": "1.0.0"
+      }
+    ]
+  }
+]

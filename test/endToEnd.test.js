@@ -43,6 +43,10 @@ const loopExpectedDataPath = path
   .resolve(__dirname, 'fixture', 'dependencyLoop', 'expectedData.json')
   .replace(/(\s+)/g, '\\$1');
 
+const tri1CyclePackageJsonPath = path
+  .resolve(__dirname, 'fixture', 'tri1Cycle', 'package.json')
+  .replace(/(\s+)/g, '\\$1');
+
 describe('end to end test', { timeout: 100000 }, () => {
   it('produce a csv report with default fields', async () => {
     const expectedDataBase = await util.readJson(e2eExpectedDataDefaultFieldsFlatPath);
@@ -113,6 +117,27 @@ describe('end to end test', { timeout: 100000 }, () => {
     const resultJson = JSON.parse(result);
 
     assert.deepStrictEqual(resultJson, expectedData);
+  });
+
+  it('produce a tree report for the tri-1 cycle family without circular JSON errors', async () => {
+    const result = execFileSync('node', [
+      scriptPath,
+      `--package=${tri1CyclePackageJsonPath}`,
+      '--output=tree',
+    ]);
+    const resultJson = JSON.parse(result);
+
+    const typedArrayRoot = resultJson.find((entry) => entry.name === 'typed-array-byte-offset');
+    const reflectNode = typedArrayRoot.requires.find(
+      (entry) => entry.name === 'reflect.getprototypeof',
+    );
+    const esAbstractNode = reflectNode.requires.find((entry) => entry.name === 'es-abstract');
+    const loopedTypedArray = esAbstractNode.requires.find(
+      (entry) => entry.name === 'typed-array-byte-offset',
+    );
+
+    assert.ok(Array.isArray(resultJson));
+    assert.equal(loopedTypedArray.requires[0].dependencyLoop, true);
   });
 });
 
