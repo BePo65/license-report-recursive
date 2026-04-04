@@ -7,3 +7,10 @@ updates:
     cooldown:
       default-days: 7
     open-pull-requests-limit: 10
+
+  - package-ecosystem: "github-actions"
+    directory: "/"
+    schedule:
+      interval: "monthly"
+    cooldown:
+      default-days: 7
