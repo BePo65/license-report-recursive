@@ -1,0 +1,261 @@
+[
+  {
+    "name": "got",
+    "path": ">getTree>got",
+    "installedVersion": "12.3.0",
+    "author": "n/a",
+    "licenseType": "MIT",
+    "link": "git+https://github.com/sindresorhus/got.git",
+    "installedFrom": "https://registry.npmjs.org/got/-/got-12.3.0.tgz",
+    "definedVersion": "^12.3.0",
+    "remoteVersion": "12.6.1",
+    "latestRemoteVersion": "15.0.1",
+    "latestRemoteModified": "2026-04-08T16:15:35.613Z",
+    "comment": "12.6.1",
+    "alias": "",
+    "isRootNode": true,
+    "requires": [
+      {
+        "name": "@szmarczak/http-timer",
+        "path": ">getTree>got>@szmarczak/http-timer",
+        "installedVersion": "5.0.1",
+        "author": "Szymon Marczak",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/szmarczak/http-timer.git",
+        "installedFrom": "https://registry.npmjs.org/@szmarczak/http-timer/-/http-timer-5.0.1.tgz",
+        "definedVersion": "^5.0.1",
+        "remoteVersion": "5.0.1",
+        "latestRemoteVersion": "5.0.1",
+        "latestRemoteModified": "2022-04-07T03:49:45.986Z",
+        "comment": "5.0.1",
+        "alias": "",
+        "requires": [
+          {
+            "name": "defer-to-connect",
+            "path": ">getTree>got>@szmarczak/http-timer>defer-to-connect",
+            "installedVersion": "2.0.1",
+            "author": "Szymon Marczak",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/szmarczak/defer-to-connect.git",
+            "installedFrom": "https://registry.npmjs.org/defer-to-connect/-/defer-to-connect-2.0.1.tgz",
+            "definedVersion": "^2.0.1",
+            "remoteVersion": "2.0.1",
+            "latestRemoteVersion": "2.0.1",
+            "latestRemoteModified": "2022-04-28T08:39:03.442Z",
+            "comment": "2.0.1",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "name": "@types/cacheable-request",
+        "path": ">getTree>got>@types/cacheable-request",
+        "installedVersion": "6.0.2",
+        "author": "n/a",
+        "licenseType": "MIT",
+        "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "installedFrom": "https://registry.npmjs.org/@types/cacheable-request/-/cacheable-request-6.0.2.tgz",
+        "definedVersion": "^6.0.2",
+        "remoteVersion": "6.0.3",
+        "latestRemoteVersion": "8.3.6",
+        "latestRemoteModified": "2024-10-23T02:40:17.245Z",
+        "comment": "6.0.3",
+        "alias": "",
+        "requires": [
+          {
+            "name": "@types/http-cache-semantics",
+            "path": ">getTree>got>@types/cacheable-request>@types/http-cache-semantics",
+            "installedVersion": "4.0.1",
+            "author": "n/a",
+            "licenseType": "MIT",
+            "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+            "installedFrom": "https://registry.npmjs.org/@types/http-cache-semantics/-/http-cache-semantics-4.0.1.tgz",
+            "definedVersion": "*",
+            "remoteVersion": "4.2.0",
+            "latestRemoteVersion": "4.2.0",
+            "latestRemoteModified": "2026-01-27T09:06:21.820Z",
+            "comment": "4.2.0",
+            "alias": ""
+          },
+          {
+            "name": "@types/responselike",
+            "path": ">getTree>got>@types/cacheable-request>@types/responselike",
+            "installedVersion": "1.0.0",
+            "author": "n/a",
+            "licenseType": "MIT",
+            "link": "https://registry.npmjs.org/@types/responselike/-/responselike-3.0.0.tgz",
+            "installedFrom": "https://registry.npmjs.org/@types/responselike/-/responselike-1.0.0.tgz",
+            "definedVersion": "*",
+            "remoteVersion": "3.0.0",
+            "latestRemoteVersion": "1.0.3",
+            "latestRemoteModified": "2025-08-03T07:42:15.346Z",
+            "comment": "3.0.0",
+            "alias": "",
+            "requires": [
+              {
+                "name": "@types/node",
+                "path": ">getTree>got>@types/cacheable-request>@types/responselike>@types/node",
+                "installedVersion": "18.6.2",
+                "author": "n/a",
+                "licenseType": "MIT",
+                "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+                "installedFrom": "https://registry.npmjs.org/@types/node/-/node-18.6.2.tgz",
+                "definedVersion": "*",
+                "remoteVersion": "25.5.2",
+                "latestRemoteVersion": "25.5.2",
+                "latestRemoteModified": "2026-04-03T11:15:14.966Z",
+                "comment": "25.5.2",
+                "alias": ""
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "name": "@types/responselike",
+        "path": ">getTree>got>@types/responselike",
+        "installedVersion": "1.0.0",
+        "author": "n/a",
+        "licenseType": "MIT",
+        "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+        "installedFrom": "https://registry.npmjs.org/@types/responselike/-/responselike-1.0.0.tgz",
+        "definedVersion": "^1.0.0",
+        "remoteVersion": "1.0.3",
+        "latestRemoteVersion": "1.0.3",
+        "latestRemoteModified": "2025-08-03T07:42:15.346Z",
+        "comment": "1.0.3",
+        "alias": "",
+        "requires": [
+          {
+            "name": "@types/node",
+            "path": ">getTree>got>@types/responselike>@types/node",
+            "installedVersion": "18.6.2",
+            "author": "n/a",
+            "licenseType": "MIT",
+            "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+            "installedFrom": "https://registry.npmjs.org/@types/node/-/node-18.6.2.tgz",
+            "definedVersion": "*",
+            "remoteVersion": "25.5.2",
+            "latestRemoteVersion": "25.5.2",
+            "latestRemoteModified": "2026-04-03T11:15:14.966Z",
+            "comment": "25.5.2",
+            "alias": ""
+          }
+        ]
+      },
+      {
+        "name": "cacheable-request",
+        "path": ">getTree>got>cacheable-request",
+        "installedVersion": "7.0.2",
+        "author": "Luke Childs <lukechilds123@gmail.com> (http://lukechilds.co.uk)",
+        "licenseType": "MIT",
+        "link": "git+https://github.com/lukechilds/cacheable-request.git",
+        "installedFrom": "https://registry.npmjs.org/cacheable-request/-/cacheable-request-7.0.2.tgz",
+        "definedVersion": "^7.0.2",
+        "remoteVersion": "7.0.4",
+        "latestRemoteVersion": "13.0.18",
+        "latestRemoteModified": "2026-01-09T21:04:28.959Z",
+        "comment": "7.0.4",
+        "alias": "",
+        "requires": [
+          {
+            "name": "clone-response",
+            "path": ">getTree>got>cacheable-request>clone-response",
+            "installedVersion": "1.0.3",
+            "author": "Luke Childs <lukechilds123@gmail.com> (http://lukechilds.co.uk)",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/sindresorhus/clone-response.git",
+            "installedFrom": "https://registry.npmjs.org/clone-response/-/clone-response-1.0.3.tgz",
+            "definedVersion": "^1.0.2",
+            "remoteVersion": "1.0.3",
+            "latestRemoteVersion": "2.0.0",
+            "latestRemoteModified": "2022-10-07T10:29:10.943Z",
+            "comment": "1.0.3",
+            "alias": "",
+            "requires": [
+              {
+                "name": "mimic-response",
+                "path": ">getTree>got>cacheable-request>clone-response>mimic-response",
+                "installedVersion": "1.0.1",
+                "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/sindresorhus/mimic-response.git",
+                "installedFrom": "https://registry.npmjs.org/mimic-response/-/mimic-response-1.0.1.tgz",
+                "definedVersion": "^1.0.0",
+                "remoteVersion": "1.0.1",
+                "latestRemoteVersion": "4.0.0",
+                "latestRemoteModified": "2022-06-19T19:59:36.358Z",
+                "comment": "1.0.1",
+                "alias": ""
+              }
+            ]
+          },
+          {
+            "name": "keyv",
+            "path": ">getTree>got>cacheable-request>keyv",
+            "installedVersion": "4.3.3",
+            "author": "Jared Wray <me@jaredwray.com> (http://jaredwray.com)",
+            "licenseType": "MIT",
+            "link": "git+https://github.com/jaredwray/keyv.git",
+            "installedFrom": "https://registry.npmjs.org/keyv/-/keyv-4.3.3.tgz",
+            "definedVersion": "^4.0.0",
+            "remoteVersion": "4.5.4",
+            "latestRemoteVersion": "5.6.0",
+            "latestRemoteModified": "2026-03-22T21:15:33.224Z",
+            "comment": "4.5.4",
+            "alias": "",
+            "requires": [
+              {
+                "name": "compress-brotli",
+                "path": ">getTree>got>cacheable-request>keyv>compress-brotli",
+                "installedVersion": "1.3.8",
+                "author": "Kiko Beats josefrancisco.verdu@gmail.com https://kikobeats.com",
+                "licenseType": "MIT",
+                "link": "git+https://github.com/Kikobeats/compress-brotli.git",
+                "installedFrom": "https://registry.npmjs.org/compress-brotli/-/compress-brotli-1.3.8.tgz",
+                "definedVersion": "^1.3.8",
+                "remoteVersion": "1.3.13",
+                "latestRemoteVersion": "1.3.13",
+                "latestRemoteModified": "2025-05-24T14:50:58.132Z",
+                "comment": "1.3.13",
+                "alias": "",
+                "requires": [
+                  {
+                    "name": "@types/json-buffer",
+                    "path": ">getTree>got>cacheable-request>keyv>compress-brotli>@types/json-buffer",
+                    "installedVersion": "3.0.0",
+                    "author": "n/a",
+                    "licenseType": "MIT",
+                    "link": "https://github.com/DefinitelyTyped/DefinitelyTyped.git",
+                    "installedFrom": "https://registry.npmjs.org/@types/json-buffer/-/json-buffer-3.0.0.tgz",
+                    "definedVersion": "~3.0.0",
+                    "remoteVersion": "3.0.2",
+                    "latestRemoteVersion": "3.0.2",
+                    "latestRemoteModified": "2025-08-03T07:05:33.516Z",
+                    "comment": "3.0.2",
+                    "alias": ""
+                  },
+                  {
+                    "name": "json-buffer",
+                    "path": ">getTree>got>cacheable-request>keyv>compress-brotli>json-buffer",
+                    "installedVersion": "3.0.1",
+                    "author": "Dominic Tarr <dominic.tarr@gmail.com> (http://dominictarr.com)",
+                    "licenseType": "MIT",
+                    "link": "git://github.com/dominictarr/json-buffer.git",
+                    "installedFrom": "https://registry.npmjs.org/json-buffer/-/json-buffer-3.0.1.tgz",
+                    "definedVersion": "~3.0.1",
+                    "remoteVersion": "3.0.1",
+                    "latestRemoteVersion": "3.0.1",
+                    "latestRemoteModified": "2022-06-19T06:12:08.317Z",
+                    "comment": "3.0.1",
+                    "alias": ""
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

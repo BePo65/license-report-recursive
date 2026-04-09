@@ -11,9 +11,5 @@
   "installedVersion": {
     "value": "",
     "label": "installedVersion"
-  },
-  "requires": {
-    "value": [],
-    "label": "requires"
   }
 }

@@ -1,98 +1,95 @@
 [
   {
     "name": "babel-register",
+    "installedVersion": "6.26.0",
     "author": "Sebastian McKenzie <sebmck@gmail.com>",
     "licenseType": "MIT",
     "link": "https://github.com/babel/babel/tree/master/packages/babel-register",
     "definedVersion": "^6.26.0",
-    "installedVersion": "6.26.0",
     "remoteVersion": "6.26.0",
     "alias": "",
     "requires": [
       {
         "name": "babel-core",
+        "installedVersion": "6.26.3",
         "author": "Sebastian McKenzie <sebmck@gmail.com>",
         "licenseType": "MIT",
         "link": "https://github.com/babel/babel/tree/master/packages/babel-core",
         "definedVersion": "^6.26.0",
-        "installedVersion": "6.26.3",
         "remoteVersion": "6.26.3",
         "alias": "",
         "requires": [
           {
             "name": "babel-code-frame",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-code-frame",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
               {
                 "name": "chalk",
+                "installedVersion": "1.1.3",
                 "author": "n/a",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/chalk/chalk.git",
                 "definedVersion": "^1.1.3",
-                "installedVersion": "1.1.3",
                 "remoteVersion": "1.1.3",
                 "alias": "",
                 "requires": [
                   {
                     "name": "ansi-styles",
+                    "installedVersion": "2.2.1",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/ansi-styles.git",
                     "definedVersion": "^2.2.1",
-                    "installedVersion": "2.2.1",
                     "remoteVersion": "2.2.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "escape-string-regexp",
+                    "installedVersion": "1.0.5",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "https://github.com/sindresorhus/escape-string-regexp",
                     "definedVersion": "^1.0.2",
-                    "installedVersion": "1.0.5",
                     "remoteVersion": "1.0.5",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "has-ansi",
+                    "installedVersion": "2.0.0",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "https://github.com/sindresorhus/has-ansi",
                     "definedVersion": "^2.0.0",
-                    "installedVersion": "2.0.0",
                     "remoteVersion": "2.0.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "ansi-regex",
+                        "installedVersion": "2.1.1",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/ansi-regex.git",
                         "definedVersion": "^2.0.0",
-                        "installedVersion": "2.1.1",
                         "remoteVersion": "2.1.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -102,28 +99,27 @@
                   },
                   {
                     "name": "strip-ansi",
+                    "installedVersion": "3.0.1",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "https://github.com/chalk/strip-ansi",
                     "definedVersion": "^3.0.0",
-                    "installedVersion": "3.0.1",
                     "remoteVersion": "3.0.1",
                     "alias": "",
                     "requires": [
                       {
                         "name": "ansi-regex",
+                        "installedVersion": "2.1.1",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/ansi-regex.git",
                         "definedVersion": "^2.0.0",
-                        "installedVersion": "2.1.1",
                         "remoteVersion": "2.1.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -133,18 +129,17 @@
                   },
                   {
                     "name": "supports-color",
+                    "installedVersion": "2.0.0",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "https://github.com/chalk/supports-color",
                     "definedVersion": "^2.0.0",
-                    "installedVersion": "2.0.0",
                     "remoteVersion": "2.0.0",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -154,33 +149,31 @@
               },
               {
                 "name": "esutils",
+                "installedVersion": "2.0.3",
                 "author": "n/a",
                 "licenseType": "BSD-2-Clause",
                 "link": "git+ssh://git@github.com/estools/esutils.git",
                 "definedVersion": "^2.0.2",
-                "installedVersion": "2.0.3",
                 "remoteVersion": "2.0.3",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "js-tokens",
+                "installedVersion": "3.0.2",
                 "author": "Simon Lydell",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/lydell/js-tokens.git",
                 "definedVersion": "^3.0.2",
-                "installedVersion": "3.0.2",
                 "remoteVersion": "3.0.2",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -190,63 +183,61 @@
           },
           {
             "name": "babel-generator",
+            "installedVersion": "6.26.1",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-generator",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.1",
             "remoteVersion": "6.26.1",
             "alias": "",
             "requires": [
               {
                 "name": "babel-messages",
+                "installedVersion": "6.23.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-messages",
                 "definedVersion": "^6.23.0",
-                "installedVersion": "6.23.0",
                 "remoteVersion": "6.23.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                    "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
+                    "definedVersion": "^6.22.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -262,43 +253,41 @@
               },
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -308,53 +297,51 @@
               },
               {
                 "name": "babel-types",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -364,48 +351,45 @@
                   },
                   {
                     "name": "esutils",
+                    "installedVersion": "2.0.3",
                     "author": "n/a",
                     "licenseType": "BSD-2-Clause",
                     "link": "git+ssh://git@github.com/estools/esutils.git",
                     "definedVersion": "^2.0.2",
-                    "installedVersion": "2.0.3",
                     "remoteVersion": "2.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "lodash",
+                    "installedVersion": "4.17.21",
                     "author": "John-David Dalton <john.david.dalton@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lodash/lodash.git",
                     "definedVersion": "^4.17.4",
-                    "installedVersion": "4.17.21",
                     "remoteVersion": "4.17.23",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "to-fast-properties",
+                    "installedVersion": "1.0.3",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                     "definedVersion": "^1.0.3",
-                    "installedVersion": "1.0.3",
                     "remoteVersion": "1.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -415,38 +399,37 @@
               },
               {
                 "name": "detect-indent",
+                "installedVersion": "4.0.0",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "licenseType": "MIT",
                 "link": "https://github.com/sindresorhus/detect-indent",
                 "definedVersion": "^4.0.0",
-                "installedVersion": "4.0.0",
                 "remoteVersion": "4.0.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "repeating",
+                    "installedVersion": "2.0.1",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/repeating.git",
                     "definedVersion": "^2.0.0",
-                    "installedVersion": "2.0.1",
                     "remoteVersion": "2.0.1",
                     "alias": "",
                     "requires": [
                       {
                         "name": "is-finite",
+                        "installedVersion": "1.1.0",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/is-finite.git",
                         "definedVersion": "^1.0.0",
-                        "installedVersion": "1.1.0",
                         "remoteVersion": "1.1.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -462,63 +445,59 @@
               },
               {
                 "name": "jsesc",
+                "installedVersion": "1.3.0",
                 "author": "Mathias Bynens https://mathiasbynens.be/",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/mathiasbynens/jsesc.git",
                 "definedVersion": "^1.3.0",
-                "installedVersion": "1.3.0",
                 "remoteVersion": "1.3.0",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "lodash",
+                "installedVersion": "4.17.21",
                 "author": "John-David Dalton <john.david.dalton@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/lodash/lodash.git",
                 "definedVersion": "^4.17.4",
-                "installedVersion": "4.17.21",
                 "remoteVersion": "4.17.23",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "source-map",
+                "installedVersion": "0.5.7",
                 "author": "Nick Fitzgerald <nfitzgerald@mozilla.com>",
                 "licenseType": "BSD-3-Clause",
                 "link": "git+ssh://git@github.com/mozilla/source-map.git",
                 "definedVersion": "^0.5.7",
-                "installedVersion": "0.5.7",
                 "remoteVersion": "0.5.7",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "trim-right",
+                "installedVersion": "1.0.1",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "licenseType": "MIT",
                 "link": "https://github.com/sindresorhus/trim-right",
                 "definedVersion": "^1.0.1",
-                "installedVersion": "1.0.1",
                 "remoteVersion": "1.0.1",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -528,53 +507,51 @@
           },
           {
             "name": "babel-helpers",
+            "installedVersion": "6.24.1",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-helpers",
             "definedVersion": "^6.24.1",
-            "installedVersion": "6.24.1",
             "remoteVersion": "6.24.1",
             "alias": "",
             "requires": [
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
+                "definedVersion": "^6.22.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -584,53 +561,51 @@
               },
               {
                 "name": "babel-template",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-template",
-                "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
+                "definedVersion": "^6.24.1",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -640,88 +615,85 @@
                   },
                   {
                     "name": "babel-traverse",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-traverse",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "babel-code-frame",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-code-frame",
                         "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "chalk",
+                            "installedVersion": "1.1.3",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/chalk/chalk.git",
                             "definedVersion": "^1.1.3",
-                            "installedVersion": "1.1.3",
                             "remoteVersion": "1.1.3",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "ansi-styles",
+                                "installedVersion": "2.2.1",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/chalk/ansi-styles.git",
                                 "definedVersion": "^2.2.1",
-                                "installedVersion": "2.2.1",
                                 "remoteVersion": "2.2.1",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               },
                               {
                                 "name": "escape-string-regexp",
+                                "installedVersion": "1.0.5",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/sindresorhus/escape-string-regexp",
                                 "definedVersion": "^1.0.2",
-                                "installedVersion": "1.0.5",
                                 "remoteVersion": "1.0.5",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               },
                               {
                                 "name": "has-ansi",
+                                "installedVersion": "2.0.0",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/sindresorhus/has-ansi",
                                 "definedVersion": "^2.0.0",
-                                "installedVersion": "2.0.0",
                                 "remoteVersion": "2.0.0",
                                 "alias": "",
                                 "requires": [
                                   {
                                     "name": "ansi-regex",
+                                    "installedVersion": "2.1.1",
                                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                     "licenseType": "MIT",
                                     "link": "git+https://github.com/chalk/ansi-regex.git",
                                     "definedVersion": "^2.0.0",
-                                    "installedVersion": "2.1.1",
                                     "remoteVersion": "2.1.1",
                                     "alias": "",
                                     "department": "kessler",
                                     "relatedTo": "stuff",
                                     "licensePeriod": "perpetual",
-                                    "material": "material",
-                                    "requires": []
+                                    "material": "material"
                                   }
                                 ],
                                 "department": "kessler",
@@ -731,28 +703,27 @@
                               },
                               {
                                 "name": "strip-ansi",
+                                "installedVersion": "3.0.1",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/chalk/strip-ansi",
                                 "definedVersion": "^3.0.0",
-                                "installedVersion": "3.0.1",
                                 "remoteVersion": "3.0.1",
                                 "alias": "",
                                 "requires": [
                                   {
                                     "name": "ansi-regex",
+                                    "installedVersion": "2.1.1",
                                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                     "licenseType": "MIT",
                                     "link": "git+https://github.com/chalk/ansi-regex.git",
                                     "definedVersion": "^2.0.0",
-                                    "installedVersion": "2.1.1",
                                     "remoteVersion": "2.1.1",
                                     "alias": "",
                                     "department": "kessler",
                                     "relatedTo": "stuff",
                                     "licensePeriod": "perpetual",
-                                    "material": "material",
-                                    "requires": []
+                                    "material": "material"
                                   }
                                 ],
                                 "department": "kessler",
@@ -762,18 +733,17 @@
                               },
                               {
                                 "name": "supports-color",
+                                "installedVersion": "2.0.0",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/chalk/supports-color",
                                 "definedVersion": "^2.0.0",
-                                "installedVersion": "2.0.0",
                                 "remoteVersion": "2.0.0",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -783,33 +753,31 @@
                           },
                           {
                             "name": "esutils",
+                            "installedVersion": "2.0.3",
                             "author": "n/a",
                             "licenseType": "BSD-2-Clause",
                             "link": "git+ssh://git@github.com/estools/esutils.git",
                             "definedVersion": "^2.0.2",
-                            "installedVersion": "2.0.3",
                             "remoteVersion": "2.0.3",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "js-tokens",
+                            "installedVersion": "3.0.2",
                             "author": "Simon Lydell",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/lydell/js-tokens.git",
                             "definedVersion": "^3.0.2",
-                            "installedVersion": "3.0.2",
                             "remoteVersion": "3.0.2",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -819,53 +787,51 @@
                       },
                       {
                         "name": "babel-messages",
+                        "installedVersion": "6.23.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-messages",
                         "definedVersion": "^6.23.0",
-                        "installedVersion": "6.23.0",
                         "remoteVersion": "6.23.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "babel-runtime",
+                            "installedVersion": "6.26.0",
                             "author": "Sebastian McKenzie <sebmck@gmail.com>",
                             "licenseType": "MIT",
                             "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                            "definedVersion": "^6.26.0",
-                            "installedVersion": "6.26.0",
+                            "definedVersion": "^6.22.0",
                             "remoteVersion": "6.26.0",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "core-js",
+                                "installedVersion": "2.6.12",
                                 "author": "n/a",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/zloirock/core-js.git",
-                                "definedVersion": "^2.5.0",
-                                "installedVersion": "2.6.12",
+                                "definedVersion": "^2.4.0",
                                 "remoteVersion": "2.6.12",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               },
                               {
                                 "name": "regenerator-runtime",
+                                "installedVersion": "0.11.1",
                                 "author": "Ben Newman <bn@cs.stanford.edu>",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                                 "definedVersion": "^0.11.0",
-                                "installedVersion": "0.11.1",
                                 "remoteVersion": "0.11.1",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -881,43 +847,41 @@
                       },
                       {
                         "name": "babel-runtime",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                         "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "core-js",
+                            "installedVersion": "2.6.12",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/zloirock/core-js.git",
-                            "definedVersion": "^2.5.0",
-                            "installedVersion": "2.6.12",
+                            "definedVersion": "^2.4.0",
                             "remoteVersion": "2.6.12",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "regenerator-runtime",
+                            "installedVersion": "0.11.1",
                             "author": "Ben Newman <bn@cs.stanford.edu>",
                             "licenseType": "MIT",
                             "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                             "definedVersion": "^0.11.0",
-                            "installedVersion": "0.11.1",
                             "remoteVersion": "0.11.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -927,53 +891,51 @@
                       },
                       {
                         "name": "babel-types",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                         "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "babel-runtime",
+                            "installedVersion": "6.26.0",
                             "author": "Sebastian McKenzie <sebmck@gmail.com>",
                             "licenseType": "MIT",
                             "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                             "definedVersion": "^6.26.0",
-                            "installedVersion": "6.26.0",
                             "remoteVersion": "6.26.0",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "core-js",
+                                "installedVersion": "2.6.12",
                                 "author": "n/a",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/zloirock/core-js.git",
-                                "definedVersion": "^2.5.0",
-                                "installedVersion": "2.6.12",
+                                "definedVersion": "^2.4.0",
                                 "remoteVersion": "2.6.12",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               },
                               {
                                 "name": "regenerator-runtime",
+                                "installedVersion": "0.11.1",
                                 "author": "Ben Newman <bn@cs.stanford.edu>",
                                 "licenseType": "MIT",
                                 "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                                 "definedVersion": "^0.11.0",
-                                "installedVersion": "0.11.1",
                                 "remoteVersion": "0.11.1",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -983,48 +945,45 @@
                           },
                           {
                             "name": "esutils",
+                            "installedVersion": "2.0.3",
                             "author": "n/a",
                             "licenseType": "BSD-2-Clause",
                             "link": "git+ssh://git@github.com/estools/esutils.git",
                             "definedVersion": "^2.0.2",
-                            "installedVersion": "2.0.3",
                             "remoteVersion": "2.0.3",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "lodash",
+                            "installedVersion": "4.17.21",
                             "author": "John-David Dalton <john.david.dalton@gmail.com>",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/lodash/lodash.git",
                             "definedVersion": "^4.17.4",
-                            "installedVersion": "4.17.21",
                             "remoteVersion": "4.17.23",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "to-fast-properties",
+                            "installedVersion": "1.0.3",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                             "definedVersion": "^1.0.3",
-                            "installedVersion": "1.0.3",
                             "remoteVersion": "1.0.3",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1034,43 +993,41 @@
                       },
                       {
                         "name": "babylon",
+                        "installedVersion": "6.18.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/babel/babylon.git",
                         "definedVersion": "^6.18.0",
-                        "installedVersion": "6.18.0",
                         "remoteVersion": "6.18.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "debug",
+                        "installedVersion": "2.6.9",
                         "author": "TJ Holowaychuk <tj@vision-media.ca>",
                         "licenseType": "MIT",
                         "link": "git://github.com/visionmedia/debug.git",
-                        "definedVersion": "^2.6.9",
-                        "installedVersion": "2.6.9",
+                        "definedVersion": "^2.6.8",
                         "remoteVersion": "2.6.9",
                         "alias": "",
                         "requires": [
                           {
                             "name": "ms",
+                            "installedVersion": "2.0.0",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/zeit/ms.git",
                             "definedVersion": "2.0.0",
-                            "installedVersion": "2.0.0",
                             "remoteVersion": "2.0.0",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1080,53 +1037,51 @@
                       },
                       {
                         "name": "globals",
+                        "installedVersion": "9.18.0",
                         "author": "Sindre Sorhus sindresorhus@gmail.com http://sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/globals.git",
                         "definedVersion": "^9.18.0",
-                        "installedVersion": "9.18.0",
                         "remoteVersion": "9.18.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "invariant",
+                        "installedVersion": "2.2.4",
                         "author": "Andres Suarez <zertosh@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zertosh/invariant.git",
                         "definedVersion": "^2.2.2",
-                        "installedVersion": "2.2.4",
                         "remoteVersion": "2.2.4",
                         "alias": "",
                         "requires": [
                           {
                             "name": "loose-envify",
+                            "installedVersion": "1.4.0",
                             "author": "Andres Suarez <zertosh@gmail.com>",
                             "licenseType": "MIT",
                             "link": "git://github.com/zertosh/loose-envify.git",
                             "definedVersion": "^1.0.0",
-                            "installedVersion": "1.4.0",
                             "remoteVersion": "1.4.0",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "js-tokens",
+                                "installedVersion": "3.0.2",
                                 "author": "Simon Lydell",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/lydell/js-tokens.git",
-                                "definedVersion": "^3.0.2",
-                                "installedVersion": "3.0.2",
-                                "remoteVersion": "3.0.2",
+                                "definedVersion": "^3.0.0 || ^4.0.0",
+                                "remoteVersion": "4.0.0",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -1142,18 +1097,17 @@
                       },
                       {
                         "name": "lodash",
+                        "installedVersion": "4.17.21",
                         "author": "John-David Dalton <john.david.dalton@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/lodash/lodash.git",
                         "definedVersion": "^4.17.4",
-                        "installedVersion": "4.17.21",
                         "remoteVersion": "4.17.23",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1163,53 +1117,51 @@
                   },
                   {
                     "name": "babel-types",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "babel-runtime",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                         "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "core-js",
+                            "installedVersion": "2.6.12",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/zloirock/core-js.git",
-                            "definedVersion": "^2.5.0",
-                            "installedVersion": "2.6.12",
+                            "definedVersion": "^2.4.0",
                             "remoteVersion": "2.6.12",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "regenerator-runtime",
+                            "installedVersion": "0.11.1",
                             "author": "Ben Newman <bn@cs.stanford.edu>",
                             "licenseType": "MIT",
                             "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                             "definedVersion": "^0.11.0",
-                            "installedVersion": "0.11.1",
                             "remoteVersion": "0.11.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1219,48 +1171,45 @@
                       },
                       {
                         "name": "esutils",
+                        "installedVersion": "2.0.3",
                         "author": "n/a",
                         "licenseType": "BSD-2-Clause",
                         "link": "git+ssh://git@github.com/estools/esutils.git",
                         "definedVersion": "^2.0.2",
-                        "installedVersion": "2.0.3",
                         "remoteVersion": "2.0.3",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "lodash",
+                        "installedVersion": "4.17.21",
                         "author": "John-David Dalton <john.david.dalton@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/lodash/lodash.git",
                         "definedVersion": "^4.17.4",
-                        "installedVersion": "4.17.21",
                         "remoteVersion": "4.17.23",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "to-fast-properties",
+                        "installedVersion": "1.0.3",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                         "definedVersion": "^1.0.3",
-                        "installedVersion": "1.0.3",
                         "remoteVersion": "1.0.3",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1270,33 +1219,31 @@
                   },
                   {
                     "name": "babylon",
+                    "installedVersion": "6.18.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/babel/babylon.git",
                     "definedVersion": "^6.18.0",
-                    "installedVersion": "6.18.0",
                     "remoteVersion": "6.18.0",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "lodash",
+                    "installedVersion": "4.17.21",
                     "author": "John-David Dalton <john.david.dalton@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lodash/lodash.git",
                     "definedVersion": "^4.17.4",
-                    "installedVersion": "4.17.21",
                     "remoteVersion": "4.17.23",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -1312,53 +1259,51 @@
           },
           {
             "name": "babel-messages",
+            "installedVersion": "6.23.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-messages",
             "definedVersion": "^6.23.0",
-            "installedVersion": "6.23.0",
             "remoteVersion": "6.23.0",
             "alias": "",
             "requires": [
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
+                "definedVersion": "^6.22.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -1374,11 +1319,11 @@
           },
           {
             "name": "babel-register",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-register",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
@@ -1393,43 +1338,41 @@
           },
           {
             "name": "babel-runtime",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
               {
                 "name": "core-js",
+                "installedVersion": "2.6.12",
                 "author": "n/a",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/zloirock/core-js.git",
-                "definedVersion": "^2.5.0",
-                "installedVersion": "2.6.12",
+                "definedVersion": "^2.4.0",
                 "remoteVersion": "2.6.12",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "regenerator-runtime",
+                "installedVersion": "0.11.1",
                 "author": "Ben Newman <bn@cs.stanford.edu>",
                 "licenseType": "MIT",
                 "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                 "definedVersion": "^0.11.0",
-                "installedVersion": "0.11.1",
                 "remoteVersion": "0.11.1",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -1439,53 +1382,51 @@
           },
           {
             "name": "babel-template",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-template",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -1495,88 +1436,85 @@
               },
               {
                 "name": "babel-traverse",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-traverse",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-code-frame",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-code-frame",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "chalk",
+                        "installedVersion": "1.1.3",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/chalk.git",
                         "definedVersion": "^1.1.3",
-                        "installedVersion": "1.1.3",
                         "remoteVersion": "1.1.3",
                         "alias": "",
                         "requires": [
                           {
                             "name": "ansi-styles",
+                            "installedVersion": "2.2.1",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/chalk/ansi-styles.git",
                             "definedVersion": "^2.2.1",
-                            "installedVersion": "2.2.1",
                             "remoteVersion": "2.2.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "escape-string-regexp",
+                            "installedVersion": "1.0.5",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "https://github.com/sindresorhus/escape-string-regexp",
                             "definedVersion": "^1.0.2",
-                            "installedVersion": "1.0.5",
                             "remoteVersion": "1.0.5",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "has-ansi",
+                            "installedVersion": "2.0.0",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "https://github.com/sindresorhus/has-ansi",
                             "definedVersion": "^2.0.0",
-                            "installedVersion": "2.0.0",
                             "remoteVersion": "2.0.0",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "ansi-regex",
+                                "installedVersion": "2.1.1",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/chalk/ansi-regex.git",
                                 "definedVersion": "^2.0.0",
-                                "installedVersion": "2.1.1",
                                 "remoteVersion": "2.1.1",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -1586,28 +1524,27 @@
                           },
                           {
                             "name": "strip-ansi",
+                            "installedVersion": "3.0.1",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "https://github.com/chalk/strip-ansi",
                             "definedVersion": "^3.0.0",
-                            "installedVersion": "3.0.1",
                             "remoteVersion": "3.0.1",
                             "alias": "",
                             "requires": [
                               {
                                 "name": "ansi-regex",
+                                "installedVersion": "2.1.1",
                                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                                 "licenseType": "MIT",
                                 "link": "git+https://github.com/chalk/ansi-regex.git",
                                 "definedVersion": "^2.0.0",
-                                "installedVersion": "2.1.1",
                                 "remoteVersion": "2.1.1",
                                 "alias": "",
                                 "department": "kessler",
                                 "relatedTo": "stuff",
                                 "licensePeriod": "perpetual",
-                                "material": "material",
-                                "requires": []
+                                "material": "material"
                               }
                             ],
                             "department": "kessler",
@@ -1617,18 +1554,17 @@
                           },
                           {
                             "name": "supports-color",
+                            "installedVersion": "2.0.0",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "https://github.com/chalk/supports-color",
                             "definedVersion": "^2.0.0",
-                            "installedVersion": "2.0.0",
                             "remoteVersion": "2.0.0",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1638,33 +1574,31 @@
                       },
                       {
                         "name": "esutils",
+                        "installedVersion": "2.0.3",
                         "author": "n/a",
                         "licenseType": "BSD-2-Clause",
                         "link": "git+ssh://git@github.com/estools/esutils.git",
                         "definedVersion": "^2.0.2",
-                        "installedVersion": "2.0.3",
                         "remoteVersion": "2.0.3",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "js-tokens",
+                        "installedVersion": "3.0.2",
                         "author": "Simon Lydell",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/lydell/js-tokens.git",
                         "definedVersion": "^3.0.2",
-                        "installedVersion": "3.0.2",
                         "remoteVersion": "3.0.2",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1674,53 +1608,51 @@
                   },
                   {
                     "name": "babel-messages",
+                    "installedVersion": "6.23.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-messages",
                     "definedVersion": "^6.23.0",
-                    "installedVersion": "6.23.0",
                     "remoteVersion": "6.23.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "babel-runtime",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                        "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
+                        "definedVersion": "^6.22.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "core-js",
+                            "installedVersion": "2.6.12",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/zloirock/core-js.git",
-                            "definedVersion": "^2.5.0",
-                            "installedVersion": "2.6.12",
+                            "definedVersion": "^2.4.0",
                             "remoteVersion": "2.6.12",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "regenerator-runtime",
+                            "installedVersion": "0.11.1",
                             "author": "Ben Newman <bn@cs.stanford.edu>",
                             "licenseType": "MIT",
                             "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                             "definedVersion": "^0.11.0",
-                            "installedVersion": "0.11.1",
                             "remoteVersion": "0.11.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1736,43 +1668,41 @@
                   },
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1782,53 +1712,51 @@
                   },
                   {
                     "name": "babel-types",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "babel-runtime",
+                        "installedVersion": "6.26.0",
                         "author": "Sebastian McKenzie <sebmck@gmail.com>",
                         "licenseType": "MIT",
                         "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                         "definedVersion": "^6.26.0",
-                        "installedVersion": "6.26.0",
                         "remoteVersion": "6.26.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "core-js",
+                            "installedVersion": "2.6.12",
                             "author": "n/a",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/zloirock/core-js.git",
-                            "definedVersion": "^2.5.0",
-                            "installedVersion": "2.6.12",
+                            "definedVersion": "^2.4.0",
                             "remoteVersion": "2.6.12",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           },
                           {
                             "name": "regenerator-runtime",
+                            "installedVersion": "0.11.1",
                             "author": "Ben Newman <bn@cs.stanford.edu>",
                             "licenseType": "MIT",
                             "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                             "definedVersion": "^0.11.0",
-                            "installedVersion": "0.11.1",
                             "remoteVersion": "0.11.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1838,48 +1766,45 @@
                       },
                       {
                         "name": "esutils",
+                        "installedVersion": "2.0.3",
                         "author": "n/a",
                         "licenseType": "BSD-2-Clause",
                         "link": "git+ssh://git@github.com/estools/esutils.git",
                         "definedVersion": "^2.0.2",
-                        "installedVersion": "2.0.3",
                         "remoteVersion": "2.0.3",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "lodash",
+                        "installedVersion": "4.17.21",
                         "author": "John-David Dalton <john.david.dalton@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/lodash/lodash.git",
                         "definedVersion": "^4.17.4",
-                        "installedVersion": "4.17.21",
                         "remoteVersion": "4.17.23",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "to-fast-properties",
+                        "installedVersion": "1.0.3",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                         "definedVersion": "^1.0.3",
-                        "installedVersion": "1.0.3",
                         "remoteVersion": "1.0.3",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1889,43 +1814,41 @@
                   },
                   {
                     "name": "babylon",
+                    "installedVersion": "6.18.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/babel/babylon.git",
                     "definedVersion": "^6.18.0",
-                    "installedVersion": "6.18.0",
                     "remoteVersion": "6.18.0",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "debug",
+                    "installedVersion": "2.6.9",
                     "author": "TJ Holowaychuk <tj@vision-media.ca>",
                     "licenseType": "MIT",
                     "link": "git://github.com/visionmedia/debug.git",
-                    "definedVersion": "^2.6.9",
-                    "installedVersion": "2.6.9",
+                    "definedVersion": "^2.6.8",
                     "remoteVersion": "2.6.9",
                     "alias": "",
                     "requires": [
                       {
                         "name": "ms",
+                        "installedVersion": "2.0.0",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zeit/ms.git",
                         "definedVersion": "2.0.0",
-                        "installedVersion": "2.0.0",
                         "remoteVersion": "2.0.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -1935,53 +1858,51 @@
                   },
                   {
                     "name": "globals",
+                    "installedVersion": "9.18.0",
                     "author": "Sindre Sorhus sindresorhus@gmail.com http://sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/globals.git",
                     "definedVersion": "^9.18.0",
-                    "installedVersion": "9.18.0",
                     "remoteVersion": "9.18.0",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "invariant",
+                    "installedVersion": "2.2.4",
                     "author": "Andres Suarez <zertosh@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zertosh/invariant.git",
                     "definedVersion": "^2.2.2",
-                    "installedVersion": "2.2.4",
                     "remoteVersion": "2.2.4",
                     "alias": "",
                     "requires": [
                       {
                         "name": "loose-envify",
+                        "installedVersion": "1.4.0",
                         "author": "Andres Suarez <zertosh@gmail.com>",
                         "licenseType": "MIT",
                         "link": "git://github.com/zertosh/loose-envify.git",
                         "definedVersion": "^1.0.0",
-                        "installedVersion": "1.4.0",
                         "remoteVersion": "1.4.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "js-tokens",
+                            "installedVersion": "3.0.2",
                             "author": "Simon Lydell",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/lydell/js-tokens.git",
-                            "definedVersion": "^3.0.2",
-                            "installedVersion": "3.0.2",
-                            "remoteVersion": "3.0.2",
+                            "definedVersion": "^3.0.0 || ^4.0.0",
+                            "remoteVersion": "4.0.0",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -1997,18 +1918,17 @@
                   },
                   {
                     "name": "lodash",
+                    "installedVersion": "4.17.21",
                     "author": "John-David Dalton <john.david.dalton@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lodash/lodash.git",
                     "definedVersion": "^4.17.4",
-                    "installedVersion": "4.17.21",
                     "remoteVersion": "4.17.23",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2018,53 +1938,51 @@
               },
               {
                 "name": "babel-types",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -2074,48 +1992,45 @@
                   },
                   {
                     "name": "esutils",
+                    "installedVersion": "2.0.3",
                     "author": "n/a",
                     "licenseType": "BSD-2-Clause",
                     "link": "git+ssh://git@github.com/estools/esutils.git",
                     "definedVersion": "^2.0.2",
-                    "installedVersion": "2.0.3",
                     "remoteVersion": "2.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "lodash",
+                    "installedVersion": "4.17.21",
                     "author": "John-David Dalton <john.david.dalton@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lodash/lodash.git",
                     "definedVersion": "^4.17.4",
-                    "installedVersion": "4.17.21",
                     "remoteVersion": "4.17.23",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "to-fast-properties",
+                    "installedVersion": "1.0.3",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                     "definedVersion": "^1.0.3",
-                    "installedVersion": "1.0.3",
                     "remoteVersion": "1.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2125,33 +2040,31 @@
               },
               {
                 "name": "babylon",
+                "installedVersion": "6.18.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/babel/babylon.git",
                 "definedVersion": "^6.18.0",
-                "installedVersion": "6.18.0",
                 "remoteVersion": "6.18.0",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "lodash",
+                "installedVersion": "4.17.21",
                 "author": "John-David Dalton <john.david.dalton@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/lodash/lodash.git",
                 "definedVersion": "^4.17.4",
-                "installedVersion": "4.17.21",
                 "remoteVersion": "4.17.23",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -2161,88 +2074,85 @@
           },
           {
             "name": "babel-traverse",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-traverse",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
               {
                 "name": "babel-code-frame",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-code-frame",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "chalk",
+                    "installedVersion": "1.1.3",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/chalk/chalk.git",
                     "definedVersion": "^1.1.3",
-                    "installedVersion": "1.1.3",
                     "remoteVersion": "1.1.3",
                     "alias": "",
                     "requires": [
                       {
                         "name": "ansi-styles",
+                        "installedVersion": "2.2.1",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/chalk/ansi-styles.git",
                         "definedVersion": "^2.2.1",
-                        "installedVersion": "2.2.1",
                         "remoteVersion": "2.2.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "escape-string-regexp",
+                        "installedVersion": "1.0.5",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "https://github.com/sindresorhus/escape-string-regexp",
                         "definedVersion": "^1.0.2",
-                        "installedVersion": "1.0.5",
                         "remoteVersion": "1.0.5",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "has-ansi",
+                        "installedVersion": "2.0.0",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "https://github.com/sindresorhus/has-ansi",
                         "definedVersion": "^2.0.0",
-                        "installedVersion": "2.0.0",
                         "remoteVersion": "2.0.0",
                         "alias": "",
                         "requires": [
                           {
                             "name": "ansi-regex",
+                            "installedVersion": "2.1.1",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/chalk/ansi-regex.git",
                             "definedVersion": "^2.0.0",
-                            "installedVersion": "2.1.1",
                             "remoteVersion": "2.1.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -2252,28 +2162,27 @@
                       },
                       {
                         "name": "strip-ansi",
+                        "installedVersion": "3.0.1",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "https://github.com/chalk/strip-ansi",
                         "definedVersion": "^3.0.0",
-                        "installedVersion": "3.0.1",
                         "remoteVersion": "3.0.1",
                         "alias": "",
                         "requires": [
                           {
                             "name": "ansi-regex",
+                            "installedVersion": "2.1.1",
                             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                             "licenseType": "MIT",
                             "link": "git+https://github.com/chalk/ansi-regex.git",
                             "definedVersion": "^2.0.0",
-                            "installedVersion": "2.1.1",
                             "remoteVersion": "2.1.1",
                             "alias": "",
                             "department": "kessler",
                             "relatedTo": "stuff",
                             "licensePeriod": "perpetual",
-                            "material": "material",
-                            "requires": []
+                            "material": "material"
                           }
                         ],
                         "department": "kessler",
@@ -2283,18 +2192,17 @@
                       },
                       {
                         "name": "supports-color",
+                        "installedVersion": "2.0.0",
                         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                         "licenseType": "MIT",
                         "link": "https://github.com/chalk/supports-color",
                         "definedVersion": "^2.0.0",
-                        "installedVersion": "2.0.0",
                         "remoteVersion": "2.0.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -2304,33 +2212,31 @@
                   },
                   {
                     "name": "esutils",
+                    "installedVersion": "2.0.3",
                     "author": "n/a",
                     "licenseType": "BSD-2-Clause",
                     "link": "git+ssh://git@github.com/estools/esutils.git",
                     "definedVersion": "^2.0.2",
-                    "installedVersion": "2.0.3",
                     "remoteVersion": "2.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "js-tokens",
+                    "installedVersion": "3.0.2",
                     "author": "Simon Lydell",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lydell/js-tokens.git",
                     "definedVersion": "^3.0.2",
-                    "installedVersion": "3.0.2",
                     "remoteVersion": "3.0.2",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2340,53 +2246,51 @@
               },
               {
                 "name": "babel-messages",
+                "installedVersion": "6.23.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-messages",
                 "definedVersion": "^6.23.0",
-                "installedVersion": "6.23.0",
                 "remoteVersion": "6.23.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
-                    "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
+                    "definedVersion": "^6.22.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -2402,43 +2306,41 @@
               },
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2448,53 +2350,51 @@
               },
               {
                 "name": "babel-types",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "babel-runtime",
+                    "installedVersion": "6.26.0",
                     "author": "Sebastian McKenzie <sebmck@gmail.com>",
                     "licenseType": "MIT",
                     "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                     "definedVersion": "^6.26.0",
-                    "installedVersion": "6.26.0",
                     "remoteVersion": "6.26.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "core-js",
+                        "installedVersion": "2.6.12",
                         "author": "n/a",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/zloirock/core-js.git",
-                        "definedVersion": "^2.5.0",
-                        "installedVersion": "2.6.12",
+                        "definedVersion": "^2.4.0",
                         "remoteVersion": "2.6.12",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       },
                       {
                         "name": "regenerator-runtime",
+                        "installedVersion": "0.11.1",
                         "author": "Ben Newman <bn@cs.stanford.edu>",
                         "licenseType": "MIT",
                         "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                         "definedVersion": "^0.11.0",
-                        "installedVersion": "0.11.1",
                         "remoteVersion": "0.11.1",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -2504,48 +2404,45 @@
                   },
                   {
                     "name": "esutils",
+                    "installedVersion": "2.0.3",
                     "author": "n/a",
                     "licenseType": "BSD-2-Clause",
                     "link": "git+ssh://git@github.com/estools/esutils.git",
                     "definedVersion": "^2.0.2",
-                    "installedVersion": "2.0.3",
                     "remoteVersion": "2.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "lodash",
+                    "installedVersion": "4.17.21",
                     "author": "John-David Dalton <john.david.dalton@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/lodash/lodash.git",
                     "definedVersion": "^4.17.4",
-                    "installedVersion": "4.17.21",
                     "remoteVersion": "4.17.23",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "to-fast-properties",
+                    "installedVersion": "1.0.3",
                     "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                     "definedVersion": "^1.0.3",
-                    "installedVersion": "1.0.3",
                     "remoteVersion": "1.0.3",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2555,43 +2452,41 @@
               },
               {
                 "name": "babylon",
+                "installedVersion": "6.18.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/babel/babylon.git",
                 "definedVersion": "^6.18.0",
-                "installedVersion": "6.18.0",
                 "remoteVersion": "6.18.0",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "debug",
+                "installedVersion": "2.6.9",
                 "author": "TJ Holowaychuk <tj@vision-media.ca>",
                 "licenseType": "MIT",
                 "link": "git://github.com/visionmedia/debug.git",
-                "definedVersion": "^2.6.9",
-                "installedVersion": "2.6.9",
+                "definedVersion": "^2.6.8",
                 "remoteVersion": "2.6.9",
                 "alias": "",
                 "requires": [
                   {
                     "name": "ms",
+                    "installedVersion": "2.0.0",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zeit/ms.git",
                     "definedVersion": "2.0.0",
-                    "installedVersion": "2.0.0",
                     "remoteVersion": "2.0.0",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2601,53 +2496,51 @@
               },
               {
                 "name": "globals",
+                "installedVersion": "9.18.0",
                 "author": "Sindre Sorhus sindresorhus@gmail.com http://sindresorhus.com",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/globals.git",
                 "definedVersion": "^9.18.0",
-                "installedVersion": "9.18.0",
                 "remoteVersion": "9.18.0",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "invariant",
+                "installedVersion": "2.2.4",
                 "author": "Andres Suarez <zertosh@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/zertosh/invariant.git",
                 "definedVersion": "^2.2.2",
-                "installedVersion": "2.2.4",
                 "remoteVersion": "2.2.4",
                 "alias": "",
                 "requires": [
                   {
                     "name": "loose-envify",
+                    "installedVersion": "1.4.0",
                     "author": "Andres Suarez <zertosh@gmail.com>",
                     "licenseType": "MIT",
                     "link": "git://github.com/zertosh/loose-envify.git",
                     "definedVersion": "^1.0.0",
-                    "installedVersion": "1.4.0",
                     "remoteVersion": "1.4.0",
                     "alias": "",
                     "requires": [
                       {
                         "name": "js-tokens",
+                        "installedVersion": "3.0.2",
                         "author": "Simon Lydell",
                         "licenseType": "MIT",
                         "link": "git+https://github.com/lydell/js-tokens.git",
-                        "definedVersion": "^3.0.2",
-                        "installedVersion": "3.0.2",
-                        "remoteVersion": "3.0.2",
+                        "definedVersion": "^3.0.0 || ^4.0.0",
+                        "remoteVersion": "4.0.0",
                         "alias": "",
                         "department": "kessler",
                         "relatedTo": "stuff",
                         "licensePeriod": "perpetual",
-                        "material": "material",
-                        "requires": []
+                        "material": "material"
                       }
                     ],
                     "department": "kessler",
@@ -2663,18 +2556,17 @@
               },
               {
                 "name": "lodash",
+                "installedVersion": "4.17.21",
                 "author": "John-David Dalton <john.david.dalton@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/lodash/lodash.git",
                 "definedVersion": "^4.17.4",
-                "installedVersion": "4.17.21",
                 "remoteVersion": "4.17.23",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -2684,53 +2576,51 @@
           },
           {
             "name": "babel-types",
+            "installedVersion": "6.26.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "https://github.com/babel/babel/tree/master/packages/babel-types",
             "definedVersion": "^6.26.0",
-            "installedVersion": "6.26.0",
             "remoteVersion": "6.26.0",
             "alias": "",
             "requires": [
               {
                 "name": "babel-runtime",
+                "installedVersion": "6.26.0",
                 "author": "Sebastian McKenzie <sebmck@gmail.com>",
                 "licenseType": "MIT",
                 "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
                 "definedVersion": "^6.26.0",
-                "installedVersion": "6.26.0",
                 "remoteVersion": "6.26.0",
                 "alias": "",
                 "requires": [
                   {
                     "name": "core-js",
+                    "installedVersion": "2.6.12",
                     "author": "n/a",
                     "licenseType": "MIT",
                     "link": "git+https://github.com/zloirock/core-js.git",
-                    "definedVersion": "^2.5.0",
-                    "installedVersion": "2.6.12",
+                    "definedVersion": "^2.4.0",
                     "remoteVersion": "2.6.12",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "regenerator-runtime",
+                    "installedVersion": "0.11.1",
                     "author": "Ben Newman <bn@cs.stanford.edu>",
                     "licenseType": "MIT",
                     "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
                     "definedVersion": "^0.11.0",
-                    "installedVersion": "0.11.1",
                     "remoteVersion": "0.11.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2740,48 +2630,45 @@
               },
               {
                 "name": "esutils",
+                "installedVersion": "2.0.3",
                 "author": "n/a",
                 "licenseType": "BSD-2-Clause",
                 "link": "git+ssh://git@github.com/estools/esutils.git",
                 "definedVersion": "^2.0.2",
-                "installedVersion": "2.0.3",
                 "remoteVersion": "2.0.3",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "lodash",
+                "installedVersion": "4.17.21",
                 "author": "John-David Dalton <john.david.dalton@gmail.com>",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/lodash/lodash.git",
                 "definedVersion": "^4.17.4",
-                "installedVersion": "4.17.21",
                 "remoteVersion": "4.17.23",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               },
               {
                 "name": "to-fast-properties",
+                "installedVersion": "1.0.3",
                 "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/sindresorhus/to-fast-properties.git",
                 "definedVersion": "^1.0.3",
-                "installedVersion": "1.0.3",
                 "remoteVersion": "1.0.3",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -2791,58 +2678,55 @@
           },
           {
             "name": "babylon",
+            "installedVersion": "6.18.0",
             "author": "Sebastian McKenzie <sebmck@gmail.com>",
             "licenseType": "MIT",
             "link": "git+https://github.com/babel/babylon.git",
             "definedVersion": "^6.18.0",
-            "installedVersion": "6.18.0",
             "remoteVersion": "6.18.0",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "convert-source-map",
+            "installedVersion": "1.9.0",
             "author": "Thorsten Lorenz thlorenz@gmx.de http://thlorenz.com",
             "licenseType": "MIT",
             "link": "git://github.com/thlorenz/convert-source-map.git",
             "definedVersion": "^1.5.1",
-            "installedVersion": "1.9.0",
             "remoteVersion": "1.9.0",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "debug",
+            "installedVersion": "2.6.9",
             "author": "TJ Holowaychuk <tj@vision-media.ca>",
             "licenseType": "MIT",
             "link": "git://github.com/visionmedia/debug.git",
             "definedVersion": "^2.6.9",
-            "installedVersion": "2.6.9",
             "remoteVersion": "2.6.9",
             "alias": "",
             "requires": [
               {
                 "name": "ms",
+                "installedVersion": "2.0.0",
                 "author": "n/a",
                 "licenseType": "MIT",
                 "link": "git+https://github.com/zeit/ms.git",
                 "definedVersion": "2.0.0",
-                "installedVersion": "2.0.0",
                 "remoteVersion": "2.0.0",
                 "alias": "",
                 "department": "kessler",
                 "relatedTo": "stuff",
                 "licensePeriod": "perpetual",
-                "material": "material",
-                "requires": []
+                "material": "material"
               }
             ],
             "department": "kessler",
@@ -2852,83 +2736,79 @@
           },
           {
             "name": "json5",
+            "installedVersion": "0.5.1",
             "author": "Aseem Kishore <aseem.kishore@gmail.com>",
             "licenseType": "MIT",
             "link": "git+https://github.com/aseemk/json5.git",
             "definedVersion": "^0.5.1",
-            "installedVersion": "0.5.1",
             "remoteVersion": "0.5.1",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "lodash",
+            "installedVersion": "4.17.21",
             "author": "John-David Dalton <john.david.dalton@gmail.com>",
             "licenseType": "MIT",
             "link": "git+https://github.com/lodash/lodash.git",
             "definedVersion": "^4.17.4",
-            "installedVersion": "4.17.21",
             "remoteVersion": "4.17.23",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "minimatch",
+            "installedVersion": "3.1.2",
             "author": "Isaac Z. Schlueter <i@izs.me> (http://blog.izs.me)",
             "licenseType": "ISC",
             "link": "git://github.com/isaacs/minimatch.git",
             "definedVersion": "^3.0.4",
-            "installedVersion": "3.1.2",
             "remoteVersion": "3.1.5",
             "alias": "",
             "requires": [
               {
                 "name": "brace-expansion",
+                "installedVersion": "1.1.11",
                 "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
                 "licenseType": "MIT",
                 "link": "git://github.com/juliangruber/brace-expansion.git",
                 "definedVersion": "^1.1.7",
-                "installedVersion": "1.1.11",
                 "remoteVersion": "1.1.12",
                 "alias": "",
                 "requires": [
                   {
                     "name": "balanced-match",
+                    "installedVersion": "1.0.2",
                     "author": "Julian Gruber mail@juliangruber.com http://juliangruber.com",
                     "licenseType": "MIT",
                     "link": "git://github.com/juliangruber/balanced-match.git",
                     "definedVersion": "^1.0.0",
-                    "installedVersion": "1.0.2",
                     "remoteVersion": "1.0.2",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   },
                   {
                     "name": "concat-map",
+                    "installedVersion": "0.0.1",
                     "author": "James Halliday mail@substack.net http://substack.net",
                     "licenseType": "MIT",
                     "link": "git://github.com/substack/node-concat-map.git",
                     "definedVersion": "0.0.1",
-                    "installedVersion": "0.0.1",
                     "remoteVersion": "0.0.1",
                     "alias": "",
                     "department": "kessler",
                     "relatedTo": "stuff",
                     "licensePeriod": "perpetual",
-                    "material": "material",
-                    "requires": []
+                    "material": "material"
                   }
                 ],
                 "department": "kessler",
@@ -2944,63 +2824,59 @@
           },
           {
             "name": "path-is-absolute",
+            "installedVersion": "1.0.1",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/path-is-absolute.git",
             "definedVersion": "^1.0.1",
-            "installedVersion": "1.0.1",
             "remoteVersion": "1.0.1",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "private",
+            "installedVersion": "0.1.8",
             "author": "Ben Newman bn@cs.stanford.edu",
             "licenseType": "MIT",
             "link": "git://github.com/benjamn/private.git",
             "definedVersion": "^0.1.8",
-            "installedVersion": "0.1.8",
             "remoteVersion": "0.1.8",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "slash",
+            "installedVersion": "1.0.0",
             "author": "Sindre Sorhus sindresorhus@gmail.com http://sindresorhus.com",
             "licenseType": "MIT",
             "link": "git://github.com/sindresorhus/slash",
             "definedVersion": "^1.0.0",
-            "installedVersion": "1.0.0",
             "remoteVersion": "1.0.0",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "source-map",
+            "installedVersion": "0.5.7",
             "author": "Nick Fitzgerald <nfitzgerald@mozilla.com>",
             "licenseType": "BSD-3-Clause",
             "link": "git+ssh://git@github.com/mozilla/source-map.git",
             "definedVersion": "^0.5.7",
-            "installedVersion": "0.5.7",
             "remoteVersion": "0.5.7",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           }
         ],
         "department": "kessler",
@@ -3010,43 +2886,41 @@
       },
       {
         "name": "babel-runtime",
+        "installedVersion": "6.26.0",
         "author": "Sebastian McKenzie <sebmck@gmail.com>",
         "licenseType": "MIT",
         "link": "https://github.com/babel/babel/tree/master/packages/babel-runtime",
         "definedVersion": "^6.26.0",
-        "installedVersion": "6.26.0",
         "remoteVersion": "6.26.0",
         "alias": "",
         "requires": [
           {
             "name": "core-js",
+            "installedVersion": "2.6.12",
             "author": "n/a",
             "licenseType": "MIT",
             "link": "git+https://github.com/zloirock/core-js.git",
-            "definedVersion": "^2.5.0",
-            "installedVersion": "2.6.12",
+            "definedVersion": "^2.4.0",
             "remoteVersion": "2.6.12",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "regenerator-runtime",
+            "installedVersion": "0.11.1",
             "author": "Ben Newman <bn@cs.stanford.edu>",
             "licenseType": "MIT",
             "link": "https://github.com/facebook/regenerator/tree/master/packages/regenerator-runtime",
             "definedVersion": "^0.11.0",
-            "installedVersion": "0.11.1",
             "remoteVersion": "0.11.1",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           }
         ],
         "department": "kessler",
@@ -3056,58 +2930,55 @@
       },
       {
         "name": "core-js",
+        "installedVersion": "2.6.12",
         "author": "n/a",
         "licenseType": "MIT",
         "link": "git+https://github.com/zloirock/core-js.git",
         "definedVersion": "^2.5.0",
-        "installedVersion": "2.6.12",
         "remoteVersion": "2.6.12",
         "alias": "",
         "department": "kessler",
         "relatedTo": "stuff",
         "licensePeriod": "perpetual",
-        "material": "material",
-        "requires": []
+        "material": "material"
       },
       {
         "name": "home-or-tmp",
+        "installedVersion": "2.0.0",
         "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
         "licenseType": "MIT",
         "link": "https://github.com/sindresorhus/home-or-tmp",
         "definedVersion": "^2.0.0",
-        "installedVersion": "2.0.0",
         "remoteVersion": "2.0.0",
         "alias": "",
         "requires": [
           {
             "name": "os-homedir",
+            "installedVersion": "1.0.2",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/os-homedir.git",
             "definedVersion": "^1.0.0",
-            "installedVersion": "1.0.2",
             "remoteVersion": "1.0.2",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           },
           {
             "name": "os-tmpdir",
+            "installedVersion": "1.0.2",
             "author": "Sindre Sorhus sindresorhus@gmail.com sindresorhus.com",
             "licenseType": "MIT",
             "link": "git+https://github.com/sindresorhus/os-tmpdir.git",
             "definedVersion": "^1.0.1",
-            "installedVersion": "1.0.2",
             "remoteVersion": "1.0.2",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           }
         ],
         "department": "kessler",
@@ -3117,43 +2988,41 @@
       },
       {
         "name": "lodash",
+        "installedVersion": "4.17.21",
         "author": "John-David Dalton <john.david.dalton@gmail.com>",
         "licenseType": "MIT",
         "link": "git+https://github.com/lodash/lodash.git",
         "definedVersion": "^4.17.4",
-        "installedVersion": "4.17.21",
         "remoteVersion": "4.17.23",
         "alias": "",
         "department": "kessler",
         "relatedTo": "stuff",
         "licensePeriod": "perpetual",
-        "material": "material",
-        "requires": []
+        "material": "material"
       },
       {
         "name": "mkdirp",
+        "installedVersion": "0.5.6",
         "author": "James Halliday <mail@substack.net> (http://substack.net)",
         "licenseType": "MIT",
         "link": "git+https://github.com/substack/node-mkdirp.git",
         "definedVersion": "^0.5.1",
-        "installedVersion": "0.5.6",
         "remoteVersion": "0.5.6",
         "alias": "",
         "requires": [
           {
             "name": "minimist",
+            "installedVersion": "1.2.7",
             "author": "James Halliday mail@substack.net http://substack.net",
             "licenseType": "MIT",
             "link": "git://github.com/minimistjs/minimist.git",
             "definedVersion": "^1.2.6",
-            "installedVersion": "1.2.7",
             "remoteVersion": "1.2.8",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           }
         ],
         "department": "kessler",
@@ -3163,53 +3032,33 @@
       },
       {
         "name": "source-map-support",
+        "installedVersion": "0.4.18",
         "author": "n/a",
         "licenseType": "MIT",
         "link": "git+https://github.com/evanw/node-source-map-support.git",
         "definedVersion": "^0.4.15",
-        "installedVersion": "0.4.18",
         "remoteVersion": "0.4.18",
         "alias": "",
         "requires": [
           {
             "name": "source-map",
+            "installedVersion": "0.5.7",
             "author": "Nick Fitzgerald <nfitzgerald@mozilla.com>",
             "licenseType": "BSD-3-Clause",
             "link": "git+ssh://git@github.com/mozilla/source-map.git",
-            "definedVersion": "^0.5.7",
-            "installedVersion": "0.5.7",
+            "definedVersion": "^0.5.6",
             "remoteVersion": "0.5.7",
             "alias": "",
             "department": "kessler",
             "relatedTo": "stuff",
             "licensePeriod": "perpetual",
-            "material": "material",
-            "requires": []
+            "material": "material"
           }
         ],
         "department": "kessler",
         "relatedTo": "stuff",
         "licensePeriod": "perpetual",
         "material": "material"
-      }
-    ],
-    "department": "kessler",
-    "relatedTo": "stuff",
-    "licensePeriod": "perpetual",
-    "material": "material"
-  },
-  {
-    "name": "babel-register",
-    "author": "Sebastian McKenzie <sebmck@gmail.com>",
-    "licenseType": "MIT",
-    "link": "https://github.com/babel/babel/tree/master/packages/babel-register",
-    "definedVersion": "^6.26.0",
-    "installedVersion": "6.26.0",
-    "remoteVersion": "6.26.0",
-    "alias": "",
-    "requires": [
-      {
-        "dependencyLoop": true
       }
     ],
     "department": "kessler",

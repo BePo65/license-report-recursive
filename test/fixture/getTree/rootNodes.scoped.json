@@ -16,17 +16,5 @@
         "installedVersion": "1.2.3"
       }
     ]
-  },
-  {
-    "fullName": "@scope-a/core",
-    "name": "core",
-    "installedVersion": "1.2.3",
-    "requires": []
-  },
-  {
-    "fullName": "@scope-b/core",
-    "name": "core",
-    "installedVersion": "1.2.3",
-    "requires": []
   }
 ]

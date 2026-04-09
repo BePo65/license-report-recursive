@@ -60,9 +60,5 @@
   "author": {
     "value": "n/a",
     "label": "author"
-  },
-  "requires": {
-    "value": [],
-    "label": "requires"
   }
 }
