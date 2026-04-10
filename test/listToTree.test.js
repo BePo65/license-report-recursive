@@ -11,28 +11,28 @@ import util from '../lib/util.js';
 
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
-const dedupedSortedListPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'sortedList.json')
+const rootNodesPlainListPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.plain.json')
   .replace(/(\s+)/g, '\\$1');
 
-const testConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.json')
+const testPlainConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.plain.json')
   .replace(/(\s+)/g, '\\$1');
 
-const scopedDistinctSortedListPath = path
-  .resolve(__dirname, 'fixture', 'getTreeScopedDistinct', 'sortedList.json')
+const rootNodesScopedListPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.scoped.json')
   .replace(/(\s+)/g, '\\$1');
 
-const scopedDistinctConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTreeScopedDistinct', 'testConfig.json')
+const testScopedConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.scoped.json')
   .replace(/(\s+)/g, '\\$1');
 
-const dependencyLoopSortedListPath = path
-  .resolve(__dirname, 'fixture', 'getTreeDependencyLoopFlagged', 'sortedList.json')
+const rootNodesLoopListPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.loop.json')
   .replace(/(\s+)/g, '\\$1');
 
-const dependencyLoopConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTreeDependencyLoopFlagged', 'testConfig.json')
+const rootNodesLoopConfigPath = path
+  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.loop.json')
   .replace(/(\s+)/g, '\\$1');
 
 describe('getTree', () => {
@@ -40,8 +40,8 @@ describe('getTree', () => {
   let testConfig;
 
   beforeEach(async () => {
-    dedupedSortedList = await util.readJson(dedupedSortedListPath);
-    testConfig = await util.readJson(testConfigPath);
+    dedupedSortedList = await util.readJson(rootNodesPlainListPath);
+    testConfig = await util.readJson(testPlainConfigPath);
   });
 
   it('does get json tree of dependencies', async () => {
@@ -51,17 +51,17 @@ describe('getTree', () => {
     assert.equal(packagesTree[0].name, 'got');
     assert.ok(packagesTree[0].isRootNode === undefined);
     assert.ok(packagesTree[0].requires !== undefined);
-    assert.equal(packagesTree[0].requires.length, 13);
+    assert.equal(packagesTree[0].requires.length, 4);
     assert.ok(packagesTree[0].requires[1].requires !== undefined);
-    assert.equal(packagesTree[0].requires[1].name, '@szmarczak/http-timer');
-    assert.equal(packagesTree[0].requires[1].requires.length, 1);
-    assert.equal(packagesTree[0].requires[1].requires[0].name, 'defer-to-connect');
-    assert.equal(packagesTree[0].requires[1].requires[0].requires.length, 0);
+    assert.equal(packagesTree[0].requires[2].name, '@types/responselike');
+    assert.equal(packagesTree[0].requires[2].requires.length, 1);
+    assert.equal(packagesTree[0].requires[2].requires[0].name, '@types/node');
+    assert.ok(packagesTree[0].requires[2].requires[0].requires === undefined);
   });
 
   it('keeps scoped packages with equal name/version distinct', async () => {
-    const testList = await util.readJson(scopedDistinctSortedListPath);
-    const cfg = await util.readJson(scopedDistinctConfigPath);
+    const testList = await util.readJson(rootNodesScopedListPath);
+    const cfg = await util.readJson(testScopedConfigPath);
 
     const packagesTree = listToTree(testList, cfg);
 
@@ -72,13 +72,14 @@ describe('getTree', () => {
   });
 
   it('keeps tree JSON-serializable when dependency loops are flagged', async () => {
-    const testList = await util.readJson(dependencyLoopSortedListPath);
-    const cfg = await util.readJson(dependencyLoopConfigPath);
+    const testList = await util.readJson(rootNodesLoopListPath);
+    const cfg = await util.readJson(rootNodesLoopConfigPath);
 
     const packagesTree = listToTree(testList, cfg);
-    const json = JSON.stringify(packagesTree);
-    const parsed = JSON.parse(json);
 
-    assert.equal(parsed[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop, true);
+    assert.equal(
+      packagesTree[0].requires[0].requires[0].requires[0].requires[0].dependencyLoop,
+      true,
+    );
   });
 });

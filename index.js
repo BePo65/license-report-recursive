@@ -12,7 +12,6 @@ import config from './lib/config.js';
 import getDependencies from './lib/getDependencies.js';
 import getFormatter from './lib/getFormatter.js';
 import listToTree from './lib/listToTree.js';
-import { getPackageIdWithVersion } from './lib/packageIdentity.js';
 import util from './lib/util.js';
 
 const debug = createDebugMessages('license-report-recurse');
@@ -119,19 +118,10 @@ const debug = createDebugMessages('license-report-recurse');
      * devDependencies of dependencies are ignored;
      * 'config.only' defaults to 'prod', 'opt', 'peer'
      */
-    const sortedList = depsIndex.sort(util.alphaSort);
-    // remove duplicates as they are only needed to identify dependency loops
-    let lastPackage = '';
-    const dedupedSortedList = sortedList.filter((element) => {
-      const currentPackage = getPackageIdWithVersion(element);
-      if (currentPackage !== lastPackage || element.isRootNode) {
-        lastPackage = currentPackage;
-        return true;
-      }
-      return false;
-    });
-
     if (config.output !== 'tree') {
+      // remove duplicates as they are not needed for flat output formats
+      const dedupedSortedList = util.dedupeDependenciesList(depsIndex);
+
       // keep only fields that are defined in the configuration
       const packagesList = await Promise.all(
         dedupedSortedList.map(async (element) => {
@@ -142,7 +132,9 @@ const debug = createDebugMessages('license-report-recurse');
       console.log(outputFormatter(packagesList, config));
       debug(`emitted list with ${packagesList.length} entries`);
     } else {
-      const packagesTree = listToTree(dedupedSortedList, config);
+      // extract root nodes
+      const rootNodes = depsIndex.filter((element) => element.isRootNode);
+      const packagesTree = listToTree(rootNodes, config);
       console.log(outputFormatter(packagesTree, config));
       debug(`emitted tree with ${packagesTree.length} base nodes`);
     }

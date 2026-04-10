@@ -1,0 +1,34 @@
+[
+  {
+    "fullName": "root",
+    "name": "root",
+    "installedVersion": "1.0.0",
+    "isRootNode": true,
+    "requires": [
+      {
+        "fullName": "@scope/a",
+        "name": "a",
+        "installedVersion": "1.0.0",
+        "requires": [
+          {
+            "fullName": "@scope/b",
+            "name": "b",
+            "installedVersion": "1.0.0",
+            "requires": [
+              {
+                "fullName": "@scope/a",
+                "name": "a",
+                "installedVersion": "1.0.0",
+                "requires": [
+                  {
+                    "dependencyLoop": true
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  }
+]

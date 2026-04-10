@@ -1,0 +1,20 @@
+[
+  {
+    "fullName": "root",
+    "name": "root",
+    "installedVersion": "1.0.0",
+    "isRootNode": true,
+    "requires": [
+      {
+        "fullName": "@scope-a/core",
+        "name": "core",
+        "installedVersion": "1.2.3"
+      },
+      {
+        "fullName": "@scope-b/core",
+        "name": "core",
+        "installedVersion": "1.2.3"
+      }
+    ]
+  }
+]

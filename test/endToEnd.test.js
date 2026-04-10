@@ -36,11 +36,11 @@ const allFieldsConfigPath = path
 
 // test data for dependencyLoop test
 const loopPackageJsonPath = path
-  .resolve(__dirname, 'fixture', 'dependencyLoop', 'package.json')
+  .resolve(__dirname, 'fixture', 'e2e.loop', 'package.json')
   .replace(/(\s+)/g, '\\$1');
 
 const loopExpectedDataPath = path
-  .resolve(__dirname, 'fixture', 'dependencyLoop', 'expectedData.json')
+  .resolve(__dirname, 'fixture', 'e2e.loop', 'expectedData.json')
   .replace(/(\s+)/g, '\\$1');
 
 describe('end to end test', { timeout: 100000 }, () => {

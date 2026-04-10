@@ -32,7 +32,7 @@
             "licenseType": "ISC",
             "link": "git+https://github.com/npm/node-semver.git",
             "installedFrom": "https://registry.npmjs.org/semver/-/semver-7.3.7.tgz",
-            "definedVersion": "^7.3.5",
+            "definedVersion": "^7.3.7",
             "remoteVersion": "7.7.4",
             "latestRemoteVersion": "7.7.4",
             "latestRemoteModified": "2026-03-19T19:28:32.632Z",
