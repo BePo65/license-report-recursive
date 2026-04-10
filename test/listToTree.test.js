@@ -12,30 +12,30 @@ import util from '../lib/util.js';
 const __dirname = path.dirname(url.fileURLToPath(import.meta.url));
 
 const rootNodesPlainListPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.plain.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'rootNodes.plain.json')
   .replace(/(\s+)/g, '\\$1');
 
 const testPlainConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.plain.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'testConfig.plain.json')
   .replace(/(\s+)/g, '\\$1');
 
 const rootNodesScopedListPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.scoped.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'rootNodes.scoped.json')
   .replace(/(\s+)/g, '\\$1');
 
 const testScopedConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.scoped.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'testConfig.scoped.json')
   .replace(/(\s+)/g, '\\$1');
 
 const rootNodesLoopListPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'rootNodes.loop.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'rootNodes.loop.json')
   .replace(/(\s+)/g, '\\$1');
 
 const rootNodesLoopConfigPath = path
-  .resolve(__dirname, 'fixture', 'getTree', 'testConfig.loop.json')
+  .resolve(__dirname, 'fixture', 'listToTree', 'testConfig.loop.json')
   .replace(/(\s+)/g, '\\$1');
 
-describe('getTree', () => {
+describe('listToTree', () => {
   let dedupedSortedList;
   let testConfig;
 
