@@ -1,6 +1,6 @@
 # license report tool with recursion
 
-[![Version](https://img.shields.io/badge/version-6.8.3-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
+[![Version](https://img.shields.io/badge/version-6.8.4-blue.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/CHANGELOG.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg?cacheSeconds=86400)](https://github.com/BePo65/license-report-recursive/blob/main/LICENSE)
 based on [![license-report](https://img.shields.io/badge/license--report-6.8.2-green.svg?cacheSeconds=86400)](https://www.npmjs.com/package/license-report)
 
