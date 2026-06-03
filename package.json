@@ -43,7 +43,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "^2.4.13",
-    "@commitlint/cli": "^20.5.0",
+    "@commitlint/cli": "^21.0.1",
     "@commitlint/config-conventional": "^21.0.1",
     "commit-and-tag-version": "^12.7.1",
     "conventional-commits-filter": "^5.0.0",
