@@ -39,16 +39,15 @@
     "debug": "^4.4.3",
     "license-report": "6.8.5",
     "rc": "^1.2.8",
-    "semver": "^7.8.1"
+    "semver": "^7.8.5"
   },
   "devDependencies": {
-    "@biomejs/biome": "^2.4.16",
-    "@commitlint/cli": "^21.0.1",
-    "@commitlint/config-conventional": "^21.0.1",
+    "@biomejs/biome": "^2.5.2",
+    "@commitlint/cli": "^21.2.0",
+    "@commitlint/config-conventional": "^21.2.0",
     "commit-and-tag-version": "^12.7.3",
-    "conventional-commits-filter": "^5.0.0",
     "husky": "^9.1.7",
-    "lint-staged": "^17.0.5"
+    "lint-staged": "^17.0.8"
   },
   "lint-staged": {
     "**/*": "npx @biomejs/biome check --write ."
